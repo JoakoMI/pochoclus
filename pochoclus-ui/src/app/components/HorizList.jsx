@@ -1,5 +1,5 @@
 import MovieCard from "./MovieCard";
-import peliculas from "../../../data/peliculasMock";
+import peliculas from "../data/peliculasMock";
 
 export default function HorizList() {
   const pelis = peliculas;

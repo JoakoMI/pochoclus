@@ -70,12 +70,12 @@ export default function App() {
               color="secondary"
               name="Jason Hughes"
               size="sm"
-              src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvfyF0xefWMnAZIYI52MkJmhwh1WRsDT66giZNuZg8sg&s"
             />
           </DropdownTrigger>
           <DropdownMenu aria-label="Profile Actions" variant="flat">
             <DropdownItem key="profile" className="h-14 gap-2">
-              <p className="font-semibold">Signed in as</p>
+              <p className=" font-semibold">Signed in as</p>
               <p className="font-semibold">zoey@example.com</p>
             </DropdownItem>
             <DropdownItem key="settings">My Settings</DropdownItem>
