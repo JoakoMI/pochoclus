@@ -10,7 +10,7 @@ import {
 
 export default function MovieCard(props) {
   return (
-    <Link href="/movieDetail" id={props.id}>
+    <Link href={`/movie/${props.id}`} id={props.id}>
       <Card className="py-4 m-1 w-56">
         <CardBody className="overflow-visible py-0 ">
           <Image

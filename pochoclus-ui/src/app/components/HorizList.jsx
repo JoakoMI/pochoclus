@@ -14,7 +14,7 @@ export default function HorizList() {
         {pelis.map((p) => {
           return (
             <MovieCard
-              key={p.id}
+              id={p.id}
               titulo={p.titulo}
               director={p.director}
               año={p.año}
