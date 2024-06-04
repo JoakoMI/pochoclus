@@ -1,0 +1,301 @@
+[
+        {
+            "title": "Amalia",
+            "year": "1914",
+            "poster": "",
+            "director": [
+                {
+                    "name": "Enrique García Velloso"
+                }
+            ],
+            "cast": [
+                {
+                    "name": "Susana Larreta y Quintana"
+                },
+                {
+                    "name": "Luis García Lawson"
+                },
+                {
+                    "name": "Jorge Quintana"
+                },
+                {
+                    "name": "Lucía de Bruyn"
+                },
+                {
+                    "name": "Jose Miguens"
+                },
+                {
+                    "name": "Raquel Aldao"
+                },
+                {
+                    "name": "Josefina Acosta"
+                },
+                {
+                    "name": "Carlos Morra"
+                },
+                {
+                    "name": "Ricardo Aldao"
+                },
+                {
+                    "name": "Camilo Aldao"
+                },
+                {
+                    "name": "Lola Marcó del Pont"
+                },
+                {
+                    "name": "Delfina Astengo"
+                },
+                {
+                    "name": "Juan Carlos Huergo"
+                },
+                {
+                    "name": "Inés González Guerrico"
+                },
+                {
+                    "name": "Enrique Bustillo"
+                }
+            ],
+            "genres": [
+                {
+                    "name": "Comedia"
+                },
+                {
+                    "name": "Drama"
+                }
+            ],
+            "plot": "Amalia es una película muda argentina de 1914 dirigida por Enrique García Velloso y escrita por Eugenio Py. Estaba basada en la novela de José Mármol. La película estuvo protagonizada por Dora Huergo y Lola Marcó del Pont. Es el primer largometraje producido en la historia del cine argentino.",
+            "movie_link": "https://www.youtube.com/watch?v=4zSzehPhLLI"
+        },
+        {
+            "title": "Nobleza Gaucha",
+            "year": "1915",
+            "poster": "https://image.tmdb.org/t/p/w342/9am1UgHN4dledEdUlAtAMonrUkC.jpg",
+            "director": [
+                {
+                    "name": "Sebastián M. Naón"
+                }
+            ],
+            "cast": [
+                {
+                    "name": "Olinda Bozán"
+                },
+                {
+                    "name": "Agustín Irusta"
+                },
+                {
+                    "name": "Marcelo Ruggero"
+                },
+                {
+                    "name": "Venturita López"
+                },
+                {
+                    "name": "Lalo Harbín"
+                },
+                {
+                    "name": "Pedro Laxalt"
+                },
+                {
+                    "name": "Atilio Supparo"
+                },
+                {
+                    "name": "Hugo Mac Dougall"
+                },
+                {
+                    "name": "Homero Manzi"
+                },
+                {
+                    "name": "Antonio Lanfranco"
+                },
+                {
+                    "name": "Javier Aurelio Ruggieri"
+                },
+                {
+                    "name": "Roque Funes"
+                },
+                {
+                    "name": "Héctor Torres"
+                },
+                {
+                    "name": "Sebastián Piana"
+                },
+                {
+                    "name": "Jose LaRosa"
+                },
+                {
+                    "name": "Clive D. Thompson"
+                }
+            ],
+            "genres": [
+                {
+                    "name": "Drama"
+                },
+                {
+                    "name": "Historia"
+                },
+                {
+                    "name": "Western"
+                }
+            ],
+            "plot": "La lucha de un trabajador rural para rescatar a la hija de un chacarero de las garras de un perverso capataz.",
+            "movie_link": "https://www.youtube.com/watch?v=gfQ09kiPFXg&t=1s&ab_channel=JordanGonzalez"
+        },
+        {
+            "title": "Hasta después de muerta",
+            "year": "1916",
+            "poster": "https://image.tmdb.org/t/p/w342/hMnCZGxnTmrjhnsz5drJ3xil0p8.jpg",
+            "director": [
+                {
+                    "name": "Enrique Ernesto Gunche"
+                },
+                {
+                    "name": "Eduardo Martínez de la Pera"
+                }
+            ],
+            "cast": [
+                {
+                    "name": "Argentino Gómez"
+                },
+                {
+                    "name": "María Fernanda Ladrón de Guevara"
+                },
+                {
+                    "name": "Silvia Parodi"
+                },
+                {
+                    "name": "Florencio Parravicini"
+                },
+                {
+                    "name": "Pedro Quartucci"
+                },
+                {
+                    "name": "Orfilia Rico"
+                },
+                {
+                    "name": "Enrique Serrano"
+                }
+            ],
+            "genres": [
+                {
+                    "name": "Drama"
+                }
+            ],
+            "plot": "A doctor finds himself in front of the corpse of a woman who was the most intense love of his life.",
+            "movie_link": "https://www.youtube.com/watch?v=VPipuJqPvb8"
+        },
+        {
+            "title": "Flor de durazno",
+            "year": "1917",
+            "poster": "https://image.tmdb.org/t/p/w342/5IwfGMcwBXhtGDRWJo5X5mqQPu5.jpg",
+            "director": [
+                {
+                    "name": "Francisco Defilippis Novoa"
+                }
+            ],
+            "cast": [
+                {
+                    "name": "Carlos Gardel"
+                },
+                {
+                    "name": "Ilde Pirovano"
+                },
+                {
+                    "name": "Argentino Gómez"
+                },
+                {
+                    "name": "Celestino Petray"
+                },
+                {
+                    "name": "Diego Figueroa"
+                },
+                {
+                    "name": "Pascual Costa"
+                },
+                {
+                    "name": "Rosa Bozán"
+                },
+                {
+                    "name": "Francisco Amerises"
+                },
+                {
+                    "name": "Ricardo Aldao"
+                },
+                {
+                    "name": "Camilo Aldao"
+                },
+                {
+                    "name": "Lola Marcó del Pont"
+                },
+                {
+                    "name": "Delfina Astengo"
+                },
+                {
+                    "name": "Juan Carlos Huergo"
+                },
+                {
+                    "name": "Inés González Guerrico"
+                },
+                {
+                    "name": "Enrique Bustillo"
+                }
+            ],
+            "genres": [
+                {
+                    "name": "Drama"
+                }
+            ],
+            "plot": "Esta fue la primera película de Gardel y fue dirigida por Francisco Defilippis Novoa y se realizó en colaboración con Celestino Petray.",
+            "movie_link": "https://www.youtube.com/watch?v=Oyza9z_ltV0"
+        },
+        {
+            "title": "Juan sin ropa",
+            "year": "1919",
+            "poster": "https://image.tmdb.org/t/p/w342/bzUspcgzdjAvgNDUT8fdPQqHWTM.jpg",
+            "director": [
+                {
+                    "name": "Héctor Quiroga"
+                },
+                {
+                    "name": "Georges Benoît"
+                }
+            ],
+            "cast": [
+                {
+                    "name": "Julio Escarsela"
+                },
+                {
+                    "name": "Camila Quiroga"
+                },
+                {
+                    "name": "José González Castillo"
+                }
+            ],
+            "genres": [
+                {
+                    "name": "Drama"
+                }
+            ],
+            "plot": "Film that marks a milestone in the Argentinean social cinema and that reflects the labor revolts suppressed during the Tragic Week in January of 1919.",
+            "movie_link": "https://www.youtube.com/watch?v=UwHRlcLqxFU"
+        },
+        {
+            "title": "La mosca y sus peligros",
+            "year": "1920",
+            "poster": "https://image.tmdb.org/t/p/w342//vCSAsxJIPdLrz0YlWrBWjnNDUEA.jpg",
+            "director": [
+                {
+                    "name": "Eduardo Martínez de la Pera"
+                },
+                {
+                    "name": "Enrique Ernesto Gunche"
+                }
+            ],
+            "cast": [],
+            "genres": [
+                {
+                    "name": "Documentary"
+                }
+            ],
+            "plot": "The Dangers of the Fly is an educational film made by Ernesto Gunche and Eduardo Martínez de la Pera, also responsible for Gaucho Nobility (1915), the biggest blockbuster of Argentinean silent cinema. De la Pera was a talented photographer, always willing to try new gadgets and techniques. This film experiments with microphotography in the style of Jean Comandon's films for Pathé and it is part of a series which included a film about mosquitoes and paludism and another one about cancer, which are considered lost. Flies were a popular subject of silent films and there are more than a dozen title's featuring them in the teens and early twenties.",
+            "movie_link": " https://www.youtube.com/watch?v=O7N1MF0kp4s"
+        }
+]
