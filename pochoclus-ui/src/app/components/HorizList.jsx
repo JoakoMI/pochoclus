@@ -10,15 +10,17 @@ export default function HorizList() {
         <h1 className="text-white text-xl font-bold">Titulo de la lista</h1>
       </section>
 
-      <div className="inline-flex gap-2">
+      <div className="inline-flex items-start gap-2">
         {pelis.map((p) => {
           return (
             <MovieCard
               id={p.id}
-              titulo={p.titulo}
+              title={p.title}
               director={p.director}
-              año={p.año}
-              imagen={p.imagen}
+              year={p.year}
+              poster={p.poster}
+              cast={p.cast}
+              genres={p.genres}
             />
           );
         })}
