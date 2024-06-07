@@ -1,30 +1,2712 @@
 [
-    {
-        "movie": "Amalia",
-        "year": 1914,
-        "link": "https://www.youtube.com/watch?v=4zSzehPhLLI"
-    },
-    {
-        "movie": "Nobleza Gaucha",
-        "year": 1915,
-        "link": "https://www.youtube.com/watch?v=gfQ09kiPFXg&t=1s&ab_channel=JordanGonzalez",
-        "intro": "https://www.youtube.com/watch?v=IpWvBrH2HVg&ab_channel=CopetesFilmoteca",
-        "Special Features (?": "Promo: https://www.youtube.com/watch?v=rTaOYm_lcwU&pp=ygUWTm9ibGV6YSBHYXVjaGEgdHJhaWxlcg%3D%3D"
-    },
-    {
-        "movie": "Hasta después de muerta",
-        "year": 1916,
-        "link": "https://www.youtube.com/watch?v=VPipuJqPvb8"
-    },
-    {
-        "movie": "Flor de durazno",
-        "year": 1917,
-        "link": "https://www.youtube.com/watch?v=Oyza9z_ltV0",
-        "Special Features (?": "Homenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
-    },
-    {
-        "movie": "Juan sin ropa",
-        "year": 1919,
-        "link": "https://www.youtube.com/watch?v=UwHRlcLqxFU"
-    }
+  {
+    "movie": "Amalia",
+    "year": 1914,
+    "link": "https://www.youtube.com/watch?v=4zSzehPhLLI"
+  },
+  {
+    "movie": "Nobleza Gaucha",
+    "year": 1915,
+    "link": "https://www.youtube.com/watch?v=gfQ09kiPFXg&t=1s&ab_channel=JordanGonzalez",
+    "intro": "https://www.youtube.com/watch?v=IpWvBrH2HVg&ab_channel=CopetesFilmoteca",
+    "Special Features (?": "Promo: https://www.youtube.com/watch?v=rTaOYm_lcwU&pp=ygUWTm9ibGV6YSBHYXVjaGEgdHJhaWxlcg%3D%3D"
+  },
+  {
+    "movie": "Hasta después de muerta",
+    "year": 1916,
+    "link": "https://www.youtube.com/watch?v=VPipuJqPvb8"
+  },
+  {
+    "movie": "Flor de durazno",
+    "year": 1917,
+    "link": "https://www.youtube.com/watch?v=Oyza9z_ltV0",
+    "Special Features (?": "Homenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "Juan sin ropa",
+    "year": 1919,
+    "link": "https://www.youtube.com/watch?v=UwHRlcLqxFU"
+  },
+  {
+    "movie": "La mosca y sus peligros",
+    "year": 1920,
+    "link": "https://www.youtube.com/watch?v=O7N1MF0kp4s",
+    "intro": "https://youtu.be/O7N1MF0kp4s?si=FeNH7xLHGdJAo9jM"
+  },
+  {
+    "movie": "El suplicio del fuego",
+    "year": 1922,
+    "link": "https://www.youtube.com/watch?v=Pk6XEfNGNdQ"
+  },
+  {
+    "movie": "En pos de la tierra",
+    "year": 1922,
+    "link": "https://www.youtube.com/watch?v=r4FadVeeJ54"
+  },
+  {
+    "movie": "Historia de un gaucho viejo",
+    "year": 1924,
+    "link": "https://www.youtube.com/watch?v=m169ifUgmUY&ab_channel=MuseodelCinePabloDucr%C3%B3sHicken"
+  },
+  {
+    "movie": "El último centauro - La epopeya del gaucho Juan Moreira",
+    "year": 1924,
+    "link": "https://www.youtube.com/watch?v=gyFT3Yw8ALw"
+  },
+  {
+    "movie": "Manuelita Rosas",
+    "year": 1925,
+    "link": "https://www.youtube.com/watch?v=yvLTZy7JElA"
+  },
+  {
+    "movie": "Bajo la mirada de dios",
+    "year": 1926,
+    "link": "https://www.youtube.com/watch?v=3Ot4iJFBemg"
+  },
+  {
+    "movie": "La vuelta al bulín",
+    "year": 1926,
+    "link": "https://www.youtube.com/watch?v=l3IZ5LX3tPg",
+    "intro": "https://www.youtube.com/watch?v=und9KNHV1Mc"
+  },
+  {
+    "movie": "Destinos",
+    "year": 1929,
+    "link": "https://www.youtube.com/watch?v=8ErBaiR2XA4"
+  },
+  {
+    "movie": "La flor de la ribera",
+    "year": 1931,
+    "link": "https://www.youtube.com/watch?v=bD-ATcCX00I&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=9X5p52W6q2A&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Las luces de Buenos Aires",
+    "year": 1931,
+    "link": "https://www.youtube.com/watch?v=9p4KEvlrbp8&ab_channel=MuseoFranklinRawson",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=XXXD0EZ4fq0 \nHomenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "Espérame",
+    "year": 1933,
+    "link": "https://www.youtube.com/watch?v=ieAx63gz3zU",
+    "Special Features (?": "Homenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "Melodía de Arrabal",
+    "year": 1933,
+    "link": "https://www.youtube.com/watch?v=HQ2D2OUxaVI",
+    "intro": "https://www.youtube.com/watch?v=2B2TQfypf3s",
+    "Special Features (?": "Videoclip actual de Fundación Carlos Gardel: https://www.youtube.com/watch?v=56-0gwqHlpA \nTrailer: https://www.youtube.com/watch?v=uEEykCVGw30 \nHomenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "El linyera",
+    "year": 1933,
+    "link": "https://www.youtube.com/watch?v=K-9aOkFvbTo&ab_channel=Raulo"
+  },
+  {
+    "movie": "Los Tres Berretines",
+    "year": 1933,
+    "link": "https://www.youtube.com/watch?v=hpvmkEJ14uU"
+  },
+  {
+    "movie": "Ídolos de Buenos Aires",
+    "year": 1934,
+    "link": "https://www.youtube.com/watch?v=pJJL0jXPgGU"
+  },
+  {
+    "movie": "Cuesta abajo",
+    "year": 1934,
+    "link": "https://www.youtube.com/watch?v=1j8SqM7k--Y",
+    "intro": "https://www.youtube.com/watch?v=D_U9aKZpJh4",
+    "Special Features (?": "Videoclip actual de la fundación Carlos Gardel: https://www.youtube.com/watch?v=dz22ffqQZHY\nHomenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "El tango en Broadway",
+    "year": 1934,
+    "link": "https://www.youtube.com/watch?v=sWAkUn6OwgE",
+    "intro": "https://www.youtube.com/watch?v=UzV-wftqlhM",
+    "Special Features (?": "Escena a color remasterizada: https://www.youtube.com/watch?v=dBk2aPEk4TA"
+  },
+  {
+    "movie": "Noches de Buenos Aires",
+    "year": 1935,
+    "link": "https://www.youtube.com/watch?v=ae9UkjqE_lM"
+  },
+  {
+    "movie": "El día que me quieras",
+    "year": 1935,
+    "link": "https://www.youtube.com/watch?v=x2t9aBLxSyI",
+    "intro": "https://www.youtube.com/watch?v=-pTgYjX58cI",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=omQSIlU9dPw"
+  },
+  {
+    "movie": "El caballo del pueblo",
+    "year": 1935,
+    "link": "https://www.youtube.com/watch?v=Q-RyDjaah5U"
+  },
+  {
+    "movie": "Puente alsina",
+    "year": 1935,
+    "link": "https://www.youtube.com/watch?v=p9-IIZ2ubUE"
+  },
+  {
+    "movie": "Tango Bar",
+    "year": 1935,
+    "link": "https://www.youtube.com/watch?v=aHQ2kszEa6M",
+    "intro": "https://www.youtube.com/watch?v=JukZobf6WK0",
+    "Special Features (?": "Al Pacino bailando Por Una Cabeza en la película Perfume de mujer: https://www.youtube.com/watch?v=BImXvYyF_RY  \nHomenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "Así cantaba Carlos Gardel",
+    "year": 1935,
+    "link": "https://www.youtube.com/watch?v=20JfduzILG8",
+    "Special Features (?": "Homenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "Don Quijote del Altillo",
+    "year": 1936,
+    "link": "https://www.youtube.com/watch?v=_LIu-9Cx028"
+  },
+  {
+    "movie": "Radio bar",
+    "year": 1936,
+    "link": "https://www.youtube.com/watch?v=wKdz_EmwFbQ"
+  },
+  {
+    "movie": "Puerto nuevo",
+    "year": 1936,
+    "link": "https://www.youtube.com/watch?v=Iqc_l-cNAi0",
+    "Special Features (?": "Archivo historico: https://www.youtube.com/watch?v=v8a61Rbb_IA "
+  },
+  {
+    "movie": "La muchachada de a bordo",
+    "year": 1936,
+    "link": "https://www.youtube.com/watch?v=G2ixqGr0MCA"
+  },
+  {
+    "movie": "Muchachos de la ciudad",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=uAiNbCEy2DA"
+  },
+  {
+    "movie": "Mateo",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=V0aCG_8GVKI",
+    "intro": "https://www.youtube.com/watch?v=iaU3GevgpCY"
+  },
+  {
+    "movie": "La vuelta de Rocha",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=68arcRaJEhw"
+  },
+  {
+    "movie": "El forastero",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=Hff6kh2QAiM"
+  },
+  {
+    "movie": "Sol de primavera",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=xAPsDgfieBQ"
+  },
+  {
+    "movie": "Así es el tango",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=810S_jHA_yE",
+    "intro": "https://www.youtube.com/watch?v=sUd5iwDgtqc"
+  },
+  {
+    "movie": "Fuera de la ley",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=kdkc6Xu1f5g&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=9PZ46HlUgUs&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "El cañonero de Giles",
+    "year": 1937,
+    "link": "https://www.youtube.com/watch?v=ePTnctiPMN0"
+  },
+  {
+    "movie": "La ley que olvidaron",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=PrUVxKhYAk0"
+  },
+  {
+    "movie": "La vuelta al nido",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=IElUleR9zm4",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=PkIqrYMCw4w&pp=ygUZTGEgdnVlbHRhIGFsIG5pZG8gdHJhaWxlcg%3D%3D"
+  },
+  {
+    "movie": "Dos amigos y un amor",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=uJUlQvO-Kjs"
+  },
+  {
+    "movie": "Bodas de sangre",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=Ffmd0p-lZkA"
+  },
+  {
+    "movie": "La que no perdonó",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=TEGLG7adxBc"
+  },
+  {
+    "movie": "Jettatore",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=QsUmho12WP0"
+  },
+  {
+    "movie": "Tres anclados en París",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=GbiWoGEvxM8"
+  },
+  {
+    "movie": "Kilómetro 111",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=FiCY3W9_TXI",
+    "Special Features (?": "Presentación: https://www.youtube.com/watch?v=nm_nSkKLv1U&pp=ygUWS2lsw7NtZXRybyAxMTEgdHJhaWxlcg%3D%3D"
+  },
+  {
+    "movie": "Nace un amor",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=iwpqRNcsrsU",
+    "intro": "https://www.youtube.com/watch?v=T91i-hOnsPs"
+  },
+  {
+    "movie": "Mujeres que trabajan",
+    "year": 1938,
+    "link": "https://www.youtube.com/watch?v=PUerkrGhjYA"
+  },
+  {
+    "movie": "Frente a la vida",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=pCkryAEGSC0",
+    "intro": "https://www.youtube.com/watch?v=_BVG01imyzI&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Cuatro corazones",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=ChvKGQUzQdI",
+    "intro": "https://www.youtube.com/watch?v=iDQ_smlZnzA"
+  },
+  {
+    "movie": "Alas de mi patria",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=ssSHjgqcUYU"
+  },
+  {
+    "movie": "Hermanos",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=PB7xMoTZiMY",
+    "intro": "https://www.youtube.com/watch?v=r0d85O5MPco"
+  },
+  {
+    "movie": "Prisioneros de la tierra",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=smKSIpFgAhw",
+    "intro": "https://www.youtube.com/watch?v=VHk7DLCxrZg",
+    "Special Features (?": "Presentación de Martin Scorsese: https://www.youtube.com/watch?v=pOoeoDIuEmo \nRestauración de Prisioneros de la tierra: https://www.youtube.com/watch?v=ybkhDd0WFzo "
+  },
+  {
+    "movie": "Así es la vida",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=06B0fqoiDBM"
+  },
+  {
+    "movie": "Retazo",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=7zBBppCiNZk"
+  },
+  {
+    "movie": "Muchachas que estudian",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=zGCuLpT9A94"
+  },
+  {
+    "movie": "Ambición",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=pqFoSMpSTVk"
+  },
+  {
+    "movie": "La vida es un tango",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=QFNSz4LRl8Y"
+  },
+  {
+    "movie": "La vida de Carlos Gardel",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=OlUObQ9Vc_c",
+    "intro": "https://www.youtube.com/watch?v=XykTzWgbqP4"
+  },
+  {
+    "movie": "Gente bien",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=rkjOj_OrO9k",
+    "intro": "https://www.youtube.com/watch?v=s43WHT9ElxQ"
+  },
+  {
+    "movie": "Divorcio en Montevideo",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=wC-GlunXlu0"
+  },
+  {
+    "movie": "Cándida",
+    "year": 1939,
+    "link": "https://www.youtube.com/watch?v=eZ0w2X8mJc0"
+  },
+  {
+    "movie": "Isabelita",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=r5l-naXrzcw"
+  },
+  {
+    "movie": "Los celos de Cándida",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=BvwavpyeLes"
+  },
+  {
+    "movie": "Casamiento en Buenos Aires",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=wfrzMq_-gwo"
+  },
+  {
+    "movie": "Chingolo",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=P2aSG14y8ag",
+    "intro": "https://www.youtube.com/watch?v=sIf42VH2uEM&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "El astro del tango",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=pfX1LQgonQk"
+  },
+  {
+    "movie": "El inglés de los güesos",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=0U-cA49PW48"
+  },
+  {
+    "movie": "Caprichosa y millonaria",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=n25ChHjwKws",
+    "intro": "https://www.youtube.com/watch?v=AngcFdgSUzM"
+  },
+  {
+    "movie": "Medio millón por una mujer",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=TVFRpgwlb4c"
+  },
+  {
+    "movie": "Carnaval de antaño",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=MlsFuMz4p5o"
+  },
+  {
+    "movie": "Luna de miel en Río",
+    "year": 1940,
+    "link": "https://www.youtube.com/watch?v=H84vp3WtQSU"
+  },
+  {
+    "movie": "Un bebé de París",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=H9cYRVjbPwo"
+  },
+  {
+    "movie": "Cándida millonaria",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=OT3ki-L1PPE"
+  },
+  {
+    "movie": "Los martes, orquídeas",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=pKJ61stuiZ8"
+  },
+  {
+    "movie": "Yo quiero ser Bataclana",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=cJaftRdw1t4",
+    "intro": "https://www.youtube.com/watch?v=noOHGCqT1QI&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Joven, viuda y estanciera",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=SrtZvNC0vMw"
+  },
+  {
+    "movie": "El mejor papá del mundo",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=xD1OIl_qjcc"
+  },
+  {
+    "movie": "El Tesoro de la Isla Maciel",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=6dWJC_yg9G0"
+  },
+  {
+    "movie": "El cura gaucho",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=s7RycTeKoOQ"
+  },
+  {
+    "movie": "Papá tiene novia",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=iBGUUCJUx6k"
+  },
+  {
+    "movie": "Si yo fuera rica",
+    "year": 1941,
+    "link": "https://www.youtube.com/watch?v=G_G0ukDtQiw",
+    "intro": "https://www.youtube.com/watch?v=2TTufiqywJo"
+  },
+  {
+    "movie": "Adolescencia",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=OSDyF1K-h_Y"
+  },
+  {
+    "movie": "La guerra gaucha",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=Az7kQXCSCc0",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=za_EpRnp708 \nSerie documental de Canal encuentro sobre Martín Güemes:\r\nCap.1 - El hijo de Salta: https://www.youtube.com/watch?v=gtQSNWProfU \r\nCap.2 - La Guerra Gaucha: https://www.youtube.com/watch?v=JVhrtEffnTI \r\nCap.3 - La tierra en armas: https://www.youtube.com/watch?v=ejSZRMnSLV8 \r\nCap.4 - Salta se desangra: https://www.youtube.com/watch?v=gWMmNRoR77g "
+  },
+  {
+    "movie": "En el viejo Buenos Aires",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=U8vXPbauFQs"
+  },
+  {
+    "movie": "Malambo",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=AvJW1IQuD9U"
+  },
+  {
+    "movie": "La maestrita de los obreros",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=wIyaewVjWn8"
+  },
+  {
+    "movie": "¡Gaucho!",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=gtaat514pEk"
+  },
+  {
+    "movie": "El viejo hucha",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=_JHr3z4r5-A"
+  },
+  {
+    "movie": "Noche de bodas",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=5_6Wn7Nfjm8"
+  },
+  {
+    "movie": "Ceniza al viento",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=pBEz-nQm3_A"
+  },
+  {
+    "movie": "Elvira Fernández, vendedora de tienda",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=V_MQROhRrTc",
+    "intro": "https://www.youtube.com/watch?v=KQ5mq3nDTMA"
+  },
+  {
+    "movie": "Fantasmas en Buenos Aires",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=xtFdlXh4Vpc"
+  },
+  {
+    "movie": "Historia de crimenes",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=iQc0wqvlfxU"
+  },
+  {
+    "movie": "Una luz en la ventana",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=iPbVt5rXbZw"
+  },
+  {
+    "movie": "En el último piso",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=g6SBTASh56g"
+  },
+  {
+    "movie": "Concierto de almas",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=1aY2Z2cc4qU",
+    "intro": "https://www.youtube.com/watch?v=gMMkCZ1wq3I&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Los chicos crecen",
+    "year": 1942,
+    "link": "https://www.youtube.com/watch?v=dfVy4RYUlf4"
+  },
+  {
+    "movie": "Casa de muñecas",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=0ZPtt_LHmkM"
+  },
+  {
+    "movie": "La hija del ministro",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=DBeb9XVbYK0"
+  },
+  {
+    "movie": "Los hijos artificiales",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=8gIfBqhJMGs"
+  },
+  {
+    "movie": "Todo un hombre",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=4ihF7zF-cbM"
+  },
+  {
+    "movie": "La guerra la gano yo",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=P7WuBXvPNgo"
+  },
+  {
+    "movie": "Fuego en la montaña",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=ZdHDo6EIlqE"
+  },
+  {
+    "movie": "Eclipse de Sol",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=awV2EjcwRzE"
+  },
+  {
+    "movie": "Dieciséis años",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=aa_dJAJyWPI"
+  },
+  {
+    "movie": "Juvenilia",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=n2YALaXEfQc"
+  },
+  {
+    "movie": "El sillón y la gran duquesa",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=kQnmtxDyT48"
+  },
+  {
+    "movie": "Safo, historia de una pasión",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=aU0LxhUf4gg",
+    "intro": "https://www.youtube.com/watch?v=YIQApOKDzx4"
+  },
+  {
+    "movie": "El espejo",
+    "year": 1943,
+    "link": "https://www.youtube.com/watch?v=p4B3BlxAsqA"
+  },
+  {
+    "movie": "La Pequeña Señora de Pérez",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=UlRcQzDEwNo"
+  },
+  {
+    "movie": "Mi novia es un fantasma",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=bLz5uTlqX5E"
+  },
+  {
+    "movie": "El fin de la noche",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=voY7qpnJcJE"
+  },
+  {
+    "movie": "La casta susana",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=oB_xlum_7OU",
+    "intro": "https://www.youtube.com/watch?v=paSJ-ZMIRRk"
+  },
+  {
+    "movie": "El muerto falta a la cita",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=y2ghULCWBj8"
+  },
+  {
+    "movie": "Los dos rivales",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=qby9CKtsdEY"
+  },
+  {
+    "movie": "Su mejor alumno",
+    "year": 1944,
+    "link": "https://www.youtube.com/watch?v=0av-JCYJAlU",
+    "intro": "https://www.youtube.com/watch?v=GrUV_t54TeM"
+  },
+  {
+    "movie": "Besos perdidos",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=DqUw1oRpEWI"
+  },
+  {
+    "movie": "Las seis suegras de Barba Azul",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=yBgeQjyhuOE"
+  },
+  {
+    "movie": "Se abre el abismo",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=9fiu6xoJN1M",
+    "intro": "https://www.youtube.com/watch?v=0EIipuPJT7A"
+  },
+  {
+    "movie": "Camino del infierno",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=1g7M4x71gZw"
+  },
+  {
+    "movie": "La señora Peréz se divorcia",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=UlRcQzDEwNo"
+  },
+  {
+    "movie": "La dama duende",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=F93Q1FUw6PU"
+  },
+  {
+    "movie": "Despertar a la vida",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=s0GDnZQe3Mw",
+    "intro": "https://www.youtube.com/watch?v=Rg59s60jvk0"
+  },
+  {
+    "movie": "Pampa Barbara",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=0k9pnJV-qGg"
+  },
+  {
+    "movie": "Cuando en el cielo pasen lista",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=-d9rRJ7B4WI"
+  },
+  {
+    "movie": "La pródiga",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=WBzRLynwaSw",
+    "Special Features (?": "TV Pública: https://www.youtube.com/watch?v=UicZ9kOvm2c&ab_channel=Televisi%C3%B3nP%C3%BAblica "
+  },
+  {
+    "movie": "La cabalgata del circo",
+    "year": 1945,
+    "link": "https://www.youtube.com/watch?v=p48reiasLuc",
+    "intro": "https://www.youtube.com/watch?v=8TP6eeltiq0"
+  },
+  {
+    "movie": "El Diamante del Maharajá",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=UMVVPJ8LfZU"
+  },
+  {
+    "movie": "La honra de los hombres",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=RNC3vSz14_A"
+  },
+  {
+    "movie": "Adán y la serpiente",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=7IW-WXGNqQM"
+  },
+  {
+    "movie": "Donde mueren las palabras",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=jpZOPRhwGAM"
+  },
+  {
+    "movie": "Un beso en la nuca",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=DaodjPMb2L8"
+  },
+  {
+    "movie": "Deshojando margaritas",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=IblLN2iieH0"
+  },
+  {
+    "movie": "Las tres ratas",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=D7fa5QUvayE"
+  },
+  {
+    "movie": "La tía de Carlos",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=XucPa-9GJJY"
+  },
+  {
+    "movie": "El tercer huesped",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=itTZGRRtILA"
+  },
+  {
+    "movie": "El socio",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=fUZXi3Mv3K0"
+  },
+  {
+    "movie": "El diablo andaba en los choclos",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=zzVbjvMDe1I"
+  },
+  {
+    "movie": "El ángel desnudo",
+    "year": 1946,
+    "link": "https://www.youtube.com/watch?v=X4cVgUkdNxo"
+  },
+  {
+    "movie": "La cumparsita",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=vW-9htTD1SI"
+  },
+  {
+    "movie": "El hombre del sábado",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=yRNf7ifCNZE"
+  },
+  {
+    "movie": "El que recibe las bofetadas",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=b3VI3APGLms"
+  },
+  {
+    "movie": "El misterio del cuarto amarillo",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=MWmrJkCPSHU"
+  },
+  {
+    "movie": "Madame Bovary",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=nT1XnAMUh3M"
+  },
+  {
+    "movie": "Los verdes paraísos",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=7rq19ONdWqo",
+    "intro": "https://www.youtube.com/watch?v=dPcyuCndfgs"
+  },
+  {
+    "movie": "Navidad de los pobres",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=VY25LYHiLl8"
+  },
+  {
+    "movie": "La senda oscura",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=jVPBRnvMmLI"
+  },
+  {
+    "movie": "Lucrecia Borgia",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=sKehs_wHHrk"
+  },
+  {
+    "movie": "Con el diablo en el cuerpo",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=fCbqzduaA7E"
+  },
+  {
+    "movie": "Santos Vega Vuelve",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=VJ5GRbY0i6M",
+    "intro": "https://www.youtube.com/watch?v=DSinFuwwrwQ"
+  },
+  {
+    "movie": "El retrato",
+    "year": 1947,
+    "link": "https://www.youtube.com/watch?v=7fBD5yo0bL8",
+    "intro": "https://www.youtube.com/watch?v=UTNEweGLLbo"
+  },
+  {
+    "movie": "Dios se lo pague",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=KsphxxUX6LA",
+    "intro": "https://www.youtube.com/watch?v=9S-i2M-eC8c",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=91KvpWATxBU "
+  },
+  {
+    "movie": "La serpiente de cascabel",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=27jbwKNFg3w"
+  },
+  {
+    "movie": "Mis cinco hijos",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=K5iiMj5rqwI",
+    "intro": "https://www.youtube.com/watch?v=wHJrGWw8lAg"
+  },
+  {
+    "movie": "La secta del trébol",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=b14BvXJcDWw"
+  },
+  {
+    "movie": "La dama del collar",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=7SzznxCUpHQ"
+  },
+  {
+    "movie": "La muerte camina en la lluvia",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=6jzyWvKVJ9g"
+  },
+  {
+    "movie": "Pobre mi madre querida",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=5k0NCltmU9E"
+  },
+  {
+    "movie": "Pelota de trapo",
+    "year": 1948,
+    "link": "https://www.youtube.com/watch?v=085W3Kjoums"
+  },
+  {
+    "movie": "Yo no elegí mi vida",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=XbGsaiYKjWM"
+  },
+  {
+    "movie": "De padre desconocido",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=NCE6XVmsgE8"
+  },
+  {
+    "movie": "Vidalita",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=pgJDUWfycvM",
+    "intro": "https://www.youtube.com/watch?v=t2vghnUHE2s"
+  },
+  {
+    "movie": "¿Por qué mintió la cigüeña?",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=VkYfXrZEp84"
+  },
+  {
+    "movie": "Cita en las estrellas",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=PjZyCI1MRhE",
+    "intro": "https://www.youtube.com/watch?v=yLKkpgRhG2o"
+  },
+  {
+    "movie": "Miguitas en la cama",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=P9HXfdOAzuM"
+  },
+  {
+    "movie": "El extraño caso de la mujer asesinada",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=aAbMhklexAk"
+  },
+  {
+    "movie": "Fúlmine",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=R2pNa3bLuZo"
+  },
+  {
+    "movie": "El ídolo del tango",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=wtWF_TNDS5k"
+  },
+  {
+    "movie": "Nace la libertad",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=5e25H_nCKMw",
+    "intro": "https://www.youtube.com/watch?v=zor8oOt1HoY"
+  },
+  {
+    "movie": "Pantalones cortos",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=o2prFJNhS2o"
+  },
+  {
+    "movie": "La tierra será nuestra",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=CN9HxQJw_tw"
+  },
+  {
+    "movie": "Avivato (El rey de los vivos)",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=-9iNwa_VflI"
+  },
+  {
+    "movie": "La trampa",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=uMOiUxOY1i0"
+  },
+  {
+    "movie": "Apenas un delincuente",
+    "year": 1949,
+    "link": "https://www.youtube.com/watch?v=gZ4pu_Fkc_Q",
+    "intro": "https://www.youtube.com/watch?v=kG6bmJeMWpc"
+  },
+  {
+    "movie": "Arrabalera",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=sh_7ORCtekM"
+  },
+  {
+    "movie": "Campeón a la fuerza",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=THariXIuASk"
+  },
+  {
+    "movie": "El último payador",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=x5TCBgFJd2E"
+  },
+  {
+    "movie": "Con el sudor de tu frente",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=veNKY10ryuE&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=vV6lnewEUvs&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "La muerte está mintiendo",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=1YFhXZk9Fh0"
+  },
+  {
+    "movie": "Captura recomendada",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=cCKb5DgK9mk",
+    "intro": "https://www.youtube.com/watch?v=Q7_QvJtLA9s"
+  },
+  {
+    "movie": "A la Habana me voy",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=JbDhr8791IY",
+    "intro": "https://www.youtube.com/watch?v=Et_k1C53hYI"
+  },
+  {
+    "movie": "Nacha Regules",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=bPi2oaUoxkE",
+    "intro": "https://www.youtube.com/watch?v=f-UGiGy3Q1I"
+  },
+  {
+    "movie": "La balandra Isabel llegó esta tarde",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=fPMtZlnAC1c"
+  },
+  {
+    "movie": "Filomena Marturano",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=kl2mqmmCC38"
+  },
+  {
+    "movie": "Cinco grandes y una chica",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=04ILHRuVHso"
+  },
+  {
+    "movie": "La barra de la esquina",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=tX8JE6kq_QU"
+  },
+  {
+    "movie": "Escuela de campeones",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=FmU3nD3y4Pc",
+    "intro": "https://www.youtube.com/watch?v=0U4A3f1qPSk"
+  },
+  {
+    "movie": "Piantadino",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=f-WU_6622iw"
+  },
+  {
+    "movie": "Cinco locos en la pista",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=BIsEUWYdXGs"
+  },
+  {
+    "movie": "La culpa la tuvo el otro",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=6-JTvQiEXSk"
+  },
+  {
+    "movie": "Arroz con leche",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=g2jaX-VxuWE",
+    "intro": "https://www.youtube.com/watch?v=n53z6qvJvfU"
+  },
+  {
+    "movie": "El regreso",
+    "year": 1950,
+    "link": "https://www.youtube.com/watch?v=vcqu0bHTUqM&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=xpnXhOSw-LM&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "La calle junto a la luna",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=5ZnBpbEybLU"
+  },
+  {
+    "movie": "El hincha",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=Ozr1Swzi-Sc",
+    "intro": "https://www.youtube.com/watch?v=Rw6CIp03PHo"
+  },
+  {
+    "movie": "Derecho viejo",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=wh1rWOZYxuo"
+  },
+  {
+    "movie": "El honorable inquilino",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=P8jaAXIRi2E"
+  },
+  {
+    "movie": "Los árboles mueren de pie",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=nIADPApwzmI"
+  },
+  {
+    "movie": "Café cantante",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=odOkrbfBeeM"
+  },
+  {
+    "movie": "Con la música en el alma",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=cm0VYvAbPyM",
+    "intro": "https://www.youtube.com/watch?v=6XkGvCd3D_U"
+  },
+  {
+    "movie": "Cosas de mujer",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=RixwrSAnz_o",
+    "intro": "https://www.youtube.com/watch?v=lPUIgAjhhSc"
+  },
+  {
+    "movie": "El hermoso Brummel",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=2Tk5vaz_bUo"
+  },
+  {
+    "movie": "Ritmo, Sal y Pimienta",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=QdSGHwzSnqk"
+  },
+  {
+    "movie": "Los isleros",
+    "year": 1951,
+    "link": "https://www.youtube.com/watch?v=TinlYsyhjog"
+  },
+  {
+    "movie": "Si muero antes de despertar",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=7bq05zdcBLc"
+  },
+  {
+    "movie": "No abras nunca esa puerta",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=WZPdYc5-oFs"
+  },
+  {
+    "movie": "La muerte en las calles",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=fg1iMe0gKRA",
+    "intro": "https://www.youtube.com/watch?v=HZowFX4nO28"
+  },
+  {
+    "movie": "Bárbara atómica",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=VTFH8bkIW54"
+  },
+  {
+    "movie": "La parda flora",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=_ku5jSJ-u-w"
+  },
+  {
+    "movie": "Mala gente",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=oZFooKD1u1Q"
+  },
+  {
+    "movie": "Deshonra",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=RDR1rD_irYQ"
+  },
+  {
+    "movie": "Las aguas bajan turbias",
+    "year": 1952,
+    "link": "https://www.youtube.com/watch?v=BEjOnE_SpPY",
+    "Special Features (?": "Trailer de Filmoteca: https://www.youtube.com/watch?v=vUjUpZaThzA \nEfemerides Canal Encuentro: https://www.youtube.com/watch?v=vPWaSeUhXvU "
+  },
+  {
+    "movie": "El hijo del crack",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=oAoWD33gKSk"
+  },
+  {
+    "movie": "Por cuatro dias locos",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=TRYN7fzstVI",
+    "intro": "https://www.youtube.com/watch?v=xeMpEuQ4vFw"
+  },
+  {
+    "movie": "La pasión desnuda",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=JEoVZJpJJLc"
+  },
+  {
+    "movie": "Por cuatro días locos",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=TRYN7fzstVI",
+    "intro": "https://www.youtube.com/watch?v=xeMpEuQ4vFw"
+  },
+  {
+    "movie": "Los troperos",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=j91eCND9V9g"
+  },
+  {
+    "movie": "Ellos nos hicieron así",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=u_tMUdJZu58"
+  },
+  {
+    "movie": "El conde de Montecristo",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=99fDtA-qiOM"
+  },
+  {
+    "movie": "Un ángel sin pudor",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=-6Q53xN9Yvc"
+  },
+  {
+    "movie": "La mano que aprieta",
+    "year": 1953,
+    "link": "https://www.youtube.com/watch?v=GEwXdRqVNYg"
+  },
+  {
+    "movie": "Guacho",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=IOYh7eTimkY",
+    "intro": "https://www.youtube.com/watch?v=FwAk7ftqiOw"
+  },
+  {
+    "movie": "La dama del mar",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=1T-km-MnDiI"
+  },
+  {
+    "movie": "Canción de la nieve",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=_J8PWbCQ0ZM",
+    "intro": "https://www.youtube.com/watch?v=PHhxSZVX4Tw"
+  },
+  {
+    "movie": "Somos todos inquilinos",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=XWoro7uHFxY"
+  },
+  {
+    "movie": "Río Turbio",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=hceuJUnkNiI"
+  },
+  {
+    "movie": "Dringue, Castrito y la lámpara de Aladino",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=bdLNfe0YxJ0"
+  },
+  {
+    "movie": "La edad del amor",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=ful8VQ-VAlA"
+  },
+  {
+    "movie": "Su seguro servidor",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=dZMdeHGemAM"
+  },
+  {
+    "movie": "Los ojos llenos de amor",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=XfBIfV6gVKw",
+    "intro": "https://www.youtube.com/watch?v=vMEvkIvStBA"
+  },
+  {
+    "movie": "Un hombre cualquiera",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=HjVkTz0u2FU"
+  },
+  {
+    "movie": "La cueva de Alí Babá",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=JR6KfaZ3Uno"
+  },
+  {
+    "movie": "El cura Lorenzo",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=O56VWkAqI-Y"
+  },
+  {
+    "movie": "Requiebro",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=b_BKHOptApE",
+    "intro": "https://www.youtube.com/watch?v=2dkssqLjPBA"
+  },
+  {
+    "movie": "Días de odio",
+    "year": 1954,
+    "link": "https://www.youtube.com/watch?v=KrCFaZzphR4"
+  },
+  {
+    "movie": "Mercado de Abasto",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=K5bWyKJGfRk",
+    "Special Features (?": "Material de archivo sobre incendio en el Mercado de Abasto: https://www.youtube.com/watch?v=3JugztqkIYg "
+  },
+  {
+    "movie": "El hombre que debía una muerte",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=IT4YpQKOjLI"
+  },
+  {
+    "movie": "El fantasma de la opereta",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=Pn162hf1gVY"
+  },
+  {
+    "movie": "El barro humano",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=xelcbB6KDhQ"
+  },
+  {
+    "movie": "Adiós problemas",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=F_VeppJEcfM"
+  },
+  {
+    "movie": "En carne viva",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=09TPmKSt_Rs"
+  },
+  {
+    "movie": "Un novio para Laura",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=rLWTNHtfR60"
+  },
+  {
+    "movie": "El curandero",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=3F4lcOqHhH4"
+  },
+  {
+    "movie": "Mi marido hoy duerme en casa",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=80Q7LB2Qh0w"
+  },
+  {
+    "movie": "La tierra del fuego se apaga",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=JO6dGQgTN6U",
+    "intro": "https://www.youtube.com/watch?v=liJuN0b3puM"
+  },
+  {
+    "movie": "El mal amor",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=4Y1iccTZg3g"
+  },
+  {
+    "movie": "La quintrala",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=ElEMSQBcJ-Y"
+  },
+  {
+    "movie": "Concierto para una lágrima",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=bqspnog29hU&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=O1pGFSHtP48&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Adiós muchachos",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=f9KCn79Phbo"
+  },
+  {
+    "movie": "El amor nunca muere",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=uZLmXtQJaZY"
+  },
+  {
+    "movie": "Cuando los duendes cazan perdices",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=EhBFWUlQb8k"
+  },
+  {
+    "movie": "El Tren Expreso ",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=Y2Fy_qNqf7E"
+  },
+  {
+    "movie": "La simuladora",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=T2Eb4i1lXno&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=uoAFDB3gFyo&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Ayer fue primavera",
+    "year": 1955,
+    "link": "https://www.youtube.com/watch?v=vZzC00RpHNw"
+  },
+  {
+    "movie": "La pícara soñadora",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=jO3CzYexgQo"
+  },
+  {
+    "movie": "Más allá del olvido",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=YjtrgcBp54A&pp=ygUjTcOhcyBhbGzDoSBkZWwgb2x2aWRvIDE5NTYgcGVsaWN1bGE%3D"
+  },
+  {
+    "movie": "El satélite chiflado",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=xYZFlQt-S5M"
+  },
+  {
+    "movie": "Edad difícil",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=sLCEIzxj9hE",
+    "intro": "https://www.youtube.com/watch?v=QQ4Qta5BNmk"
+  },
+  {
+    "movie": "Después del silencio",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=_-Y0J_RDUhg"
+  },
+  {
+    "movie": "Catita es una dama",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=fPuFuSIkgw0"
+  },
+  {
+    "movie": "Los torturados",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=U7KeJ0JoyPM",
+    "intro": "https://www.youtube.com/watch?v=Y0sGavA7bhE"
+  },
+  {
+    "movie": "El último perro",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=epNSWrmZ_mY",
+    "intro": "https://www.youtube.com/watch?v=qrG4QknXxY0"
+  },
+  {
+    "movie": "Los tallos amargos",
+    "year": 1956,
+    "link": "https://www.youtube.com/watch?v=SPCYIoUuWbw"
+  },
+  {
+    "movie": "Cinco gallinas y el cielo",
+    "year": 1957,
+    "link": "https://www.youtube.com/watch?v=P7YxxnENhz8",
+    "intro": "https://www.youtube.com/watch?v=K3V3D4ZZ_KI"
+  },
+  {
+    "movie": "Venga a bailar el rock",
+    "year": 1957,
+    "link": "https://www.youtube.com/watch?v=XsJn7onJ2vg"
+  },
+  {
+    "movie": "Historia de una carta",
+    "year": 1957,
+    "link": "https://www.youtube.com/watch?v=F3_dLvc9dYQ",
+    "intro": "https://www.youtube.com/watch?v=3maN5iaQOfs"
+  },
+  {
+    "movie": "Alfonsina",
+    "year": 1957,
+    "link": "https://www.youtube.com/watch?v=G3SMmPhxaJw",
+    "intro": "https://www.youtube.com/watch?v=9rNvklaVwZE"
+  },
+  {
+    "movie": "Que me toquen las golondrinas",
+    "year": 1957,
+    "link": "https://www.youtube.com/watch?v=oCH1LsZ0Vx4"
+  },
+  {
+    "movie": "La bestia humana",
+    "year": 1957,
+    "link": "https://www.youtube.com/watch?v=JiUcNL9Uwlc",
+    "intro": "https://www.youtube.com/watch?v=elWgd2arJAc&pp=ygUjTGEgYmVzdGlhIGh1bWFuYSBDb3BldGVzIEZpbG1vdGVjYSA%3D"
+  },
+  {
+    "movie": "Amor prohibido",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=MZa5YyAMjg0"
+  },
+  {
+    "movie": "Sin familia",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=UG7vxTskMV0"
+  },
+  {
+    "movie": "Pobres habrá siempre",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=2HA9S_SxTnc"
+  },
+  {
+    "movie": "El trueno entre las hojas",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=CtSXIdbyOWw"
+  },
+  {
+    "movie": "Alto paraná",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=RDfVS4qYMrE"
+  },
+  {
+    "movie": "La morocha",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=hfHeefSz7QE",
+    "intro": "https://www.youtube.com/watch?v=cBoYolJqOjg"
+  },
+  {
+    "movie": "El jefe",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=zhNcJGhvHTk"
+  },
+  {
+    "movie": "Tire dié",
+    "year": 1958,
+    "link": "https://www.youtube.com/watch?v=vLQCmwwjxvw",
+    "intro": "https://www.youtube.com/watch?v=XKhMS2Fj6Y0&pp=ygUhVGlyZSBkacOpIDE5NTggQ29wZXRlcyBGaWxtb3RlY2Eg",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=Qoo0zjT8BVI&pp=ygUWVGlyZSBkacOpIDE5NTggdHJhaWxlcg%3D%3D"
+  },
+  {
+    "movie": "El negoción",
+    "year": 1959,
+    "link": "https://www.youtube.com/watch?v=6J70zrXGbYI"
+  },
+  {
+    "movie": "Del cuple al tango",
+    "year": 1959,
+    "link": "https://www.youtube.com/watch?v=RNa5bdL_eCo"
+  },
+  {
+    "movie": "Nubes de humo",
+    "year": 1959,
+    "link": "https://www.youtube.com/watch?v=Kowhz8C2cnM"
+  },
+  {
+    "movie": "Campo arado",
+    "year": 1959,
+    "link": "https://www.youtube.com/watch?v=lJRO8foSVfI&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=-3d4kRW8usU&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "India",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=mbQb-TP6MCc"
+  },
+  {
+    "movie": "Culpable",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=SXsKxSulUSo"
+  },
+  {
+    "movie": "Río abajo",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=f01K5c7kQjA"
+  },
+  {
+    "movie": "Los de la mesa 10",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=prmfvSOCIqg"
+  },
+  {
+    "movie": "Shunko",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=4bIcnYJJCmM"
+  },
+  {
+    "movie": "La madrastra",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=Y1cPLTPeuOw"
+  },
+  {
+    "movie": "El Pecado De Una Madre",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=iKe1vZvPbXc"
+  },
+  {
+    "movie": "Obras maestras del terror",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=dnoLc7vPGRQ"
+  },
+  {
+    "movie": "El crack",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=oV7waI3aHAs"
+  },
+  {
+    "movie": "Las furias",
+    "year": 1960,
+    "link": "https://www.youtube.com/watch?v=iPEJRXKSIgo",
+    "intro": "https://www.youtube.com/watch?v=OySQPNjQkQE"
+  },
+  {
+    "movie": "La mano en la trampa",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=ib-duX-XQw4"
+  },
+  {
+    "movie": "Quinto año nacional",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=VraFO-XqEDY"
+  },
+  {
+    "movie": "Piel de verano",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=RjoHs2Juxoc"
+  },
+  {
+    "movie": "El centroforward murió al amanecer",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=X7kh07GTuNQ"
+  },
+  {
+    "movie": "Alias Gardelito",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=vFwa9pErl8k"
+  },
+  {
+    "movie": "Tres veces ana",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=VGdaNAHs1Zs"
+  },
+  {
+    "movie": "Hijo de hombre",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=7yZsVll4IEg"
+  },
+  {
+    "movie": "Amorina",
+    "year": 1961,
+    "link": "https://www.youtube.com/watch?v=viKMZYFoaGA"
+  },
+  {
+    "movie": "Setenta veces siete",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=_VfgTO0g01w"
+  },
+  {
+    "movie": "Los inundados",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=Kibrt76rb_g"
+  },
+  {
+    "movie": "Dar la cara",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=GQwJ7DPVEEU",
+    "intro": "https://www.youtube.com/watch?v=cHN2bBroXtc"
+  },
+  {
+    "movie": "El televisor",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=bSly07H4iAA"
+  },
+  {
+    "movie": "Una jaula no tiene secretos",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=AYVD6XDWfC4"
+  },
+  {
+    "movie": "Detrás de la mentira",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=ymBeLa4nXG4"
+  },
+  {
+    "movie": "La cifra impar",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=C71iGxB-k5k",
+    "intro": "https://www.youtube.com/watch?v=OAAcvhX3uj8"
+  },
+  {
+    "movie": "Reencuentro con la gloria",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=9E3ovTiDWb0"
+  },
+  {
+    "movie": "Dr. Cándido Pérez, Sras.",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=FBEpelJB5FY"
+  },
+  {
+    "movie": "El mago de las finanzas",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=OS-WRcn1WTo"
+  },
+  {
+    "movie": "La burrerita de Ypacaraí",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=jZHVOfmARas"
+  },
+  {
+    "movie": "Prisioneros de una noche",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=RGzk0PcaxGg"
+  },
+  {
+    "movie": "Homenaje a la hora de la siesta",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=Di-u05U2IJI"
+  },
+  {
+    "movie": "Los jóvenes viejos",
+    "year": 1962,
+    "link": "https://www.youtube.com/watch?v=ay78RvgzolU"
+  },
+  {
+    "movie": "La terraza",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=t6vbH0mMYxk"
+  },
+  {
+    "movie": "Las ratas",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=uffw_l7GCh8"
+  },
+  {
+    "movie": "Cuando calienta el sol",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=7hQDTvQcH_w"
+  },
+  {
+    "movie": "La murga",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=uJTqfxbOx-4"
+  },
+  {
+    "movie": "Pelota de cuero",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=tDUo_FOGt8U"
+  },
+  {
+    "movie": "Paula cautiva",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=-j_STAW0U_M",
+    "Special Features (?": "Copete de la joven guardia: https://www.youtube.com/watch?v=zeUKuEIQk90 "
+  },
+  {
+    "movie": "Los inconstantes",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=h-wgS-H1Juk"
+  },
+  {
+    "movie": "El último montonero",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=um4Fp3-otHU",
+    "intro": "https://www.youtube.com/watch?v=qQ2sGpkmi9I"
+  },
+  {
+    "movie": "Las aventuras del Capitán Piluso en el castillo del terror",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=um4Fp3-otHU"
+  },
+  {
+    "movie": "Canuto Cañete, conscripto del 7",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=5Zk3dmcXqXA"
+  },
+  {
+    "movie": "La calesita",
+    "year": 1963,
+    "link": "https://www.youtube.com/watch?v=ilE8PaTNGL4&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=-vgnaRZJgwI&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "El desastrólogo",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=xamMIHD6B18"
+  },
+  {
+    "movie": "Sombras en el cielo",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=BpzIrpxfKEk&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=18iPVyq86Bk&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Así o de otra manera",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=VPQyzDrJaCI"
+  },
+  {
+    "movie": "Canuto Cañete y los 40 ladrones",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=uLxz0rRATIE"
+  },
+  {
+    "movie": "Carlos Gardel, Historia de un Ídolo",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=VVosPxiQ5nI",
+    "Special Features (?": "Homenaje de la Fundación Carlos Gardel: https://www.youtube.com/watch?v=6V21OtxgYI4 "
+  },
+  {
+    "movie": "El gordo villanueva",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=CIcs1D9oD7s"
+  },
+  {
+    "movie": "La herencia",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=GwjbQ5o_MiU",
+    "intro": "https://www.youtube.com/watch?v=MVAkLotzPIc"
+  },
+  {
+    "movie": "Circe",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=RBYXH6ENduU",
+    "intro": "https://www.youtube.com/watch?v=eJrLJBXu1WI"
+  },
+  {
+    "movie": "Extraña ternura",
+    "year": 1964,
+    "link": "https://www.youtube.com/watch?v=yjMbLLIUkdo"
+  },
+  {
+    "movie": "Canuto Cañete, detective privado",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=1xcGnLMRCuo"
+  },
+  {
+    "movie": "La industria del matrimonio",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=3ItnKzjRXnM"
+  },
+  {
+    "movie": "Ritmo nuevo, vieja ola",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=KTZ03ET1cO8"
+  },
+  {
+    "movie": "Orden de matar",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=rbf_v4O8zcE"
+  },
+  {
+    "movie": "Extraña invasión",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=kpVTAVC0YbY"
+  },
+  {
+    "movie": "Intimidad de los parques",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=tYLs5YXguN8"
+  },
+  {
+    "movie": "El perseguidor",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=N0LG9WorG2E",
+    "intro": "https://www.youtube.com/watch?v=3PhYFzDOTSA"
+  },
+  {
+    "movie": "Cosquín, amor y folklore",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=kqg_gHyxLjI"
+  },
+  {
+    "movie": "Convención de vagabundos",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=nsuhdmtjX7A"
+  },
+  {
+    "movie": "La mujer del zapatero",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=OJQcqo6ohZA"
+  },
+  {
+    "movie": "Santiago querido!",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=A3KtGZu575M"
+  },
+  {
+    "movie": "Mi primera novia",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=pxPbnfbiwdA"
+  },
+  {
+    "movie": "Fuego en la sangre",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=ZuNLtDIzNAw"
+  },
+  {
+    "movie": "Pajarito Gomez",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=VL4Kxdo9xMg",
+    "intro": "https://www.youtube.com/watch?v=oebHzhGINrk"
+  },
+  {
+    "movie": "Eva Perón",
+    "year": 1996,
+    "link": "https://www.youtube.com/watch?v=yNKSiSoCp2I"
+  },
+  {
+    "movie": "El ojo de la cerradura",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=qDM64Zko0-s"
+  },
+  {
+    "movie": "Pimienta",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=VBq0QrEkV14"
+  },
+  {
+    "movie": "La tentación desnuda",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=DFBstlJquQA"
+  },
+  {
+    "movie": "¡Cómo te extraño…!",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=T7VaiRfKRZ4"
+  },
+  {
+    "movie": "Escala musical",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=hRozCa9t0wg"
+  },
+  {
+    "movie": "Del brazo y por la calle",
+    "year": 1966,
+    "link": "https://www.youtube.com/watch?v=LEGGXZFo9NM"
+  },
+  {
+    "movie": "Crónica de un niño solo",
+    "year": 1965,
+    "link": "https://www.youtube.com/watch?v=VDGUX7zRqGs&pp=ygUmQ3LDs25pY2EgZGUgdW4gbmnDsW8gc29sbyAxOTY1IHRyYWlsZXI%3D",
+    "intro": "https://www.youtube.com/watch?v=4WpdatSJz3g&pp=ygUwQ3LDs25pY2EgZGUgdW4gbmnDsW8gc29sbyAxOTY1IGNvcGV0ZXMgZmlsbW90ZWNh",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=OH6MqgfcHew&pp=ygUmQ3LDs25pY2EgZGUgdW4gbmnDsW8gc29sbyAxOTY1IHRyYWlsZXI%3D\nFavio por Favio - Cronica de un niño solo: https://www.youtube.com/watch?v=7fYYSGv9dFc "
+  },
+  {
+    "movie": "Sangre de vírgenes",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=pj9O31j7_2s"
+  },
+  {
+    "movie": "Ya tiene comisario el pueblo",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=fW1vgYuDwko"
+  },
+  {
+    "movie": "¡Esto es alegría!",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=dqZvev-abz8"
+  },
+  {
+    "movie": "La muchachada de a bordo",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=BB4916XMaDw"
+  },
+  {
+    "movie": "Tacuara y Chamorro, pichones de hombres",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=88Y_qixjKi8"
+  },
+  {
+    "movie": "Placer sangriento",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=SH_xonieSYY"
+  },
+  {
+    "movie": "Cuando los hombres hablan de mujeres",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=h5OgfQh4DpE"
+  },
+  {
+    "movie": "Villa cariño",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=9MJjyPfSXlU"
+  },
+  {
+    "movie": "Patapúfete",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=P9qT-LzI9L8"
+  },
+  {
+    "movie": "La chica del lunes",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=8FvGEfx95wM"
+  },
+  {
+    "movie": "Mi secretaria está loca... loca... loca",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=XerPFdL43zw"
+  },
+  {
+    "movie": "La señora del intendente",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=K5TDCMH6AS0"
+  },
+  {
+    "movie": "Este es el romance del Aniceto y la Francisca, de cómo quedó trunco, comenzó la tristeza y unas pocas cosas más…",
+    "year": 1967,
+    "link": "https://www.youtube.com/watch?v=V1RZyTlGmWQ",
+    "intro": "https://www.youtube.com/watch?v=B7yonKQLtzY&pp=ygVFRXN0ZSBlcyBlbCByb21hbmNlIGRlbCBBbmljZXRvIHkgbGEgRnJhbmNpc2NhIDE5NjcgIGNvcGV0ZXMgZmlsbW90ZWNh",
+    "Special Features (?": "https://www.youtube.com/watch?v=jwVkfnUnwsI&pp=ygU7RXN0ZSBlcyBlbCByb21hbmNlIGRlbCBBbmljZXRvIHkgbGEgRnJhbmNpc2NhIDE5NjcgIHRyYWlsZXI%3D"
+  },
+  {
+    "movie": "Ufa con el sexo",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=7iOUeKgpC3s",
+    "intro": "https://www.youtube.com/watch?v=7E7t1fnUSEo"
+  },
+  {
+    "movie": "Tute Cabrero",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=_5B5GWHzDRU"
+  },
+  {
+    "movie": "Somos los mejores",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=YguaydPf89g"
+  },
+  {
+    "movie": "En mi casa mando yo",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=9zJ0M33Ybq0"
+  },
+  {
+    "movie": "La hora de los hornos",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=z2HRWWyQ-kY"
+  },
+  {
+    "movie": "Villa Cariño está que arde",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=7lHJb2xFrsU"
+  },
+  {
+    "movie": "La venganza del sexo",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=JY2T6NrGMxg"
+  },
+  {
+    "movie": "Coche cama, alojamiento",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=ShToTjNT5Uc"
+  },
+  {
+    "movie": "Destino para dos",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=FWl6qti7PRY"
+  },
+  {
+    "movie": "Martín Fierro",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=ZksYYmmhmOo"
+  },
+  {
+    "movie": "Che, OVNI",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=USU-ougCAJA"
+  },
+  {
+    "movie": "Psexoanálisis",
+    "year": 1968,
+    "link": "https://www.youtube.com/watch?v=8W3WMI7Udzk"
+  },
+  {
+    "movie": "Tiro de gracia",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=HmKI3g_FRo8"
+  },
+  {
+    "movie": "Don Segundo Sombra",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=n2DGlwSZ6SA&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=79fX8JNXibs&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "Los muchachos de antes no usaban gomina",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=HfRVJ_xcXf0"
+  },
+  {
+    "movie": "La vida continúa",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=mRhmp1Y0HYs"
+  },
+  {
+    "movie": "Quiero llenarme de ti",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=dfaOST3CjDU"
+  },
+  {
+    "movie": "El dependiente",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=blmnjnHasO4",
+    "Special Features (?": "Introducción de Canal Encuentro: https://www.youtube.com/watch?v=jArGfOJCAng \nFavio por Favio - El dependiente: https://www.youtube.com/watch?v=iHgoU_xaaUg "
+  },
+  {
+    "movie": "La fiaca",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=nPUeFZP5hmM"
+  },
+  {
+    "movie": "Fuiste Mía un Verano",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=mgXqotArXBs"
+  },
+  {
+    "movie": "El Profesor Hippie",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=dGOuiv24l9I"
+  },
+  {
+    "movie": "Deliciosamente Amoral",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=o9M_RW-vJGk"
+  },
+  {
+    "movie": "Breve cielo",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=uuLwyBmezZo"
+  },
+  {
+    "movie": "Invasión",
+    "year": 1969,
+    "link": "https://www.youtube.com/watch?v=ZF1cz8dHZ9I",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=SDHV6PJAdSU&pp=ygUWSW52YXNpw7NuIDE5NjkgdHJhaWxlcg%3D%3D"
+  },
+  {
+    "movie": "Gitano",
+    "year": 1970,
+    "link": "https://www.youtube.com/watch?v=LZGtNHmzMqk"
+  },
+  {
+    "movie": "Muchacho",
+    "year": 1970,
+    "link": "https://www.youtube.com/watch?v=gHg-YlA93Rg"
+  },
+  {
+    "movie": "El santo de la espada",
+    "year": 1970,
+    "link": "https://www.youtube.com/watch?v=4m3n_nWVetM"
+  },
+  {
+    "movie": "La guita",
+    "year": 1970,
+    "link": "https://www.youtube.com/watch?v=dtLeOj79W4c"
+  },
+  {
+    "movie": "El profesor patagonico",
+    "year": 1970,
+    "link": "https://www.youtube.com/watch?v=fU5yQgQpYso"
+  },
+  {
+    "movie": "Embrujo de amor",
+    "year": 1971,
+    "link": "https://www.youtube.com/watch?v=QPPrdkZv5ow"
+  },
+  {
+    "movie": "Argentino Hasta la Muerte",
+    "year": 1971,
+    "link": "https://www.youtube.com/watch?v=qN3MTX2_Pfs"
+  },
+  {
+    "movie": "Y que patatín, y que patatán",
+    "year": 1971,
+    "link": "https://www.youtube.com/watch?v=IReIRcffapM"
+  },
+  {
+    "movie": "Güemes, la tierra en armas",
+    "year": 1971,
+    "link": "https://www.youtube.com/watch?v=MRMjG3lvuwM"
+  },
+  {
+    "movie": "... (Puntos suspensivos)",
+    "year": 1971,
+    "link": "https://www.youtube.com/watch?v=n2CL34pqQOA&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=KV6GUmz95Bw&ab_channel=CopetesFilmoteca",
+    "Special Features (?": "Presentación final fimoteca: https://www.youtube.com/watch?v=dzYs7QL8IlU&t=264s&ab_channel=CopetesFilmoteca "
+  },
+  {
+    "movie": "El camino hacia la muerte del viejo Reales",
+    "year": 1971,
+    "link": "https://www.youtube.com/watch?v=rX9sabhne4w"
+  },
+  {
+    "movie": "Destino de un capricho",
+    "year": 1972,
+    "link": "https://www.youtube.com/watch?v=JDY6aKT56z4"
+  },
+  {
+    "movie": "El Profesor Tirabombas",
+    "year": 1972,
+    "link": "https://www.youtube.com/watch?v=WhT9pm2WkvM"
+  },
+  {
+    "movie": "La maffia",
+    "year": 1972,
+    "link": "https://www.youtube.com/watch?v=HIx1C7whXdU"
+  },
+  {
+    "movie": "El deseo de vivir",
+    "year": 1973,
+    "link": "https://www.youtube.com/watch?v=kAXhrbA7vjU"
+  },
+  {
+    "movie": "Juan Moreira",
+    "year": 1973,
+    "link": "https://www.youtube.com/watch?v=C2-ciE5syV0",
+    "Special Features (?": "Favio por Favio - Juan Moreira: https://www.youtube.com/watch?v=NOCViFvm9hc "
+  },
+  {
+    "movie": "La malavida",
+    "year": 1973,
+    "link": "https://www.youtube.com/watch?v=7mE7INd71dw"
+  },
+  {
+    "movie": "Los siete locos",
+    "year": 1973,
+    "link": "https://www.youtube.com/watch?v=pVjdILLmPgE"
+  },
+  {
+    "movie": "Los traidores",
+    "year": 1973,
+    "link": "https://www.youtube.com/watch?v=TP77LT9Vncc",
+    "Special Features (?": "Virna Molina presenta Los traidores: https://www.youtube.com/watch?v=cG9LL9824V8 "
+  },
+  {
+    "movie": "La gran aventura",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=CX2br-rfx3g"
+  },
+  {
+    "movie": "Los golpes bajos",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=-hdjid7xyD4"
+  },
+  {
+    "movie": "Operación rosa rosa",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=DaRaYrOnjfQ",
+    "Special Features (?": "Graciela Guiñazu sobre Operación Rosa Rosa: https://www.youtube.com/watch?v=dphPFy4nDZs "
+  },
+  {
+    "movie": "Gente en Buenos Aires",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=y7Qo52NfeWY"
+  },
+  {
+    "movie": "La tregua",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=THKSTlzIoo8",
+    "Special Features (?": "Primera película argentina nominada a los Oscars: https://www.youtube.com/watch?v=YkNIgLdvFtk "
+  },
+  {
+    "movie": "La madre María",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=pCIjY9tRSMU"
+  },
+  {
+    "movie": "La Patagonia rebelde",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=YihcSvh6pvQ"
+  },
+  {
+    "movie": "Boquitas pintadas",
+    "year": 1974,
+    "link": "https://www.youtube.com/watch?v=HGGb7AGC0bw"
+  },
+  {
+    "movie": "La raulito",
+    "year": 1975,
+    "link": "https://www.youtube.com/watch?v=JX0xXkEnd-M"
+  },
+  {
+    "movie": "La super, super aventura",
+    "year": 1975,
+    "link": "https://www.youtube.com/watch?v=mfcvi2b2xZo"
+  },
+  {
+    "movie": "Nazareno Cruz y el lobo",
+    "year": 1975,
+    "link": "https://www.youtube.com/watch?v=L_R2zrGz2Jc",
+    "Special Features (?": "Favio por Favio - Nazareno Cruz y el lobo: https://www.youtube.com/watch?v=aANsNHtaMuQ "
+  },
+  {
+    "movie": "Los chantas",
+    "year": 1975,
+    "link": "https://www.youtube.com/watch?v=iGsWNaK6tdU&ab_channel=CopetesFilmoteca",
+    "intro": "https://www.youtube.com/watch?v=JmO0LKEUrbw&ab_channel=CopetesFilmoteca"
+  },
+  {
+    "movie": "El pibe Cabeza",
+    "year": 1975,
+    "link": "https://www.youtube.com/watch?v=s7w0jcYIz8w",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=V2oFzz9wtk8 "
+  },
+  {
+    "movie": "La guerra del cerdo",
+    "year": 1975,
+    "link": "https://www.youtube.com/watch?v=TSSzzLH6J_A"
+  },
+  {
+    "movie": "Soñar, soñar",
+    "year": 1976,
+    "link": "https://www.youtube.com/watch?v=3tv3D_VW8AY"
+  },
+  {
+    "movie": "Piedra libre",
+    "year": 1976,
+    "link": "https://www.youtube.com/watch?v=njZ9e1amF6E&ab_channel=MarkBlackburn"
+  },
+  {
+    "movie": "Dos locos en el aire",
+    "year": 1976,
+    "link": "https://www.youtube.com/watch?v=OXyvtouqJ00"
+  },
+  {
+    "movie": "El canto cuenta su historia",
+    "year": 1976,
+    "link": "https://www.youtube.com/watch?v=yL11dFS7na4"
+  },
+  {
+    "movie": "Tú me enloqueces",
+    "year": 1976,
+    "link": "https://www.youtube.com/watch?v=k2H2JT1M0K0"
+  },
+  {
+    "movie": "Los muchachos de antes no usaban arsenico",
+    "year": 1976,
+    "link": "https://www.youtube.com/watch?v=6QfN7nPMeVI"
+  },
+  {
+    "movie": "Los superagentes biónicos",
+    "year": 1977,
+    "link": "https://www.youtube.com/watch?v=2rTMzRHi_lc"
+  },
+  {
+    "movie": "Brigada en acción",
+    "year": 1977,
+    "link": "https://www.youtube.com/watch?v=2tXrj4uFXSA"
+  },
+  {
+    "movie": "Las locuras del profesor",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=tHQbshNatMg"
+  },
+  {
+    "movie": "El tío Disparate",
+    "year": 1978,
+    "link": "https://www.youtube.com/watch?v=5Qj2V6o1_1g"
+  },
+  {
+    "movie": "La parte del león",
+    "year": 1978,
+    "link": "https://www.youtube.com/watch?v=Udumk15ZnYM",
+    "Special Features (?": "Adolfo Aristarain sobre la pelicula: https://www.youtube.com/watch?v=sXMhsSL0yRM "
+  },
+  {
+    "movie": "Los hijos de Fierro",
+    "year": 1978,
+    "link": "https://www.youtube.com/watch?v=jkRllXiOXn4"
+  },
+  {
+    "movie": "El poder de las tinieblas",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=JpHtXe3IiKA"
+  },
+  {
+    "movie": "Vivir con alegría",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=UzYq4S9Q7h0"
+  },
+  {
+    "movie": "La carpa del amor",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=7zh-SUW6woI"
+  },
+  {
+    "movie": "Los superagentes no se rompen",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=QNq8mpr-G4Q"
+  },
+  {
+    "movie": "La nona",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=egK-uTOVvmE"
+  },
+  {
+    "movie": "Los Exitos del Amor",
+    "year": 1979,
+    "link": "https://www.youtube.com/watch?v=cm6e8NlVbJ0"
+  },
+  {
+    "movie": "Subí que te llevo",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=pGY32Ht4GvY"
+  },
+  {
+    "movie": "La discoteca del amor",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=dnncfMcV4QI"
+  },
+  {
+    "movie": "La playa del amor",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=vI9wuJ6yp9Y"
+  },
+  {
+    "movie": "Locos por la musica",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=ym2HQQBuHgo"
+  },
+  {
+    "movie": "Los miedos",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=A_PP6bS-cx4"
+  },
+  {
+    "movie": "¡Qué linda es mi familia!",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=93Z4PDPVojc"
+  },
+  {
+    "movie": "Tiro al aire",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=AFcjepB_pZ4",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=J8iRDyaqLP0 "
+  },
+  {
+    "movie": "La guerra de los niños",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=OLAqJCRdnig"
+  },
+  {
+    "movie": "Desde el abismo",
+    "year": 1980,
+    "link": "https://www.youtube.com/watch?v=2VriCMmo7b8"
+  },
+  {
+    "movie": "Los Parchís contra el inventor invisible",
+    "year": 1981,
+    "link": "https://www.youtube.com/watch?v=p7dli8QGUv8"
+  },
+  {
+    "movie": "Cosa de locos",
+    "year": 1981,
+    "link": "https://www.youtube.com/watch?v=Iex2K-hrzHk"
+  },
+  {
+    "movie": "La conquista del paraíso",
+    "year": 1981,
+    "link": "https://www.youtube.com/watch?v=jfSXdTb86WA"
+  },
+  {
+    "movie": "Tiempo de revancha",
+    "year": 1981,
+    "link": "https://www.youtube.com/watch?v=ztMuS1baOQw",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=f6fIawRcRxs "
+  },
+  {
+    "movie": "La magia de Los Parchis",
+    "year": 1982,
+    "link": "https://www.youtube.com/watch?v=_2AqCE1ZbZM"
+  },
+  {
+    "movie": "Ultimos dias de la victima",
+    "year": 1982,
+    "link": "https://www.youtube.com/watch?v=F8Yv_0ZBR8o",
+    "Special Features (?": "Publicidad de la epoca: https://www.youtube.com/watch?v=Gz2AWJwjBOc "
+  },
+  {
+    "movie": "Plata dulce",
+    "year": 1982,
+    "link": "https://www.youtube.com/watch?v=DrczGQChzY8&pp=ygUiUGxhdGEgZHVsY2UgMTk4MiBwZWxpY3VsYSBjb21wbGV0YQ%3D%3D",
+    "Special Features (?": "Archivo Histórico: https://www.youtube.com/watch?v=WhFtRoPW_ck"
+  },
+  {
+    "movie": "La gran aventura de los Parchís",
+    "year": 1983,
+    "link": "https://www.youtube.com/watch?v=yk9EJpdsBhY"
+  },
+  {
+    "movie": "Parchís entra en acción",
+    "year": 1983,
+    "link": "https://www.youtube.com/watch?v=x3xgVG2I25U"
+  },
+  {
+    "movie": "No habrá más penas ni olvido",
+    "year": 1983,
+    "link": "https://www.youtube.com/watch?v=X0ey5AmunRQ",
+    "Special Features (?": "Efemérides: https://www.youtube.com/watch?v=DBlUul91AW4&pp=ygUmTm8gaGFicsOhIG1hcyBwZW5hcyBuaSBvbHZpZG9zIHRyYWlsZXI%3D"
+  },
+  {
+    "movie": "Un loco en acción",
+    "year": 1983,
+    "link": "https://www.youtube.com/watch?v=Iex2K-hrzHk"
+  },
+  {
+    "movie": "Superagentes y titanes",
+    "year": 1983,
+    "link": "https://www.youtube.com/watch?v=LR_KdNnMyJ4"
+  },
+  {
+    "movie": "El arreglo",
+    "year": 1983,
+    "link": "https://www.youtube.com/watch?v=pFqcVTKVr40&pp=ygUwRWwgYXJyZWdsbyAxOTgzIGZlZGVyaWNvIGx1cHBpIHBlbGljdWxhIGNvbXBsZXRh"
+  },
+  {
+    "movie": "Pasajeros de una pesadilla",
+    "year": 1984,
+    "link": "https://www.youtube.com/watch?v=4T4mvT_etUE&ab_channel=ElisaTrujillo-Youtube"
+  },
+  {
+    "movie": "Asesinato en el Senado de la Nación",
+    "year": 1984,
+    "link": "https://www.youtube.com/watch?v=GuVoW5cx090"
+  },
+  {
+    "movie": "Noches sin lunas ni soles",
+    "year": 1984,
+    "link": "https://www.youtube.com/watch?v=RJctjAYSZuQ"
+  },
+  {
+    "movie": "Camila",
+    "year": 1984,
+    "link": "https://www.youtube.com/watch?v=Z24YfTl8A4k&pp=ygUdQ2FtaWxhIDE5ODQgcGVsaWN1bGEgY29tcGxldGE%3D",
+    "Special Features (?": "Efemerides: https://www.youtube.com/watch?v=R49vigeOfv8&ab_channel=Telenueve \nNominación a los Premios Oscar: https://www.youtube.com/watch?v=UAfvId9VEWo "
+  },
+  {
+    "movie": "Las barras bravas",
+    "year": 1985,
+    "link": "https://www.youtube.com/watch?v=dMuzhCPOivw"
+  },
+  {
+    "movie": "Tacos altos",
+    "year": 1985,
+    "link": "https://www.youtube.com/watch?v=jY6Taq7Nxc0&ab_channel=alfajororeo"
+  },
+  {
+    "movie": "El exilio de Gardel: Tangos",
+    "year": 1985,
+    "link": "https://www.youtube.com/watch?v=RLd3I_w-df0"
+  },
+  {
+    "movie": "La historia oficial",
+    "year": 1985,
+    "link": "https://www.youtube.com/watch?v=VPhgeDCRt6A",
+    "Special Features (?": "Primer Premio Oscar argentino: https://www.youtube.com/watch?v=LfS3GOlS-n4&ab_channel=Oscars \nTrailer: https://www.youtube.com/watch?v=BibM13-Jd8E&ab_channel=Lukanela \nCanal Encuentro: https://www.youtube.com/watch?v=GdWE1vfYBno&ab_channel=CanalEncuentro "
+  },
+  {
+    "movie": "La noche de los lápices",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=-iqOGIC_0qQ"
+  },
+  {
+    "movie": "Los superagentes contra los fantasmas",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=MvzGXrc0kaM"
+  },
+  {
+    "movie": "Brigada explosiva",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=7A3FKlE48gA"
+  },
+  {
+    "movie": "Brigada Explosiva contra los ninjas",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=N3IvRdfj2P0"
+  },
+  {
+    "movie": "Miss Mary",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=Bk3hQhJUAWo",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=BdzcWasJQL4&pp=ygUWTWlzcyBNYXJ5IDE5ODYgdHJhaWxlcg%3D%3D"
+  },
+  {
+    "movie": "Pobre mariposa",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=DvS4P4xAzY8"
+  },
+  {
+    "movie": "La película del rey",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=ss5FmG7OlFI&pp=ygUrTGEgcGVsw61jdWxhIGRlbCByZXkgMTk4NiBwZWxpY3VsYSBjb21wbGV0YQ%3D%3D"
+  },
+  {
+    "movie": "Habeas Corpus",
+    "year": 1986,
+    "link": "https://www.youtube.com/watch?v=cTfst3pkCf0&ab_channel=Films%2CDocumentary%2CMusicandmore"
+  },
+  {
+    "movie": "Los bañeros más locos del mundo",
+    "year": 1987,
+    "link": "https://www.youtube.com/watch?v=oHdtRlwkyPU"
+  },
+  {
+    "movie": "Los matamonstruos en la mansión del terror",
+    "year": 1987,
+    "link": "https://www.youtube.com/watch?v=vsRSBvXr4CY"
+  },
+  {
+    "movie": "Juan: Como si nada hubiera sucedido",
+    "year": 1987,
+    "link": "https://www.youtube.com/watch?v=An8VkyuYtUY",
+    "intro": "https://www.youtube.com/watch?v=txW8tEDeEZY&pp=ygU6SnVhbjogQ29tbyBzaSBuYWRhIGh1YmllcmEgc3VjZWRpZG8gMTk4NyBjb3BldGVzIGZpbG1vdGVjYQ%3D%3D"
+  },
+  {
+    "movie": "Tres alegres fugitivos",
+    "year": 1988,
+    "link": "https://www.youtube.com/watch?v=yd_aUm6J8vg"
+  },
+  {
+    "movie": "Sur",
+    "year": 1988,
+    "link": "https://www.youtube.com/watch?v=GW_tYy1xpjA"
+  },
+  {
+    "movie": "Bañeros II: La playa loca",
+    "year": 1989,
+    "link": "https://www.youtube.com/watch?v=M1Dh3dJPa0c"
+  },
+  {
+    "movie": "Boda secreta",
+    "year": 1989,
+    "link": "https://www.youtube.com/watch?v=XAM0hofJO4E&ab_channel=InfoCa%C3%B1uelas"
+  },
+  {
+    "movie": "Los extermineitors",
+    "year": 1989,
+    "link": "https://www.youtube.com/watch?v=3GWW5I1LDx8"
+  },
+  {
+    "movie": "Extermineitors II: La venganza del Dragón",
+    "year": 1990,
+    "link": "https://www.youtube.com/watch?v=JnbKrCYGlRg"
+  },
+  {
+    "movie": "Extermineitors III: La gran pelea final",
+    "year": 1991,
+    "link": "https://www.youtube.com/watch?v=oAwSG0H5ziM",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=pBab8dZuFkk&pp=ygUvRXh0ZXJtaW5laXRvcnMgSUlJOiBMYSBncmFuIHBlbGVhIGZpbmFsIHRyYWlsZXI%3D"
+  },
+  {
+    "movie": "Extermineitors IV: Como hermanos gemelos",
+    "year": 1992,
+    "link": "https://www.youtube.com/watch?v=dM2FYYfc6N0"
+  },
+  {
+    "movie": "Un lugar en el mundo",
+    "year": 1992,
+    "link": "https://www.youtube.com/watch?v=ZmMNbj1Mbno&ab_channel=BurundangaFilms"
+  },
+  {
+    "movie": "El acto en cuestión",
+    "year": 1993,
+    "link": "https://www.youtube.com/watch?v=VT0ukeFcFMs&ab_channel=Lamesadelasflores"
+  },
+  {
+    "movie": "De eso no se habla",
+    "year": 1993,
+    "link": "https://www.youtube.com/watch?v=uOQtAOugnW8&ab_channel=MB",
+    "Special Features (?": "Favio por Favio - Gatica el mono: https://www.youtube.com/watch?v=ifqVoyt9bfg "
+  },
+  {
+    "movie": "Gatica el mono",
+    "year": 1993,
+    "link": "https://www.youtube.com/watch?v=u9Q4ZcIXX94"
+  },
+  {
+    "movie": "Tango feroz: La leyenda de Tanguito ",
+    "year": 1993,
+    "link": "https://www.youtube.com/watch?v=8Uar4ZjrEgM&ab_channel=gabriel_srvt"
+  },
+  {
+    "movie": "Una sombra ya pronto serás",
+    "year": 1994,
+    "link": "https://www.youtube.com/watch?v=Vr3i3-TlFlM",
+    "Special Features (?": "Backstage: https://www.youtube.com/watch?v=0FNfXS_4xaM "
+  },
+  {
+    "movie": "No te mueras sin decirme adónde vas",
+    "year": 1995,
+    "link": "https://youtube.com/watch?v=swgSPQHFeyQ"
+  },
+  {
+    "movie": "Caballos salvajes",
+    "year": 1995,
+    "link": "https://www.youtube.com/watch?v=vhM1GgOCWR4"
+  },
+  {
+    "movie": "La ley de la frontera",
+    "year": 1995,
+    "link": "https://www.youtube.com/watch?v=wr_A6ZpWu-g"
+  },
+  {
+    "movie": "Buenos Aires Viceversa",
+    "year": 1996,
+    "link": "https://www.youtube.com/watch?v=xYnGbWIE8o0"
+  },
+  {
+    "movie": "Martín (Hache)",
+    "year": 1997,
+    "link": "https://www.youtube.com/watch?v=imMrQAOhiys"
+  },
+  {
+    "movie": "Sapucay, mi pueblo",
+    "year": 1997,
+    "link": "https://www.youtube.com/watch?v=dnaqwYF50ig"
+  },
+
+  {
+    "movie": "Despabílate amor",
+    "year": 1996,
+    "link": "https://www.youtube.com/watch?v=NaFTbrOCQRU&ab_channel=PelisArgentinas"
+  },
+  {
+    "movie": "El sueño de los héroes",
+    "year": 1997,
+    "link": "https://www.youtube.com/watch?v=Jw9OIuvWDsU&ab_channel=Andr%C3%A9sDomynas"
+  },
+  {
+    "movie": "Pizza, birra, faso",
+    "year": 1998,
+    "link": "https://www.youtube.com/watch?v=h3l2jhreMMc"
+  },
+  {
+    "movie": "Pequeños milagros",
+    "year": 1997,
+    "link": "https://www.youtube.com/watch?v=dWLf6Ug5i9M"
+  },
+  {
+    "movie": "Perón. Sinfonía del Sentimiento",
+    "year": 1999,
+    "link": "https://www.youtube.com/watch?v=YIpbWjIgAAo"
+  },
+  {
+    "movie": "Héroes y Demonios",
+    "year": 1999,
+    "link": "https://www.youtube.com/watch?v=x7w1Srx-26I"
+  },
+  {
+    "movie": "Mundo grúa",
+    "year": 1999,
+    "link": "https://www.youtube.com/watch?v=C6yDuR-4HnA",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=aqsVHEB61As "
+  },
+  {
+    "movie": "El mismo amor, la misma lluvia",
+    "year": 1999,
+    "link": "https://www.youtube.com/watch?v=4LGZ2AqYi1Y",
+    "Special Features (?": "Trailer: https://www.youtube.com/watch?v=hL7Hr0wzOEA "
+  }
 ]
