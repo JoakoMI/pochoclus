@@ -1,4 +1,4 @@
-import getConnection from './conn.js';
+import getConnection from './connection.js';
 const DATABASE = 'Pochoclus';
 const MOVIES = 'Movies';
 
