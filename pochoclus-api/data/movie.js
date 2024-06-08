@@ -29,7 +29,7 @@ async function getMovieById(movieId) {
   }
 }
 
-async function getMoviesByName(pageSize, page) {
+async function getNamesAndTypes(pageSize, page) {
   const connectiondb = await getConnection();
   const movies = await connectiondb
     .db(DATABASE)
@@ -37,9 +37,38 @@ async function getMoviesByName(pageSize, page) {
     .find({})
     .limit(pageSize)
     .skip(pageSize * page)
-	.project({ _id: 1, name: 1, tmdbId: 1 })
-	
     .toArray();
-  return movies;
+
+  const result = [];
+  const seen = new Set();
+
+  movies.forEach(movie => {
+    // Agregar nombre de pelicula
+    if (!seen.has(movie.name)) {
+      result.push({ name: movie.name, type: "Pelicula" });
+      seen.add(movie.name);
+    }
+
+    // Agregar actores
+    movie.cast.forEach(castMember => {
+      if (!seen.has(castMember.name)) {
+        result.push({ name: castMember.name, type: "Actor" });
+        seen.add(castMember.name);
+      }
+    });
+
+    // Agregar directores
+    movie.directors.forEach(director => {
+      if (!seen.has(director.name)) {
+        result.push({ name: director.name, type: "Director" });
+        seen.add(director.name);
+      }
+    });
+    
+  });
+
+  return result;
 }
-export { getAllMovies, getMovieById, getMoviesByName };
+
+
+export { getAllMovies, getMovieById, getNamesAndTypes };
