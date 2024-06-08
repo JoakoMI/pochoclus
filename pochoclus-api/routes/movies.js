@@ -1,5 +1,5 @@
-import express from "express";
-import { getAllMovies, getMovieById, getMoviesByName } from "../data/movie.js";
+import express from 'express';
+import { getAllMovies, getMovieById, getMoviesByName } from '../data/movies.js';
 
 const router = express.Router();
 
