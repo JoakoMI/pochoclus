@@ -60,6 +60,7 @@ export default function App() {
           size="sm"
           startContent={<SearchIcon size={18} />}
           type="search"
+          style={{ borderRadius: '8px' }}
         />
         <Dropdown placement="bottom-end">
           <DropdownTrigger>
