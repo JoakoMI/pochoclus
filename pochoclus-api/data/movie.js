@@ -29,6 +29,18 @@ async function getMovieById(movieId) {
   }
 }
 
+async function getMoviesByName(movieName) {
+  const connectiondb = await getConnection();
+  const movies = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIES)
+    .find({ name: movieName })
+    .project({ _id: 0, name: 1, "cast.name": 1, "directors.name": 1 })
+    .toArray();
+
+  return movies;
+}
+
 async function getNamesAndTypes(pageSize, page) {
   const connectiondb = await getConnection();
   const movies = await connectiondb
@@ -71,4 +83,4 @@ async function getNamesAndTypes(pageSize, page) {
 }
 
 
-export { getAllMovies, getMovieById, getNamesAndTypes };
+export { getAllMovies, getMovieById, getMoviesByName, getNamesAndTypes };
