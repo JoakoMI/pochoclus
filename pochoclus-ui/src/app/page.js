@@ -9,16 +9,21 @@ export default function Home() {
 
   useEffect(() => {
     fetch("http://localhost:3001/api/movieCollections")
-      .then((res) => res.json())
-      .then((data) => setCollections(data))
+      .then((response) => response.json())
+      .then((data) => {
+        setCollections(data);
+      })
       .catch((error) => console.log(error));
   }, []);
 
+  {
+    console.log(collections);
+  }
   return (
     <section>
       <HomeCarousel />
       {collections.map((c) => {
-        return <HorizList Collections={c} />;
+        return <HorizList collection={c} />;
       })}
     </section>
   );

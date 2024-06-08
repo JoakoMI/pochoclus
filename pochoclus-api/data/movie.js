@@ -25,7 +25,7 @@ async function getMovieById(movieId) {
 
     return movie;
   } catch (error) {
-    return "No movie found with that ID";
+    return null;
   }
 }
 
@@ -37,8 +37,8 @@ async function getMoviesByName(pageSize, page) {
     .find({})
     .limit(pageSize)
     .skip(pageSize * page)
-	.project({ _id: 1, name: 1, tmdbId: 1 })
-	
+    .project({ _id: 1, name: 1, tmdbId: 1 })
+
     .toArray();
   return movies;
 }

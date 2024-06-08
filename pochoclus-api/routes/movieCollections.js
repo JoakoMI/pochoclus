@@ -1,4 +1,4 @@
-import express from 'express';
+import express from "express";
 import { createCollections, getCollections } from "../data/movieCollections.js";
 
 const router = express.Router();
@@ -7,8 +7,8 @@ const router = express.Router();
 	res.json(await createCollections());
 });*/
 
-router.get('/', async (req, res) => {
-	res.json(await getCollections());
+router.get("/", async (req, res) => {
+  res.json(await getCollections());
 });
 
 export default router;
