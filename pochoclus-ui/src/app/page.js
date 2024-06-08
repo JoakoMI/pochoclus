@@ -5,20 +5,20 @@ import HorizList from "./components/HorizList";
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [collecciones, setCollecciones] = useState([]);
+  const [collections, setCollections] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/movies?pageSize=20&page=1")
+    fetch("http://localhost:3001/api/movieCollections")
       .then((res) => res.json())
-      .then((data) => setColecciones(data))
+      .then((data) => setCollections(data))
       .catch((error) => console.log(error));
   }, []);
 
   return (
     <section>
       <HomeCarousel />
-      {collecciones.map((c) => {
-        return <HorizList colleccion={c} />;
+      {collections.map((c) => {
+        return <HorizList Collections={c} />;
       })}
     </section>
   );
