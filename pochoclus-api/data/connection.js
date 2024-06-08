@@ -35,6 +35,8 @@ export default async function getConnection() {
 							name: movie.movie,
 							tmdbId: data.id,
 							popularity: data.popularity,
+							top100: movie.top100,
+							filmoteca: movie.intro,
 							year: movie.year,
 							link: movie.link,
 							poster: data.poster_path ? 'https://image.tmdb.org/t/p/w342' + data.poster_path : null,
