@@ -1,14 +1,22 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { AutoComplete } from "primereact/autocomplete";
-
 
 export default function BasicDemo() {
   const [value, setValue] = useState("");
   const [items, setItems] = useState([]);
 
-  const search = (event) => {
-    setItems([...Array(10).keys()].map((item) => event.query + "perro" + item));
+  const search = async (event) => {
+    try {
+      const response = await fetch(
+        `http://localhost:3001/api/movies/byNameAndType?query=${event.query}`
+      );
+      const data = await response.json();
+      setItems(Array.isArray(data) ? data : []);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setItems([]);
+    }
   };
 
   return (
@@ -20,8 +28,11 @@ export default function BasicDemo() {
         onChange={(e) => setValue(e.value)}
         itemTemplate={(item) => (
           <div className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200">
-            <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V4a4 4 0 014-4h4a4 4 0 014 4v3M4 8h16m-5 0v10a2 2 0 01-2 2H7a2 2 0 01-2-2V8h14zm5 0v10a2 2 0 01-2 2h-7a2 2 0 01-2-2V8h14z"></path></svg>
-            <span>{item}</span>
+            <div>
+              <span className="font-bold">{item.name}</span>
+              <br />
+              <span className="text-gray-500">{item.type}</span>
+            </div>
           </div>
         )}
         panelClassName="w-full shadow-lg rounded-lg overflow-hidden border border-gray-300 bg-white"
@@ -29,5 +40,3 @@ export default function BasicDemo() {
     </div>
   );
 }
-
-

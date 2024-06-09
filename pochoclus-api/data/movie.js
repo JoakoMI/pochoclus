@@ -41,7 +41,7 @@ async function getMoviesByName(movieName) {
   return movies;
 }
 
-async function getNamesAndTypes(pageSize, page) {
+async function getNamesAndTypes(query, pageSize, page) {
   const connectiondb = await getConnection();
   const movies = await connectiondb
     .db(DATABASE)
@@ -49,40 +49,41 @@ async function getNamesAndTypes(pageSize, page) {
     .find({})
     .limit(pageSize)
     .skip(pageSize * page)
-    .project({ _id: 1, name: 1, tmdbId: 1 })
-
+    .project({ _id: 1, name: 1, tmdbId: 1, cast: 1, directors: 1 })
     .toArray();
 
   const result = [];
   const seen = new Set();
+  const lowerQuery = query.toLowerCase();
 
-  movies.forEach(movie => {
-    // Agregar nombre de pelicula
-    if (!seen.has(movie.name)) {
+  movies.forEach((movie) => {
+    // Añadir Películas
+    if (!seen.has(movie.name) && movie.name.toLowerCase().includes(lowerQuery)) {
       result.push({ name: movie.name, type: "Pelicula" });
       seen.add(movie.name);
     }
 
-    // Agregar actores
-    movie.cast.forEach(castMember => {
-      if (!seen.has(castMember.name)) {
-        result.push({ name: castMember.name, type: "Actor" });
-        seen.add(castMember.name);
-      }
-    });
+    // Añadir Actores
+    if (movie.cast) {
+      movie.cast.forEach((castMember) => {
+        if (!seen.has(castMember.name) && castMember.name.toLowerCase().includes(lowerQuery)) {
+          result.push({ name: castMember.name, type: "Actor" });
+          seen.add(castMember.name);
+        }
+      });
+    }
 
-    // Agregar directores
-    movie.directors.forEach(director => {
-      if (!seen.has(director.name)) {
-        result.push({ name: director.name, type: "Director" });
-        seen.add(director.name);
-      }
-    });
-    
+    // Añadir Directores
+    if (movie.directors) {
+      movie.directors.forEach((director) => {
+        if (!seen.has(director.name) && director.name.toLowerCase().includes(lowerQuery)) {
+          result.push({ name: director.name, type: "Director" });
+          seen.add(director.name);
+        }
+      });
+    }
   });
 
   return result;
 }
-
-
 export { getAllMovies, getMovieById, getMoviesByName, getNamesAndTypes };
