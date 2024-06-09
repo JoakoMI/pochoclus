@@ -1,0 +1,9 @@
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+    background-color: #0044cc;
+    color: #ffffff;
+}
+
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item.p-highlight {
+    background-color: #002a80;
+    color: #ffffff;
+}
