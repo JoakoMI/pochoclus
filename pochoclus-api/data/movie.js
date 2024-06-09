@@ -29,16 +29,44 @@ async function getMovieById(movieId) {
   }
 }
 
-async function getMoviesByName(movieName) {
+async function getActorByName(actorName) {
   const connectiondb = await getConnection();
   const movies = await connectiondb
     .db(DATABASE)
     .collection(MOVIES)
-    .find({ name: movieName })
-    .project({ _id: 0, name: 1, "cast.name": 1, "directors.name": 1 })
+    .find({})
     .toArray();
+    
 
-  return movies;
+  for (const movie of movies) {
+    for (const actor of movie.cast) {
+      if (actor.name === actorName) {
+        return { name: actor.name, image: actor.image }; 
+      }
+    }
+  }
+
+  return null; 
+}
+
+async function getDirectorByName(directorName) {
+  const connectiondb = await getConnection();
+  const movies = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIES)
+    .find({})
+    .toArray();
+    
+
+  for (const movie of movies) {
+    for (const director of movie.directors) {
+      if (director.name === directorName) {
+        return { name: director.name, image: director.image }; 
+      }
+    }
+  }
+
+  return null; 
 }
 
 async function getNamesAndTypes(query, pageSize, page) {
@@ -59,7 +87,7 @@ async function getNamesAndTypes(query, pageSize, page) {
   movies.forEach((movie) => {
     // Añadir Películas
     if (!seen.has(movie.name) && movie.name.toLowerCase().includes(lowerQuery)) {
-      result.push({ name: movie.name, type: "Pelicula" });
+      result.push({ id: movie._id, name: movie.name, type: "Pelicula" });
       seen.add(movie.name);
     }
 
@@ -86,4 +114,4 @@ async function getNamesAndTypes(query, pageSize, page) {
 
   return result;
 }
-export { getAllMovies, getMovieById, getMoviesByName, getNamesAndTypes };
+export { getAllMovies, getMovieById, getActorByName, getNamesAndTypes, getDirectorByName };

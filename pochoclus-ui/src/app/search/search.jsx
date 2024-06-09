@@ -19,6 +19,19 @@ export default function BasicDemo() {
     }
   };
 
+  const getLink = (item) => {
+    switch (item.type) {
+      case 'Director':
+        return `/director/${item.name}`;
+      case 'Actor':
+        return `/actor/${item.name}`;
+      case 'Pelicula':
+        return `/movie/${item.id}`;
+      default:
+        return '#';
+    }
+  };
+
   return (
     <div className="card flex justify-content-center">
       <AutoComplete
@@ -27,13 +40,16 @@ export default function BasicDemo() {
         completeMethod={search}
         onChange={(e) => setValue(e.value)}
         itemTemplate={(item) => (
-          <div className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200">
+          <a 
+            href={getLink(item)}
+            className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
+          >
             <div>
               <span className="font-bold">{item.name}</span>
               <br />
               <span className="text-gray-500">{item.type}</span>
             </div>
-          </div>
+          </a>
         )}
         panelClassName="w-full shadow-lg rounded-lg overflow-hidden border border-gray-300 bg-white"
       />

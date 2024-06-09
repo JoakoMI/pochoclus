@@ -2,8 +2,9 @@ import express from "express";
 import {
   getAllMovies,
   getMovieById,
-  getMoviesByName,
   getNamesAndTypes,
+  getDirectorByName,
+  getActorByName,
 } from "../data/movie.js";
 
 const router = express.Router();
@@ -15,14 +16,21 @@ router.get("/", async (req, res) => {
   res.json(await getAllMovies(pageSize, page));
 });
 
-router.get("/byName/:name", async (req, res) => {
-  const movieName = req.params.name;
+router.get("/actor/:name", async (req, res) => {
+  const actorName = req.params.name;
 
-  res.json(await getMoviesByName(movieName));
+  res.json(await getActorByName(actorName));
+});
+
+
+router.get("/director/:name", async (req, res) => {
+  const directorName = req.params.name;
+
+  res.json(await getDirectorByName(directorName));
 });
 
 router.get("/byNameAndType", async (req, res) => {
-  const { query, pageSize, page } = req.query;
+  const { query = "", pageSize, page } = req.query;
   const result = await getNamesAndTypes(
     query,
     parseInt(pageSize),

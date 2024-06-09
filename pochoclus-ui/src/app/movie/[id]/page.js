@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 
 export default function MovieDetail({ params }) {
-  //const movie = peliculas.find((p) => p._id == props.params._id);
   const { id } = params;
   const [movie, setMovie] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -13,54 +12,69 @@ export default function MovieDetail({ params }) {
       .then((response) => response.json())
       .then((data) => {
         setMovie(data);
+        setIsLoading(false);
       })
       .catch((error) => {
         setMovie(null);
+        setIsLoading(false);
       });
-  }, []);
+  }, [id]);
 
-  useEffect(() => {
-    movie == null ? setIsLoading(true) : setIsLoading(false);
-  }, [movie]);
+  if (isLoading) return <p className="text-white">Loading...</p>;
 
-  if (isLoading) return <p class="text-white">Loading...</p>;
+  if (!movie) return <p className="text-white">Movie not found</p>;
 
   return (
     <div>
-      <div class="flex justify-around m-4 ">
-        <section class="w-1/2">
-          <div class="flex ">
+      <div className="flex justify-around m-4">
+        <section className="w-1/2">
+          <div className="flex">
             <h1 className="text-white font-bold text-4xl mb-8 me-4">
               {movie.name}
             </h1>
-            <h1 className="text-gray-200 font-light text-4xl   ">
+            <h1 className="text-gray-200 font-light text-4xl">
               ({movie.year})
             </h1>
           </div>
-          <p className="text-white font-light mb-4">{movie.plot} </p>
-          <span class="flex justify-start mb-4 ">
-            <div className="flex me-8 text-white">
-              Dirige:
-              {movie.directors.map((d) => {
-                return <p className=" font-light  "> {d.name} </p>;
-              })}
+          <p className="text-white font-light mb-4">{movie.plot}</p>
+          <span className="flex flex-wrap justify-start mb-4">
+            <div className="flex flex-col me-8 text-white">
+              <span className="font-bold">Dirige:</span>
+              {movie.directors.map((d, index) => (
+                <a
+                  key={d.name}
+                  href={`/director/${encodeURIComponent(d.name)}`}
+                  className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out mt-1"
+                >
+                  {d.name}
+                </a>
+              ))}
             </div>
-            <div className="flex text-white">
-              Generos:
-              {movie.genres.map((g) => {
-                return <p className=" font-light">{g}</p>;
-              })}
+            <div className="flex flex-col text-white">
+              <span className="font-bold">Géneros:</span>
+              {movie.genres.map((g, index) => (
+                <span className="font-light ml-2" key={g}>
+                  {g}
+                </span>
+              ))}
             </div>
           </span>
-          <section class="  text-white ">
-            Actuan:
-            {movie.cast.map((c) => {
-              return <p className="font-light"> {c.name} </p>;
-            })}
+          <section className="text-white">
+            <span className="font-bold">Actúan:</span>
+            {movie.cast.map((c, index) => (
+              <a
+                key={c.name}
+                href={`/actor/${encodeURIComponent(c.name)}`}
+                className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out ml-2"
+              >
+                {c.name}
+                {index < movie.cast.length - 1 && ', '}
+              </a>
+            ))}
           </section>
         </section>
         <section>
-          <img src={movie.poster} class="w-full"></img>
+          <img src={movie.poster} className="w-full" alt={`${movie.name} poster`} />
         </section>
       </div>
     </div>
