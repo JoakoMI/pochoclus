@@ -14,7 +14,7 @@ import {
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import { SearchIcon } from "./SearchIcon.jsx";
-import  Search from "../search/Search.jsx";
+import  Search from "./search.jsx";
 
 export default function App() {
 
