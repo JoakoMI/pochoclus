@@ -79,13 +79,15 @@ async function getNamesAndTypes(query, pageSize, page) {
     .toArray();
 
   const result = [];
-  const seen = new Set();
+  const moviesSeen = new Set();
+  const actorsSeen = new Set();
+  const directorsSeen = new Set();
   const lowerQuery = query.toLowerCase();
 
   movies.forEach((movie) => {
     // Añadir Películas
     if (
-      !seen.has(movie.name) &&
+      !moviesSeen.has(movie.name) &&
       movie.name.toLowerCase().includes(lowerQuery)
     ) {
       result.push({
@@ -94,14 +96,14 @@ async function getNamesAndTypes(query, pageSize, page) {
         type: "Pelicula",
         poster: movie.poster,
       });
-      seen.add(movie.name);
+      moviesSeen.add(movie.name);
     }
 
     // Añadir Actores
     if (movie.cast) {
       movie.cast.forEach((castMember) => {
         if (
-          !seen.has(castMember.name) &&
+          !actorsSeen.has(castMember.name) &&
           castMember.name.toLowerCase().includes(lowerQuery)
         ) {
           result.push({
@@ -109,7 +111,7 @@ async function getNamesAndTypes(query, pageSize, page) {
             type: "Actor",
             poster: castMember.image,
           });
-          seen.add(castMember.name);
+          actorsSeen.add(castMember.name);
         }
       });
     }
@@ -118,7 +120,7 @@ async function getNamesAndTypes(query, pageSize, page) {
     if (movie.directors) {
       movie.directors.forEach((director) => {
         if (
-          !seen.has(director.name) &&
+          !directorsSeen.has(director.name) &&
           director.name.toLowerCase().includes(lowerQuery)
         ) {
           result.push({
@@ -126,13 +128,48 @@ async function getNamesAndTypes(query, pageSize, page) {
             type: "Director",
             poster: director.image,
           });
-          seen.add(director.name);
+          directorsSeen.add(director.name);
         }
       });
     }
   });
 
   return result;
+}
+// solo Actor
+async function getMoviesByActorName(actorName) {
+  const connectiondb = await getConnection();
+  const movies = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIES)
+    .find({ "cast.name": actorName })
+    .toArray();
+
+  return movies;
+}
+// solo Director
+async function getMoviesByDirectorName(directorName) {
+  const connectiondb = await getConnection();
+  const movies = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIES)
+    .find({ "directors.name": directorName })
+    .toArray();
+
+  return movies;
+}
+
+// solo Actor y Director
+async function getMoviesPersonByName(personName) {
+  const connectiondb = await getConnection();
+  const movies = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIES)
+    .find({ "directors.name": personName, "cast.name": personName })
+    .project({ name: 1 })
+    .toArray();
+
+  return movies;
 }
 
 export {
@@ -141,4 +178,7 @@ export {
   getActorByName,
   getNamesAndTypes,
   getDirectorByName,
+  getMoviesByActorName,
+  getMoviesByDirectorName,
+  getMoviesPersonByName,
 };
