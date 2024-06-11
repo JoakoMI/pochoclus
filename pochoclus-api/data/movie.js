@@ -36,17 +36,16 @@ async function getActorByName(actorName) {
     .collection(MOVIES)
     .find({})
     .toArray();
-    
 
   for (const movie of movies) {
     for (const actor of movie.cast) {
       if (actor.name === actorName) {
-        return { name: actor.name, image: actor.image }; 
+        return { name: actor.name, image: actor.image };
       }
     }
   }
 
-  return null; 
+  return null;
 }
 
 async function getDirectorByName(directorName) {
@@ -56,17 +55,16 @@ async function getDirectorByName(directorName) {
     .collection(MOVIES)
     .find({})
     .toArray();
-    
 
   for (const movie of movies) {
     for (const director of movie.directors) {
       if (director.name === directorName) {
-        return { name: director.name, image: director.image }; 
+        return { name: director.name, image: director.image };
       }
     }
   }
 
-  return null; 
+  return null;
 }
 
 async function getNamesAndTypes(query, pageSize, page) {
@@ -77,7 +75,7 @@ async function getNamesAndTypes(query, pageSize, page) {
     .find({})
     .limit(pageSize)
     .skip(pageSize * page)
-    .project({ _id: 1, name: 1, tmdbId: 1, cast: 1, directors: 1 })
+    .project({ _id: 1, name: 1, tmdbId: 1, cast: 1, directors: 1, poster: 1 })
     .toArray();
 
   const result = [];
@@ -86,16 +84,31 @@ async function getNamesAndTypes(query, pageSize, page) {
 
   movies.forEach((movie) => {
     // Añadir Películas
-    if (!seen.has(movie.name) && movie.name.toLowerCase().includes(lowerQuery)) {
-      result.push({ id: movie._id, name: movie.name, type: "Pelicula" });
+    if (
+      !seen.has(movie.name) &&
+      movie.name.toLowerCase().includes(lowerQuery)
+    ) {
+      result.push({
+        id: movie._id,
+        name: movie.name,
+        type: "Pelicula",
+        poster: movie.poster,
+      });
       seen.add(movie.name);
     }
 
     // Añadir Actores
     if (movie.cast) {
       movie.cast.forEach((castMember) => {
-        if (!seen.has(castMember.name) && castMember.name.toLowerCase().includes(lowerQuery)) {
-          result.push({ name: castMember.name, type: "Actor" });
+        if (
+          !seen.has(castMember.name) &&
+          castMember.name.toLowerCase().includes(lowerQuery)
+        ) {
+          result.push({
+            name: castMember.name,
+            type: "Actor",
+            poster: castMember.image,
+          });
           seen.add(castMember.name);
         }
       });
@@ -104,8 +117,15 @@ async function getNamesAndTypes(query, pageSize, page) {
     // Añadir Directores
     if (movie.directors) {
       movie.directors.forEach((director) => {
-        if (!seen.has(director.name) && director.name.toLowerCase().includes(lowerQuery)) {
-          result.push({ name: director.name, type: "Director" });
+        if (
+          !seen.has(director.name) &&
+          director.name.toLowerCase().includes(lowerQuery)
+        ) {
+          result.push({
+            name: director.name,
+            type: "Director",
+            poster: director.image,
+          });
           seen.add(director.name);
         }
       });
@@ -114,4 +134,11 @@ async function getNamesAndTypes(query, pageSize, page) {
 
   return result;
 }
-export { getAllMovies, getMovieById, getActorByName, getNamesAndTypes, getDirectorByName };
+
+export {
+  getAllMovies,
+  getMovieById,
+  getActorByName,
+  getNamesAndTypes,
+  getDirectorByName,
+};

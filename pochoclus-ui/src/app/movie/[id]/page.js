@@ -1,5 +1,5 @@
 "use client";
-
+import VideoEmbeed from "@/app/components/VideoEmbeed"; 
 import { useState, useEffect } from "react";
 
 export default function MovieDetail({ params }) {
@@ -76,6 +76,9 @@ export default function MovieDetail({ params }) {
         <section>
           <img src={movie.poster} className="w-full" alt={`${movie.name} poster`} />
         </section>
+<br></br>
+        <VideoEmbeed videoUrl={movie.link}/>
+
       </div>
     </div>
   );

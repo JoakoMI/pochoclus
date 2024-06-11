@@ -21,14 +21,14 @@ export default function BasicDemo() {
 
   const getLink = (item) => {
     switch (item.type) {
-      case 'Director':
+      case "Director":
         return `/director/${item.name}`;
-      case 'Actor':
+      case "Actor":
         return `/actor/${item.name}`;
-      case 'Pelicula':
+      case "Pelicula":
         return `/movie/${item.id}`;
       default:
-        return '#';
+        return "#";
     }
   };
 
@@ -40,10 +40,15 @@ export default function BasicDemo() {
         completeMethod={search}
         onChange={(e) => setValue(e.value)}
         itemTemplate={(item) => (
-          <a 
+          <a
             href={getLink(item)}
             className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-200"
           >
+            <img
+              src={item.poster}
+              alt={item.name}
+              className="w-10 h-10 mr-3"
+            />
             <div>
               <span className="font-bold">{item.name}</span>
               <br />

@@ -22,7 +22,6 @@ router.get("/actor/:name", async (req, res) => {
   res.json(await getActorByName(actorName));
 });
 
-
 router.get("/director/:name", async (req, res) => {
   const directorName = req.params.name;
 
