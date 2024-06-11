@@ -1,5 +1,5 @@
 "use client";
-import VideoEmbeed from "@/app/components/VideoEmbeed"; 
+import VideoEmbeed from "@/app/components/VideoEmbeed";
 import { useState, useEffect } from "react";
 
 export default function MovieDetail({ params }) {
@@ -68,18 +68,20 @@ export default function MovieDetail({ params }) {
                 className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out ml-2"
               >
                 {c.name}
-                {index < movie.cast.length - 1 && ', '}
+                {index < movie.cast.length - 1 && ", "}
               </a>
             ))}
           </section>
         </section>
         <section>
-          <img src={movie.poster} className="w-full" alt={`${movie.name} poster`} />
+          <img
+            src={movie.poster}
+            className="w-full"
+            alt={`${movie.name} poster`}
+          />
         </section>
-<br></br>
-        <VideoEmbeed videoUrl={movie.link}/>
-
       </div>
+      <VideoEmbeed videoUrl={movie.link} />
     </div>
   );
 }
