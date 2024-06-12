@@ -16,20 +16,21 @@ async function signUpUser(userInfo) {
 	try {
 		const connectiondb = await getConnection();
 
-		const foundUser = await findByEmail(user.email);
+		const foundUser = await findByEmail(userInfo.email);
 		if (foundUser !== null) {
 			throw new Error('User already exists');
 		}
 
-		userInfo.password = await bcryptjs.hash(user.password, 10);
+		userInfo.password = await bcryptjs.hash(userInfo.password, 10);
 
 		const user = {
+			name: userInfo.name,
 			email: userInfo.email,
 			password: userInfo.password,
+			profilePicture: userInfo.profilePicture ?? null,
 			watchlist: [],
 			puntajes: [],
 		};
-
 		const result = connectiondb.db(DATABASE).collection(USERS).insertOne(user);
 
 		return result;
@@ -44,14 +45,13 @@ async function logInUser(email, password) {
 	if (foundUser === null) {
 		throw new Error('Credenciales no validas');
 	}
-	const hashedPass = await bcryptjs.hash(password, 10);
-	const passMatch = await bcryptjs.compare(foundUser.password, hashedPass);
+	const passMatch = await bcryptjs.compare(password, foundUser.password);
 
 	if (!passMatch) {
 		throw new Error('Credenciales no validas');
 	}
 
-	return user;
+	return foundUser;
 }
 
 export { signUpUser, logInUser };

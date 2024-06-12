@@ -2,7 +2,9 @@ import 'dotenv/config';
 import jwt from 'jsonwebtoken';
 
 async function generateAuthToken(user) {
-	const token = await jwt.sign({ _id: user._id, email: user.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
+	const token = await jwt.sign({ name: user.name, email: user.email, profilePicture: user.profilePicture }, process.env.JWT_SECRET, {
+		expiresIn: '1h',
+	});
 	return token;
 }
 
