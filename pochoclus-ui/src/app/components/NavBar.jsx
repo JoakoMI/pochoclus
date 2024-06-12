@@ -14,11 +14,9 @@ import {
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import { SearchIcon } from "./SearchIcon.jsx";
-import  Search from "./search.jsx";
+import Search from "./search.jsx";
 
 export default function App() {
-
-
   return (
     <Navbar isBordered>
       <NavbarContent justify="center">
@@ -42,19 +40,13 @@ export default function App() {
               Explorar
             </Link>
           </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="/colecciones">
-              Colecciones
-            </Link>
-          </NavbarItem>
         </NavbarContent>
       </NavbarContent>
 
       <NavbarContent as="div" className="items-center" justify="end">
-      
-      <Search/>
-      
-        <Dropdown placement="bottom-end">
+        <Search />
+
+        {/* <Dropdown placement="bottom-end">
           <DropdownTrigger>
             <Avatar
               isBordered
@@ -81,7 +73,7 @@ export default function App() {
               Log Out
             </DropdownItem>
           </DropdownMenu>
-        </Dropdown>
+        </Dropdown> */}
       </NavbarContent>
     </Navbar>
   );
