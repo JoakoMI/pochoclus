@@ -3,11 +3,8 @@ import {
   getAllMovies,
   getMovieById,
   getNamesAndTypes,
-  getDirectorByName,
-  getActorByName,
-  getMoviesByActorName,
-  getMoviesByDirectorName,
   getMoviesPersonByName,
+  getByName,
 } from "../data/movie.js";
 
 const router = express.Router();
@@ -19,16 +16,10 @@ router.get("/", async (req, res) => {
   res.json(await getAllMovies(pageSize, page));
 });
 
-router.get("/actor/:name", async (req, res) => {
-  const actorName = req.params.name;
+router.get("/person/:name", async (req, res) => {
+  const personName = req.params.name;
 
-  res.json(await getActorByName(actorName));
-});
-
-router.get("/director/:name", async (req, res) => {
-  const directorName = req.params.name;
-
-  res.json(await getDirectorByName(directorName));
+  res.json(await getByName(personName));
 });
 
 router.get("/byNameAndType", async (req, res) => {
@@ -39,19 +30,6 @@ router.get("/byNameAndType", async (req, res) => {
     parseInt(page)
   );
   res.json(result);
-});
-// solo Actor
-router.get("/actorMovie/:actorName", async (req, res) => {
-  const actorName = req.params.actorName;
-
-  res.json(await getMoviesByActorName(actorName));
-});
-
-// solo Director
-router.get("/directorMovie/:directorName", async (req, res) => {
-  const directorName = req.params.directorName;
-
-  res.json(await getMoviesByDirectorName(directorName));
 });
 
 // solo Actor y Director

@@ -10,7 +10,7 @@ export default function ActorDetail({ params }) {
   useEffect(() => {
     const fetchActor = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/api/movies/director/${name}`);
+        const response = await fetch(`http://localhost:3001/api/movies/person/${name}`);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
