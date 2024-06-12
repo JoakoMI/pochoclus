@@ -7,14 +7,11 @@ export default function PersonMovies(props) {
         <h1 className="text-white font-bold text-xl">Peliculas</h1>
       </section>
 
-      {/* {console.log("----------------------------")}
-      {console.log(props)}
-      {console.log("----------------------------")} */}
-
-      <div className="inline-flex items-start gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {props.movies.map((movie) => {
           return (
             <MovieCard
+              key={movie._id}
               _id={movie._id}
               name={movie.name}
               directors={movie.directors.name}

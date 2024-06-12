@@ -1,5 +1,3 @@
-import { Carousel } from "flowbite-react";
-
 export default function HomeCarousel() {
   return (
     <div id="controls-carousel" class="relative w-full" data-carousel="static">

@@ -143,11 +143,17 @@ async function getMoviesPersonByName(personName) {
   const movies = await connectiondb
     .db(DATABASE)
     .collection(MOVIES)
-    .find({ "directors.name": personName, "cast.name": personName })
+    .find({
+      $or: [
+        { "directors.name": personName },
+        { "cast.name": personName }
+      ]
+    })
     .toArray();
 
   return movies;
 }
+
 
 export {
   getAllMovies,
