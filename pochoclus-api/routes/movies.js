@@ -33,7 +33,7 @@ router.get("/byNameAndType", async (req, res) => {
 });
 
 // solo Actor y Director
-router.get("/personByName/:ByName", async (req, res) => {
+router.get("/moviesByPerson/:ByName", async (req, res) => {
   const personName = req.params.ByName;
 
   res.json(await getMoviesPersonByName(personName));
