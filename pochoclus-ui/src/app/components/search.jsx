@@ -22,9 +22,11 @@ export default function BasicDemo() {
   const getLink = (item) => {
     switch (item.type) {
       case "Director":
-        return `/director/${item.name}`;
+        return `/person/${item.name}`;
       case "Actor":
-        return `/actor/${item.name}`;
+        return `/person/${item.name}`;
+        case "Actor y Director":
+          return `/person/${item.name}`;
       case "Pelicula":
         return `/movie/${item.id}`;
       default:

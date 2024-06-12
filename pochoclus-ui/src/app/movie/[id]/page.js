@@ -43,7 +43,7 @@ export default function MovieDetail({ params }) {
               {movie.directors.map((d, index) => (
                 <a
                   key={d.name}
-                  href={`/director/${encodeURIComponent(d.name)}`}
+                  href={`/person/${encodeURIComponent(d.name)}`}
                   className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out mt-1"
                 >
                   {d.name}
@@ -64,7 +64,7 @@ export default function MovieDetail({ params }) {
             {movie.cast.map((c, index) => (
               <a
                 key={c.name}
-                href={`/actor/${encodeURIComponent(c.name)}`}
+                href={`/person/${encodeURIComponent(c.name)}`}
                 className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out ml-2"
               >
                 {c.name}
