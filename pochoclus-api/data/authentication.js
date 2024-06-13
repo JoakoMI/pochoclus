@@ -8,11 +8,13 @@ async function generateAuthToken(user) {
 	return token;
 }
 
-async function authenticateToken(token) {
+async function authenticateToken(req, res, next) {
 	try {
-		return await jwt.verify(token, process.env.JWT_SECRET);
+		const token = req.header('Authentication');
+		await jwt.verify(token, process.env.JWT_SECRET);
+		next();
 	} catch (error) {
-		throw new Error(error.message);
+		res.status(401).send(error.message);
 	}
 }
 

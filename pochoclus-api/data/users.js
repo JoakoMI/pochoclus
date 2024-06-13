@@ -1,8 +1,10 @@
+import { ObjectId } from 'mongodb';
 import getConnection from './connection.js';
 import bcryptjs from 'bcryptjs';
 
 const DATABASE = 'Pochoclus';
 const USERS = 'Users';
+const MOVIES = 'Movies';
 
 async function findByEmail(email) {
 	const connectiondb = await getConnection();
@@ -54,4 +56,33 @@ async function logInUser(email, password) {
 	return foundUser;
 }
 
-export { signUpUser, logInUser };
+async function addMovieToWatchlist(movieId, email) {
+	try {
+		const connectiondb = await getConnection();
+
+		let foundUser = await findByEmail(email);
+		if (foundUser === null) {
+			throw new Error('Usuario no valido');
+		}
+		let foundMovie = await connectiondb
+			.db(DATABASE)
+			.collection(MOVIES)
+			.findOne({ _id: new ObjectId(movieId) });
+
+		const movieInWatchlist = foundUser.watchlist.includes(foundMovie);
+		if (foundMovie === null) {
+			throw new Error('Pelicula no encontrada');
+		} else if (movieInWatchlist) {
+			throw new Error('Pelicula ya esta en la watchlist');
+		}
+
+		await connectiondb
+			.db(DATABASE)
+			.collection(USERS)
+			.findOneAndUpdate({ email: email }, { $push: { watchlist: foundMovie } });
+	} catch (error) {
+		throw new Error(error.message);
+	}
+}
+
+export { signUpUser, logInUser, addMovieToWatchlist };
