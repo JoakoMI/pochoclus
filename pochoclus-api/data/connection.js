@@ -39,7 +39,7 @@ export default async function getConnection() {
 							filmoteca: movie.intro,
 							year: movie.year,
 							link: movie.link,
-							poster: data.poster_path ? 'https://image.tmdb.org/t/p/w342' + data.poster_path : null,
+							poster: data.poster_path ? 'https://image.tmdb.org/t/p/w342' + data.poster_path : "/movie-no-available.jpg",
 							plot: data.overview,
 						};
 					})
@@ -56,7 +56,7 @@ export default async function getConnection() {
 								movieCast.push({
 									tmdbId: castMember.id,
 									name: castMember.name,
-									image: castMember.profile_path ? 'https://image.tmdb.org/t/p/w342' + castMember.profile_path : null,
+									image: castMember.profile_path ? 'https://image.tmdb.org/t/p/w342' + castMember.profile_path : "/default-actor-image.jpg",
 								});
 							}
 						});
@@ -66,7 +66,7 @@ export default async function getConnection() {
 								movieDirectors.push({
 									tmdbId: crewMember.id,
 									name: crewMember.name,
-									image: crewMember.profile_path ? 'https://image.tmdb.org/t/p/w342' + crewMember.profile_path : null,
+									image: crewMember.profile_path ? 'https://image.tmdb.org/t/p/w342' + crewMember.profile_path : "/default-actor-image.jpg",
 								});
 							}
 						});
