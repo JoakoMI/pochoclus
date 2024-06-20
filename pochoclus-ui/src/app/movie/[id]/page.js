@@ -68,16 +68,35 @@ export default function MovieDetail({ params }) {
                 ))}
               </div>
             </div>
+            <div className="mt-4">
+              <span className="font-bold text-xl">Directores:</span>
+              <div className="flex flex-wrap">
+                {movie.directors.map((d, index) => (
+                  <a
+                    key={d.name}
+                    href={`/person/${encodeURIComponent(d.name)}`}
+                    className="text-blue-400 hover:underline transition duration-300 ease-in-out ml-2 text-lg"
+                  >
+                    {d.name}
+                    {index < movie.directors.length - 1 && ", "}
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="w-full mt-4">
-
         <div className="flex justify-center">
           <VideoEmbeed videoUrl={movie.link} />
         </div>
+        {movie.filmoteca !== null && (
+          <div className="flex flex-col items-center mt-4">
+            <p className="text-white font-bold text-xl mb-2">Contenido Extra (Filmoteca)</p>
+              <VideoEmbeed videoUrl={movie.filmoteca} />
+          </div>
+        )}
       </div>
     </div>
   );
 }
-
