@@ -25,63 +25,63 @@ export default function MovieDetail({ params }) {
   if (!movie) return <p className="text-white">Movie not found</p>;
 
   return (
-    <div>
-      <div className="flex justify-around m-4">
-        <section className="w-1/2">
-          <div className="flex">
-            <h1 className="text-white font-bold text-4xl mb-8 me-4">
+    <div className="flex flex-col lg:flex-row justify-center items-center">
+      <div className="flex flex-col lg:w-1/2 m-4">
+        <div className="flex flex-col lg:flex-row items-center lg:justify-between">
+          <div className="flex flex-col">
+            <h1 className="text-white font-bold text-4xl mb-2 lg:mb-0">
               {movie.name}
             </h1>
             <h1 className="text-gray-200 font-light text-4xl">
               ({movie.year})
             </h1>
           </div>
-          <p className="text-white font-light mb-4">{movie.plot}</p>
-          <span className="flex flex-wrap justify-start mb-4">
-            <div className="flex flex-col me-8 text-white">
-              <span className="font-bold">Dirige:</span>
-              {movie.directors.map((d, index) => (
-                <a
-                  key={d.name}
-                  href={`/person/${encodeURIComponent(d.name)}`}
-                  className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out mt-1"
-                >
-                  {d.name}
-                </a>
-              ))}
-            </div>
-            <div className="flex flex-col text-white">
-              <span className="font-bold">Géneros:</span>
-              {movie.genres.map((g, index) => (
-                <span className="font-light ml-2" key={g}>
-                  {g}
-                </span>
-              ))}
-            </div>
-          </span>
-          <section className="text-white">
-            <span className="font-bold">Actúan:</span>
-            {movie.cast.map((c, index) => (
-              <a
-                key={c.name}
-                href={`/person/${encodeURIComponent(c.name)}`}
-                className="text-blue-400 hover:text-blue-600 transition duration-300 ease-in-out ml-2"
-              >
-                {c.name}
-                {index < movie.cast.length - 1 && ", "}
-              </a>
-            ))}
-          </section>
-        </section>
-        <section>
           <img
             src={movie.poster}
-            className="w-full"
+            className="w-full lg:w-64"
             alt={`${movie.name} poster`}
           />
+        </div>
+        <p className="text-white font-light mb-4">{movie.plot}</p>
+        <div className="flex flex-wrap mb-4">
+          <div className="flex flex-col me-8 text-white">
+            <span className="font-bold">Dirige:</span>
+            {movie.directors.map((d, index) => (
+              <a
+                key={d.name}
+                href={`/person/${encodeURIComponent(d.name)}`}
+                className="text-blue-400 hover:underline transition duration-300 ease-in-out mt-1"
+              >
+                {d.name}
+              </a>
+            ))}
+          </div>
+          <div className="flex flex-col text-white mt-2 lg:mt-0">
+            <span className="font-bold">Géneros:</span>
+            {movie.genres.map((g, index) => (
+              <span className="font-light ml-2" key={g}>
+                {g}
+              </span>
+            ))}
+          </div>
+        </div>
+        <section className="text-white">
+          <span className="font-bold">Actúan:</span>
+          {movie.cast.map((c, index) => (
+            <a
+              key={c.name}
+              href={`/person/${encodeURIComponent(c.name)}`}
+              className="text-blue-400 hover:underline transition duration-300 ease-in-out ml-2"
+            >
+              {c.name}
+              {index < movie.cast.length - 1 && ", "}
+            </a>
+          ))}
         </section>
       </div>
-      <VideoEmbeed videoUrl={movie.link} />
+      <div className="w-full">
+        <VideoEmbeed videoUrl={movie.link} />
+      </div>
     </div>
   );
 }

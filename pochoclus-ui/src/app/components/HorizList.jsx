@@ -23,10 +23,12 @@ export default function HorizList(props) {
   return (
     <div className="py-4 px-4 my-1 mb-4 relative">
       <section className="my-1 items-baseline mb-4">
-        <h1 className="text-white font-bold text-xl">
+        <h1 className="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
           {props.collection.title}
         </h1>
-        <p className="text-gray-300 text-base">{props.collection.subtitle}</p>
+        <p className="text-gray-300 text-base sm:text-lg lg:text-xl">
+          {props.collection.subtitle}
+        </p>
       </section>
 
       <div className="flex items-center">
