@@ -5,7 +5,7 @@ import {
   getNamesAndTypes,
   getMoviesPersonByName,
   getByName,
-} from "../data/movie.js";
+} from "../data/movies.js";
 
 const router = express.Router();
 
