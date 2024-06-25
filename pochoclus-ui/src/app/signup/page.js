@@ -32,7 +32,6 @@ export default function Signup() {
 
       if (response.ok) {
         console.log("Registro exitoso");
-        router.push("/");
       } else {
         console.log("Error en el registro");
       }

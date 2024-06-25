@@ -1,8 +1,11 @@
 "use client";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Login() {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -24,15 +27,23 @@ export default function Login() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          //   "Authentication":
         },
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        console.log("Registro exitoso");
+      if (!response.ok) {
+        throw new Error("Error en el registro.");
+      }
+
+      const data = await response.json();
+
+      if (data != null) {
+        console.log("Registro exitoso.");
+        console.log("Token recibido:", data);
+        localStorage.setItem("authToken", data);
+        router.push("/");
       } else {
-        console.log("Error en el registro");
+        console.log("Token no recibido");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -40,7 +51,7 @@ export default function Login() {
   };
 
   return (
-    <form class="max-w-sm mx-auto m-16 " onSubmit={handleSubmit}>
+    <form className="max-w-sm mx-auto m-16 " onSubmit={handleSubmit}>
       <div class="mb-5">
         <label
           htmlFor="email"
