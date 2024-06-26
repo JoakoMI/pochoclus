@@ -72,7 +72,7 @@ export default function HomeCarousel() {
         {movies.length > 0 && movies.map((movie, index) => (
           <div
             key={movie._id}
-            className="flex-shrink-0 w-full"
+            className="flex-shrink-0 w-full relative"
             style={{ width: `${carouselRef.current ? carouselRef.current.offsetWidth : '100%'}` }}
           >
             <Link href={`/movie/${movie._id}`}>
@@ -81,6 +81,10 @@ export default function HomeCarousel() {
                 className="block w-full h-full object-cover"
                 alt={movie.name}
               />
+              {/* Title container */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                <h1 className="text-lg font-semibold">{movie.name}</h1>
+              </div>
             </Link>
           </div>
         ))}
