@@ -29,7 +29,6 @@ async function signUpUser(userInfo) {
 			name: userInfo.name,
 			email: userInfo.email,
 			password: userInfo.password,
-			profilePicture: userInfo.profilePicture ?? null,
 			watchlist: [],
 			puntajes: [],
 		};
@@ -57,32 +56,36 @@ async function logInUser(email, password) {
 }
 
 async function addMovieToWatchlist(movieId, email) {
-	try {
-		const connectiondb = await getConnection();
+	const connectiondb = await getConnection();
 
-		let foundUser = await findByEmail(email);
-		if (foundUser === null) {
-			throw new Error('Usuario no valido');
-		}
-		let foundMovie = await connectiondb
-			.db(DATABASE)
-			.collection(MOVIES)
-			.findOne({ _id: new ObjectId(movieId) });
-
-		const movieInWatchlist = foundUser.watchlist.includes(foundMovie);
-		if (foundMovie === null) {
-			throw new Error('Pelicula no encontrada');
-		} else if (movieInWatchlist) {
-			throw new Error('Pelicula ya esta en la watchlist');
-		}
-
-		await connectiondb
-			.db(DATABASE)
-			.collection(USERS)
-			.findOneAndUpdate({ email: email }, { $push: { watchlist: foundMovie } });
-	} catch (error) {
-		throw new Error(error.message);
+	let foundUser = await findByEmail(email);
+	if (foundUser === null) {
+		throw new Error('Usuario no válido');
 	}
+	let foundMovie = await connectiondb
+		.db(DATABASE)
+		.collection(MOVIES)
+		.findOne({ _id: new ObjectId(movieId) });
+
+	let movieInWatchlist = false;
+	let i = 0;
+	while (!movieInWatchlist && i < foundUser.watchlist.length) {
+		if (foundUser.watchlist[i].tmdbId === foundMovie.tmdbId) {
+			movieInWatchlist = true;
+		}
+		i++;
+	}
+
+	if (foundMovie === null) {
+		throw new Error('Película no encontrada');
+	} else if (movieInWatchlist) {
+		throw new Error('Película ya está en la watchlist');
+	}
+
+	await connectiondb
+		.db(DATABASE)
+		.collection(USERS)
+		.findOneAndUpdate({ email: email }, { $push: { watchlist: foundMovie } });
 }
 
 export { signUpUser, logInUser, addMovieToWatchlist };

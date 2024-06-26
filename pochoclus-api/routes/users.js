@@ -16,14 +16,17 @@ router.post('/login', async (req, res) => {
 });
 
 router.patch(
-	'/watchlist/:movieId',
-	async (req, res, next) => authenticateToken(req, res, next),
+	'/watchlist',
+	async (req, res, next) => await authenticateToken(req, res, next),
 	async (req, res) => {
-		const { movieId } = req.params;
-		const { email } = req.body;
+		try {
+			const { movieId, email } = req.body;
 
-		addMovieToWatchlist(movieId, email);
-		res.status(201).send('');
+			await addMovieToWatchlist(movieId, email);
+			res.status(201).send('');
+		} catch (error) {
+			res.status(400).send({ message: error.message });
+		}
 	}
 );
 
