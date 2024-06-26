@@ -1,5 +1,7 @@
 "use client";
 import VideoEmbeed from "@/app/components/VideoEmbeed";
+import SpecialFeaturesCard from "@/app/components/SpecialFeaturesCard";
+import FilmotecaCard from "@/app/components/FilmotecaCard";
 import { useState, useEffect } from "react";
 
 export default function MovieDetail({ params }) {
@@ -21,17 +23,16 @@ export default function MovieDetail({ params }) {
   }, [id]);
 
   if (isLoading) return <p className="text-white">Loading...</p>;
-
   if (!movie) return <p className="text-white">Movie not found</p>;
 
   return (
     <div className="flex flex-col items-center bg-dark p-4">
       <div className="w-full lg:w-1/2 m-4">
         <div className="flex flex-col items-center">
-          <h1 className="text-white font-bold text-4xl mb-2">
-            {movie.name}
-          </h1>
-          <h2 className="text-gray-300 text-xl"><span className="font-bold text-xl">Año:</span> {movie.year}</h2>
+          <h1 className="text-white font-bold text-4xl mb-2">{movie.name}</h1>
+          <h2 className="text-gray-300 text-xl">
+            <span className="font-bold text-xl">Año:</span> {movie.year}
+          </h2>
         </div>
         <div className="flex flex-col lg:flex-row items-center mt-4">
           <img
@@ -90,10 +91,24 @@ export default function MovieDetail({ params }) {
         <div className="flex justify-center">
           <VideoEmbeed videoUrl={movie.link} />
         </div>
-        {movie.filmoteca !== null && (
+        {(movie.filmoteca || (movie.sp && movie.sp.length > 0)) && (
           <div className="flex flex-col items-center mt-4">
-            <p className="text-white font-bold text-xl mb-2">Contenido Extra (Filmoteca)</p>
-              <VideoEmbeed videoUrl={movie.filmoteca} />
+            <p className="text-white font-bold text-xl mb-2">
+              Special Features
+            </p>
+            <div className="flex flex-wrap justify-center">
+              {movie.filmoteca && <FilmotecaCard filmoteca={movie.filmoteca} />}
+              {movie.sp && movie.sp.length > 0 && (
+                <div className="flex flex-wrap justify-center">
+                  {movie.sp.map((sp) => (
+                    <SpecialFeaturesCard
+                      spTitulo={sp.spTitulo}
+                      spLink={sp.spLink}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>
