@@ -3,9 +3,13 @@ import { signUpUser, logInUser, addMovieToWatchlist, getAllMoviesFromWatchlist, 
 import { authenticateToken, generateAuthToken } from '../data/authentication.js';
 const router = express.Router();
 
-router.post('/signUp', async (req, res) => {
-	const token = await generateAuthToken(await signUpUser(req.body));
-	res.json({ token });
+router.post("/signUp", async (req, res) => {
+  try {
+    const token = await generateAuthToken(await signUpUser(req.body));
+    res.json({ token });
+  } catch (error) {
+    res.status(400).send({ message: error.message });
+  }
 });
 
 router.post('/login', async (req, res) => {
