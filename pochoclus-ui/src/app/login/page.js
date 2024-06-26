@@ -1,16 +1,23 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 export default function Login() {
   const router = useRouter();
+  const [error, setError] = useState(false);
+  const [msg, setMsg] = useState("   ");
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    if (error) {
+      setMsg("Credenciales no válidas");
+    }
+  }, [error]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -35,8 +42,6 @@ export default function Login() {
       if (!response.ok) {
         throw new Error("Credenciales no validas");
       }
-      
-      
 
       const data = await response.json();
 
@@ -44,84 +49,72 @@ export default function Login() {
         console.log("Registro exitoso.");
         console.log("Token recibido:", data);
         localStorage.setItem("authToken", data);
-        window.location.href = "/";        
+        window.location.href = "/";
       } else {
         console.log("Token no recibido");
       }
     } catch (error) {
-      
+      setError(true);
     }
   };
 
   return (
-    <form className="max-w-sm mx-auto m-16 " onSubmit={handleSubmit}>
-      <div class="mb-5">
-        <label
-          htmlFor="email"
-          class="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
-          Tu email
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          placeholder="petru@pochoclus.com"
-          required
-          onChange={handleChange}
-        />
-      </div>
-      <div class="mb-5">
-        <label
-          htmlFor="password"
-          class="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
-          Tu contraseña
-        </label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-          required
-          onChange={handleChange}
-        />
-      </div>
-      <div class="flex items-start mb-5">
-        <div class="flex items-center h-5">
+    <div className="m-16">
+      <form className="max-w-sm mx-auto m-8 " onSubmit={handleSubmit}>
+        <div class="mb-5">
+          <label
+            htmlFor="email"
+            class="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
+          >
+            Tu email
+          </label>
           <input
-            id="remember"
-            type="checkbox"
-            value=""
-            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+            type="email"
+            id="email"
+            name="email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="petru@pochoclus.com"
+            required
+            onChange={handleChange}
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            htmlFor="password"
+            class="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
+          >
+            Tu contraseña
+          </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+            onChange={handleChange}
           />
         </div>
 
-        <label
-          htmlFor="remember"
-          class="ms-2 text-sm font-medium text-gray-200 dark:text-gray-300"
-        >
-          recordarme
-        </label>
-      </div>
-      <div>
-        <button
-          type="submit"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Ingresar
-        </button>
-        <div class="ms-2 m-8 text-sm text-center font-medium text-gray-200 dark:text-gray-300">
-          Si todavia no tenes cuenta podes{" "}
-          <Link
-            href="/signup"
-            class="text-blue-500 hover:underline dark:text-blue-500"
+        <div>
+          <button
+            type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            registrarte acá
-          </Link>
+            Ingresar
+          </button>
+          <h1 className="text-red-600 text-center m-4">{msg}</h1>
+
+          <div class="ms-2 m-8 text-sm text-center font-medium text-gray-200 dark:text-gray-300">
+            Si todavia no tenes cuenta podes{" "}
+            <Link
+              href="/signup"
+              class="text-blue-500 hover:underline dark:text-blue-500"
+            >
+              registrarte acá
+            </Link>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
