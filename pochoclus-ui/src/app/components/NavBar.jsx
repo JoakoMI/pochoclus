@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Menu } from "@headlessui/react";
-import { Navbar, NavbarContent, NavbarItem, Link, Input, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
+import { Navbar, NavbarContent, NavbarItem, Link, Input, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button } from "@nextui-org/react";
 import Search from "./search.jsx";
 
 export default function App() {
@@ -26,9 +26,7 @@ export default function App() {
   };
 
   return (
-    
     <Navbar isBordered>
-      
       <NavbarContent justify="start">
         <p className="hidden sm:block font-bold text-inherit">Pochoclus</p>
       </NavbarContent>
