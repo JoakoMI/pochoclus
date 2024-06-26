@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function Login() {
   const router = useRouter();
-  const [error, setError] = useState(false);
+  const [error, setError] = useState("");
   const [msg, setMsg] = useState("   ");
 
   const [formData, setFormData] = useState({

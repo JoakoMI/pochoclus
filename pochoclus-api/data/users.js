@@ -17,8 +17,12 @@ async function signUpUser(userInfo) {
 		const connectiondb = await getConnection();
 
 		const foundUser = await findByEmail(userInfo.email);
-		if (foundUser !== null) {
-			throw new Error('User already exists');
+		if (foundUser?.email == userInfo.email) {
+			throw new Error('Ya existe un usuario con ese mail');
+		}
+
+		if (userInfo.password != userInfo.repeatPassword) {
+			throw new Error('Las contraseñas no coinciden');
 		}
 
 		userInfo.password = await bcryptjs.hash(userInfo.password, 10);

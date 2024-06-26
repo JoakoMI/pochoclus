@@ -1,14 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Signup() {
+  const [errorValue, setErrorValue] = useState(false);
+  const [msg, setMsg] = useState("  Hola ");
+
   const [formData, setFormData] = useState({
     email: "",
     name: "",
     password: "",
     repeatPassword: "",
-    terms: false,
   });
+
+  useEffect(() => {
+    if (errorValue) {
+      setMsg("Hay un error en el formulario. Revise los campos y vuelva a intentar.");
+    }
+  }, [errorValue]);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -30,23 +38,24 @@ export default function Signup() {
         body: JSON.stringify(formData),
       });
 
+      if (!response.ok) {
+        throw new Error("Credenciales no validas");
+      }
+
       if (response.ok) {
-        console.log("Registro exitoso");
+        console.log("Registro exitoso.");
+        window.location.href = "/login";
       } else {
-        console.log("Error en el registro");
       }
     } catch (error) {
-      console.error("Error:", error);
+      setErrorValue(true);
     }
   };
 
   return (
     <form className="max-w-sm mx-auto m-16" onSubmit={handleSubmit}>
       <div className="mb-5">
-        <label
-          htmlFor="email"
-          className="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
+        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
           Tu email
         </label>
         <input
@@ -61,10 +70,7 @@ export default function Signup() {
         />
       </div>
       <div className="mb-5">
-        <label
-          htmlFor="name"
-          className="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
+        <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
           Nombre de usuario
         </label>
         <input
@@ -79,10 +85,7 @@ export default function Signup() {
         />
       </div>
       <div className="mb-5">
-        <label
-          htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
+        <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
           Tu contraseña
         </label>
         <input
@@ -97,10 +100,7 @@ export default function Signup() {
         />
       </div>
       <div className="mb-5">
-        <label
-          htmlFor="repeatPassword"
-          className="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
-        >
+        <label htmlFor="repeatPassword" className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
           Repetí tu contraseña
         </label>
         <input
@@ -114,6 +114,7 @@ export default function Signup() {
           required
         />
       </div>
+      <h1 className="text-red-600 text-center m-4">{msg}</h1>
       <div className="flex items-start mb-5"></div>
       <button
         type="submit"
