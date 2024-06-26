@@ -13,7 +13,7 @@ import { AcmeLogo } from "./AcmeLogo.jsx";
 import { SearchIcon } from "./SearchIcon.jsx";
 import { useEffect, useState } from "react";
 
-export default function App() {
+export default function  App() {
   const router = useRouter();
   const [session, setSession] = useState(null);
 

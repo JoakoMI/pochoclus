@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 
+
 export default function Login() {
   const router = useRouter();
 
@@ -32,8 +33,10 @@ export default function Login() {
       });
 
       if (!response.ok) {
-        throw new Error("Error en el registro.");
+        throw new Error("Credenciales no validas");
       }
+      
+      
 
       const data = await response.json();
 
@@ -41,12 +44,12 @@ export default function Login() {
         console.log("Registro exitoso.");
         console.log("Token recibido:", data);
         localStorage.setItem("authToken", data);
-        router.push("/");
+        window.location.href = "/";        
       } else {
         console.log("Token no recibido");
       }
     } catch (error) {
-      console.error("Error:", error);
+      
     }
   };
 

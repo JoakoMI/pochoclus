@@ -10,9 +10,13 @@ router.post('/signUp', async (req, res) => {
 
 router.post('/login', async (req, res) => {
 	const { email, password } = req.body;
-
-	const token = await generateAuthToken(await logInUser(email, password));
-	res.json({ token });
+	try {
+		const token = await generateAuthToken(await logInUser(email, password));
+		res.json({ token });		
+	} catch (error) {
+		res.status(401).send(error);
+	}
+	
 });
 
 export default router;
