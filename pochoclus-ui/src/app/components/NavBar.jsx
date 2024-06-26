@@ -1,10 +1,12 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Menu } from "@headlessui/react";
-import { Navbar, NavbarContent, NavbarItem, Link, Input } from "@nextui-org/react";
+import { Navbar, NavbarContent, NavbarItem, Link, Input, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
+import Search from "./search.jsx";
 
 export default function App() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const router = useRouter();
   const [session, setSession] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +26,9 @@ export default function App() {
   };
 
   return (
+    
     <Navbar isBordered>
+      
       <NavbarContent justify="start">
         <p className="hidden sm:block font-bold text-inherit">Pochoclus</p>
       </NavbarContent>
@@ -105,6 +109,24 @@ export default function App() {
           </Menu.Items>
         </Menu>
       </NavbarContent>
+
+      <NavbarMenu>
+        <NavbarMenuItem>
+          <Link color="foreground" href="/">
+            Home
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link color="foreground" href="/milista">
+            Mi lista
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link color="foreground" href="/explorar">
+            Explorar
+          </Link>
+        </NavbarMenuItem>
+      </NavbarMenu>
     </Navbar>
   );
 }

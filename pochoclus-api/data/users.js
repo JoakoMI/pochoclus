@@ -1,8 +1,10 @@
+import { ObjectId } from 'mongodb';
 import getConnection from './connection.js';
 import bcryptjs from 'bcryptjs';
 
 const DATABASE = 'Pochoclus';
 const USERS = 'Users';
+const MOVIES = 'Movies';
 
 async function findByEmail(email) {
 	const connectiondb = await getConnection();
@@ -31,7 +33,6 @@ async function signUpUser(userInfo) {
 			name: userInfo.name,
 			email: userInfo.email,
 			password: userInfo.password,
-			profilePicture: userInfo.profilePicture ?? null,
 			watchlist: [],
 			puntajes: [],
 		};
@@ -58,4 +59,72 @@ async function logInUser(email, password) {
 	return foundUser;
 }
 
-export { signUpUser, logInUser };
+async function addMovieToWatchlist(movieId, email) {
+	const connectiondb = await getConnection();
+
+	let foundUser = await findByEmail(email);
+	if (foundUser === null) {
+		throw new Error('Usuario no válido');
+	}
+	let foundMovie = await connectiondb
+		.db(DATABASE)
+		.collection(MOVIES)
+		.findOne({ _id: new ObjectId(movieId) });
+
+	let movieInWatchlist = false;
+	let i = 0;
+	while (!movieInWatchlist && i < foundUser.watchlist.length) {
+		if (foundUser.watchlist[i].tmdbId === foundMovie.tmdbId) {
+			movieInWatchlist = true;
+		}
+		i++;
+	}
+
+	if (foundMovie === null) {
+		throw new Error('Película no encontrada');
+	} else if (movieInWatchlist) {
+		throw new Error('Película ya está en la watchlist');
+	}
+
+	await connectiondb
+		.db(DATABASE)
+		.collection(USERS)
+		.findOneAndUpdate({ email: email }, { $push: { watchlist: foundMovie } });
+}
+
+async function getAllMoviesFromWatchlist(email) {
+	try {
+		let foundUser = await findByEmail(email);
+		if (foundUser === null) {
+			throw new Error('Usuario no válido');
+		}
+		return foundUser.watchlist;
+	} catch (error) {
+		throw new Error(error.message);
+	}
+}
+
+async function deleteMovieFromWatchlist(movieId, email) {
+	const connectiondb = await getConnection();
+
+	let foundUser = await findByEmail(email);
+	if (foundUser === null) {
+		throw new Error('Usuario no válido');
+	}
+	let foundMovie = await connectiondb
+		.db(DATABASE)
+		.collection(MOVIES)
+		.findOne({ _id: new ObjectId(movieId) });
+
+	if (foundMovie === null) {
+		throw new Error('Película no encontrada');
+	}
+
+	await connectiondb
+		.db(DATABASE)
+		.collection(USERS)
+		.findOneAndUpdate({ email: email }, { $pull: { watchlist: foundMovie } });
+
+	return foundMovie;
+}
+export { signUpUser, logInUser, addMovieToWatchlist, getAllMoviesFromWatchlist, deleteMovieFromWatchlist };
