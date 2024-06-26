@@ -126,18 +126,6 @@ export default function Signup() {
             required
           />
         </div>
-        <label
-          htmlFor="terms"
-          className="ms-2 text-sm font-medium text-gray-200 dark:text-gray-300"
-        >
-          estoy de acuerdo con los{" "}
-          <a
-            href="#"
-            className="text-blue-500 hover:underline dark:text-blue-500"
-          >
-            terminos y condiciones
-          </a>
-        </label>
       </div>
       <button
         type="submit"
