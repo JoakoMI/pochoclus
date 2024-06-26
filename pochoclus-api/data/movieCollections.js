@@ -169,16 +169,16 @@ async function getCollections() {
   return collections;
 }
 
-async function getCollectionByTitle(carrusel) {
+async function getCarrusel() {
   const connectiondb = await getConnection();
   const collections = await connectiondb
     .db(DATABASE)
     .collection(MOVIECOLLECTIONS)
-    .find({title : carrusel})
+    .find({title : "Carrusel"})
     .toArray();
 
   return collections;
 }
 
 
-export { createCollections, getCollections , getCollectionByTitle};
+export { createCollections, getCollections , getCarrusel};

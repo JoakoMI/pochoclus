@@ -1,5 +1,5 @@
 import express from "express";
-import { createCollections, getCollections , getCollectionByTitle} from "../data/movieCollections.js";
+import { createCollections, getCollections , getCarrusel} from "../data/movieCollections.js";
 
 const router = express.Router();
 /*
@@ -11,9 +11,8 @@ router.get("/", async (req, res) => {
   res.json(await getCollections());
 });
 
-router.get("/:title", async (req, res) => {
-  const carrusel = req.params.title
-  res.json(await getCollectionByTitle(carrusel));
+router.get("/carrusel", async (req, res) => {
+  res.json(await getCarrusel());
 });
 
 export default router;
