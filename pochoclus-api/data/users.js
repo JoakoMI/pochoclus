@@ -88,4 +88,39 @@ async function addMovieToWatchlist(movieId, email) {
 		.findOneAndUpdate({ email: email }, { $push: { watchlist: foundMovie } });
 }
 
-export { signUpUser, logInUser, addMovieToWatchlist };
+async function getAllMoviesFromWatchlist(email) {
+	try {
+		let foundUser = await findByEmail(email);
+		if (foundUser === null) {
+			throw new Error('Usuario no válido');
+		}
+		return foundUser.watchlist;
+	} catch (error) {
+		throw new Error(error.message);
+	}
+}
+
+async function deleteMovieFromWatchlist(movieId, email) {
+	const connectiondb = await getConnection();
+
+	let foundUser = await findByEmail(email);
+	if (foundUser === null) {
+		throw new Error('Usuario no válido');
+	}
+	let foundMovie = await connectiondb
+		.db(DATABASE)
+		.collection(MOVIES)
+		.findOne({ _id: new ObjectId(movieId) });
+
+	if (foundMovie === null) {
+		throw new Error('Película no encontrada');
+	}
+
+	await connectiondb
+		.db(DATABASE)
+		.collection(USERS)
+		.findOneAndUpdate({ email: email }, { $pull: { watchlist: foundMovie } });
+
+	return foundMovie;
+}
+export { signUpUser, logInUser, addMovieToWatchlist, getAllMoviesFromWatchlist, deleteMovieFromWatchlist };
