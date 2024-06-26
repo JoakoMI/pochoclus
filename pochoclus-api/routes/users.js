@@ -12,12 +12,15 @@ router.post("/signUp", async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
-	const { email, password } = req.body;
-
-	const token = await generateAuthToken(await logInUser(email, password));
-	res.json({ token });
-});
+router.post("/login", async (req, res) => {
+	try {
+	  const { email, password } = req.body;
+	  const token = await generateAuthToken(await logInUser(email, password));
+	  res.json({ token });
+	} catch (error) {
+	  res.status(400).send({ message: error.message });
+	}
+  });
 
 router.get(
 	'/watchlist',
