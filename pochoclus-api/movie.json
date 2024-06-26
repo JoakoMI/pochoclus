@@ -198,7 +198,8 @@
         "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=omQSIlU9dPw"
       }
-    ]
+    ],
+    "imgInicio": "elDiaQueMeQuieras.jpg"
   },
   {
     "movie": "El caballo del pueblo",
@@ -408,7 +409,8 @@
         "spLink": "https://www.youtube.com/watch?v=ybkhDd0WFzo"
       }
     ],
-    "top100": 14
+    "top100": 14,
+    "imgInicio": "prisionerosDeLaTierra.jpg"
   },
   {
     "movie": "Así es la vida",
@@ -593,7 +595,8 @@
         "spLink": "https://www.youtube.com/watch?v=gWMmNRoR77g"
       }
     ],
-    "top100": 45
+    "top100": 45,
+    "imgInicio": "laGuerraGaucha.jpg"
   },
   {
     "movie": "En el viejo Buenos Aires",
@@ -1246,7 +1249,8 @@
     "movie": "Si muero antes de despertar",
     "year": 1952,
     "link": "https://www.youtube.com/watch?v=7bq05zdcBLc",
-    "top100": 26
+    "top100": 26,
+    "imgInicio": "siMueroAntesDeDespertar.jpg"
   },
   {
     "movie": "No abras nunca esa puerta",
@@ -1523,7 +1527,8 @@
     "movie": "Más allá del olvido",
     "year": 1956,
     "link": "https://www.youtube.com/watch?v=YjtrgcBp54A",
-    "top100": 13
+    "top100": 13,
+    "imgInicio": "masAllaDelOlvido.jpg"
   },
   {
     "movie": "El satélite chiflado",
@@ -2024,7 +2029,8 @@
     "movie": "Pajarito Gomez",
     "year": 1965,
     "link": "https://www.youtube.com/watch?v=VL4Kxdo9xMg",
-    "intro": "https://www.youtube.com/watch?v=oebHzhGINrk"
+    "intro": "https://www.youtube.com/watch?v=oebHzhGINrk",
+    "imgInicio": "pajaritoGomez.jpg"
   },
   {
     "movie": "Eva Perón",
@@ -2250,7 +2256,8 @@
         "spTitulo": "Favio por Favio - El dependiente",
         "spLink": "https://www.youtube.com/watch?v=iHgoU_xaaUg"
       }
-    ]
+    ],
+    "imgInicio": "elDependiente.jpg"
   },
   {
     "movie": "La fiaca",
@@ -2401,7 +2408,8 @@
         "spTitulo": "Virna Molina presenta Los traidores",
         "spLink": "https://www.youtube.com/watch?v=cG9LL9824V8"
       }
-    ]
+    ],
+    "imgInicio": "losTraidores.jpg"
   },
   {
     "movie": "La gran aventura",
@@ -2449,7 +2457,8 @@
     "movie": "La Patagonia rebelde",
     "year": 1974,
     "link": "https://www.youtube.com/watch?v=YihcSvh6pvQ",
-    "top100": 20
+    "top100": 20,
+    "imgInicio": "laPatagoniaRebelde.jpg"
   },
   {
     "movie": "Boquitas pintadas",
@@ -2504,7 +2513,8 @@
     "movie": "Soñar, soñar",
     "year": 1976,
     "link": "https://www.youtube.com/watch?v=3tv3D_VW8AY",
-    "top100": 19
+    "top100": 19,
+    "imgInicio": "soñarSoñar.jpg"
   },
   {
     "movie": "Piedra libre",

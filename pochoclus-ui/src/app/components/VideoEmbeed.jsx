@@ -1,5 +1,3 @@
-// src/components/VideoEmbed.jsx
-
 import React from 'react';
 
 function getEmbedUrl(videoUrl) {

@@ -125,6 +125,17 @@ async function createCollections() {
     .sort({ popularity: -1 })
     .toArray();
 
+  // ----------------Inicio-----------------------
+
+  const inicioMovies = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIES)
+    .find({ imgInicio: { $exists: true } })
+    .sort({ popularity: -1 })
+    .toArray();
+    console.log(inicioMovies)
+  
+
   // ----------------Agregar todos los arrays-----------------------
 
   await connectiondb
@@ -142,7 +153,8 @@ async function createCollections() {
       { title: "La Chaplin con faldas: Niní Marshall", subtitle: '"Digo de mí que no soy artista, sino una señora de su casa que logró, simplemente, hacerse la graciosa"', movies: niniMarshallMovies },
       { title: "Grandes películas de grandes directores", subtitle: "Soffici, Christensen, Torre Nilsson, Favio... La lista es infinita. Algunas de las mejores películas dirigidas por los mejores directores de nuestro país.", movies: directoresMovies },
       { title: "Grandes películas de Gauchos", subtitle: "¿Qué hay más argentino que historias de gauchos? Acá hay una selección de las mejores películas donde los gauchos son más que un estereotipo.", movies: gauchosMovies },
-      { title: "¡La vieja ve los colores! Grandes hits de Luis Sandrini", subtitle: "Algunas de las mejores comedias de Sandrini, el tipo con la carrera cómica más grande de nuestro país.", movies: luisAndriniMovies }
+      { title: "¡La vieja ve los colores! Grandes hits de Luis Sandrini", subtitle: "Algunas de las mejores comedias de Sandrini, el tipo con la carrera cómica más grande de nuestro país.", movies: luisAndriniMovies },
+      {title: "Carrusel", subtitle: "Carrusel", movies: inicioMovies}
     ]);
 }
 
@@ -157,4 +169,16 @@ async function getCollections() {
   return collections;
 }
 
-export { createCollections, getCollections };
+async function getCollectionByTitle(carrusel) {
+  const connectiondb = await getConnection();
+  const collections = await connectiondb
+    .db(DATABASE)
+    .collection(MOVIECOLLECTIONS)
+    .find({title : carrusel})
+    .toArray();
+
+  return collections;
+}
+
+
+export { createCollections, getCollections , getCollectionByTitle};
