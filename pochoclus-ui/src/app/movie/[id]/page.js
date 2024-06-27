@@ -114,78 +114,85 @@ export default function MovieDetail({ params }) {
   if (!movie) return <p className="text-white">Movie not found</p>;
 
   return (
-    <div className="flex flex-col items-center bg-dark p-4">
-      <button
-        onClick={
-          isInWatchlist ? handleRemoveFromWatchlist : handleAddToWatchlist
-        }
-        className={`text-white ${
-          isInWatchlist
-            ? "bg-red-700 hover:bg-red-600"
-            : "bg-blue-700 hover:bg-blue-600"
-        } focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
-      >
-        {isInWatchlist ? "Eliminar de mi lista" : "Agregar a mi lista"}
-      </button>
-      <div className="w-full lg:w-1/2 m-4">
-        <div className="flex flex-col items-center">
-          <h1 className="text-white font-bold text-4xl mb-2">{movie.name}</h1>
-          <h2 className="text-gray-300 text-xl">
-            <span className="font-bold text-xl">Año:</span> {movie.year}
-          </h2>
-        </div>
-        <div className="flex flex-col lg:flex-row items-center mt-4">
+    <div className="flex flex-col items-center p-4">
+      <section className="flex flex-col lg:flex-row m-6 items-center gap-4">
+        <h1 className="text-white font-bold text-3xl lg:text-5xl mb-2">
+          {movie.name}
+        </h1>
+        <h2 className="text-gray-300 text-lg lg:text-xl">
+          <span className="font-bold text-xl lg:text-2xl">
+            {" "}
+            ({movie.year}){" "}
+          </span>
+        </h2>
+      </section>
+      <div className="grid grid-cols-1 lg:grid-cols-3 w-full m-6 gap-4">
+        <section className="col-span-1 flex justify-center ">
           <img
             src={movie.poster}
             className="w-full lg:w-64"
             alt={`${movie.name} poster`}
           />
-          <div className="text-white mt-4 lg:mt-0 lg:ml-4">
-            <div className="mb-4">
-              <span className="font-bold text-xl">Géneros:</span>
-              <div className="flex flex-wrap">
-                {movie.genres.map((g, index) => (
-                  <span className="font-light ml-2 text-lg" key={g}>
-                    {g}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <p className="font-light text-lg">
-              <span className="font-bold">Sinopsis:</span> {movie.plot}
-            </p>
-            <div className="mt-4">
-              <span className="font-bold text-xl">Actores:</span>
-              <div className="flex flex-wrap">
-                {movie.cast.map((c, index) => (
-                  <a
-                    key={c.name}
-                    href={`/person/${encodeURIComponent(c.name)}`}
-                    className="text-blue-400 hover:underline transition duration-300 ease-in-out ml-2 text-lg"
-                  >
-                    {c.name}
-                    {index < movie.cast.length - 1 && ", "}
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div className="mt-4">
-              <span className="font-bold text-xl">Directores:</span>
-              <div className="flex flex-wrap">
-                {movie.directors.map((d, index) => (
-                  <a
-                    key={d.name}
-                    href={`/person/${encodeURIComponent(d.name)}`}
-                    className="text-blue-400 hover:underline transition duration-300 ease-in-out ml-2 text-lg"
-                  >
-                    {d.name}
-                    {index < movie.directors.length - 1 && ", "}
-                  </a>
-                ))}
-              </div>
+        </section>
+        <section className="col-span-2 text-white mt-4 lg:mt-0 lg:ml-4">
+          <div className="mb-4">
+            <span className="font-bold text-xl">Géneros:</span>
+            <div className="flex flex-wrap">
+              {movie.genres.map((g, index) => (
+                <span className="font-light ml-2 text-medium" key={g}>
+                  {g}
+                </span>
+              ))}
             </div>
           </div>
-        </div>
+          <p className="font-light text-text-medium">
+            <span className="font-bold text-xl">Sinopsis:</span> {movie.plot}
+          </p>
+          <div className="mt-4">
+            <span className="font-bold text-xl">Actores:</span>
+            <div className="flex flex-wrap">
+              {movie.cast.map((c, index) => (
+                <a
+                  key={c.name}
+                  href={`/person/${encodeURIComponent(c.name)}`}
+                  className="text-blue-400 hover:underline transition duration-300 ease-in-out ml-2 text-medium"
+                >
+                  {c.name}
+                  {index < movie.cast.length - 1 && ", "}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="mt-4">
+            <span className="font-bold text-xl">Directores:</span>
+            <div className="flex flex-wrap">
+              {movie.directors.map((d, index) => (
+                <a
+                  key={d.name}
+                  href={`/person/${encodeURIComponent(d.name)}`}
+                  className="text-blue-400 hover:underline transition duration-300 ease-in-out ml-2 text-medium"
+                >
+                  {d.name}
+                  {index < movie.directors.length - 1 && ", "}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="flex justify-center mt-4">
+            <button
+              onClick={
+                isInWatchlist ? handleRemoveFromWatchlist : handleAddToWatchlist
+              }
+              className={`text-white ${
+                isInWatchlist
+                  ? "bg-red-700 hover:bg-red-600"
+                  : "bg-blue-700 hover:bg-blue-600"
+              } focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
+            >
+              {isInWatchlist ? "Eliminar de mi lista" : "Agregar a mi lista"}
+            </button>
+          </div>
+        </section>
       </div>
       <div className="w-full mt-4">
         <div className="flex justify-center">
@@ -202,6 +209,7 @@ export default function MovieDetail({ params }) {
                 <div className="flex flex-wrap justify-center">
                   {movie.sp.map((sp) => (
                     <SpecialFeaturesCard
+                      key={sp.spLink}
                       spTitulo={sp.spTitulo}
                       spLink={sp.spLink}
                     />

@@ -2,7 +2,18 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Menu } from "@headlessui/react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Input,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Button,
+} from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import Search from "./search.jsx";
 
@@ -29,25 +40,19 @@ export default function App() {
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="sm:hidden" />
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">Pochoclus</p>
+          <Link href="/">
+            <AcmeLogo />
+            <p className="font-bold text-gray-800 ">Pochoclus</p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent justify="start">
-        <NavbarItem>
-          <Link color="foreground" href="/">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="/explorar">
-            Explorar
-          </Link>
-        </NavbarItem>
-
         <NavbarContent justify="end">
           <Search />
         </NavbarContent>
@@ -65,7 +70,12 @@ export default function App() {
                   {session ? (
                     <Menu.Item>
                       {({ active }) => (
-                        <button className={`${active ? "bg-gray-900 text-white" : "text-gray-900"} group flex rounded-md items-center w-full px-2 py-2 text-sm`} onClick={handleLogout}>
+                        <button
+                          className={`${
+                            active ? "bg-gray-900 text-white" : "text-gray-900"
+                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          onClick={handleLogout}
+                        >
                           Salir
                         </button>
                       )}
@@ -74,14 +84,28 @@ export default function App() {
                     <>
                       <Menu.Item>
                         {({ active }) => (
-                          <Link href="/login" className={`${active ? "bg-gray-900 text-white" : "text-gray-900"} group flex rounded-md items-center w-full px-2 py-2 text-sm`}>
+                          <Link
+                            href="/login"
+                            className={`${
+                              active
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-900"
+                            } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          >
                             Ingresar
                           </Link>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <Link href="/signup" className={`${active ? "bg-gray-900 text-white" : "text-gray-900"} group flex rounded-md items-center w-full px-2 py-2 text-sm`}>
+                          <Link
+                            href="/signup"
+                            className={`${
+                              active
+                                ? "bg-gray-900 text-white"
+                                : "text-gray-900"
+                            } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          >
                             Registrarse
                           </Link>
                         )}
@@ -91,7 +115,12 @@ export default function App() {
                   {session && (
                     <Menu.Item>
                       {({ active }) => (
-                        <Link href="/milista" className={`${active ? "bg-gray-900 text-white" : "text-gray-900"} group flex rounded-md items-center w-full px-2 py-2 text-sm`}>
+                        <Link
+                          href="/milista"
+                          className={`${
+                            active ? "bg-gray-900 text-white" : "text-gray-900"
+                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                        >
                           Mi lista
                         </Link>
                       )}
@@ -106,18 +135,8 @@ export default function App() {
 
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link color="foreground" href="/">
-            Home
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
           <Link color="foreground" href="/milista">
             Mi lista
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link color="foreground" href="/explorar">
-            Explorar
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
