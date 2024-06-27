@@ -3,6 +3,7 @@ import VideoEmbeed from "@/app/components/VideoEmbeed";
 import SpecialFeaturesCard from "@/app/components/SpecialFeaturesCard";
 import FilmotecaCard from "@/app/components/FilmotecaCard";
 import { useState, useEffect } from "react";
+import { jwtDecode } from "jwt-decode";
 
 export default function MovieDetail({ params }) {
   const { id } = params;
@@ -16,6 +17,7 @@ export default function MovieDetail({ params }) {
         setMovie(data);
         setIsLoading(false);
       })
+
       .catch((error) => {
         setMovie(null);
         setIsLoading(false);
@@ -25,8 +27,38 @@ export default function MovieDetail({ params }) {
   if (isLoading) return <p className="text-white">Loading...</p>;
   if (!movie) return <p className="text-white">Movie not found</p>;
 
+  const token = localStorage.getItem("authToken");
+
+  const handleClick = async () => {
+    try {
+      const movieId = id;
+      const decodedToken = jwtDecode(token);
+      const email = decodedToken.email;
+      fetch("http://localhost:3001/api/users/watchlist", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ movieId, email }),
+      });
+
+      // if (response.ok) {
+      //   console.log("Pelicula agregada");
+      // }
+    } catch (error) {
+      console.error("Error adding movie to watchlist:", error);
+    }
+  };
+
   return (
     <div className="flex flex-col items-center bg-dark p-4">
+      <button
+        onClick={handleClick}
+        className="text-white bg-blue-700 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Agregar a mi lista
+      </button>
       <div className="w-full lg:w-1/2 m-4">
         <div className="flex flex-col items-center">
           <h1 className="text-white font-bold text-4xl mb-2">{movie.name}</h1>
