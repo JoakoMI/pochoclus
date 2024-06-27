@@ -77,6 +77,11 @@ export default function Signup() {
   }
 
   return (
+    <div>
+       <h1 className="text-white text-center text-4xl font-bold mt-8">
+       Regístrate
+      </h1>
+  
     <form className="max-w-sm mx-auto m-16" onSubmit={handleSubmit}>
       <div className="mb-5">
         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
@@ -154,5 +159,6 @@ export default function Signup() {
       </button>
       <h1 className="text-red-600 text-center m-4">{msg}</h1>
     </form>
+    </div>
   );
 }
