@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <section>
       <HomeCarousel />
-      {collections.map((c) => {
+      {collections?.map((c) => {
         return <HorizList collection={c} />;
       })}
     </section>

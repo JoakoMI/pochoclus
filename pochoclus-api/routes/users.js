@@ -33,10 +33,10 @@ router.post("/login", async (req, res) => {
 
 router.get(
   "/watchlist",
-  async (req, res, next) => await authenticateToken(req, res, next),
+  // async (req, res, next) => await authenticateToken(req, res, next),
   async (req, res) => {
     try {
-      const { email } = req.body;
+      const { email } = req.query;
       res.status(200).send(await getAllMoviesFromWatchlist(email));
     } catch (error) {
       res.status(400).send({ message: error.message });
@@ -61,7 +61,7 @@ router.patch(
 
 router.delete(
   "/watchlist",
-  async (req, res, next) => await authenticateToken(req, res, next),
+  // async (req, res, next) => await authenticateToken(req, res, next),
   async (req, res) => {
     try {
       const { movieId, email } = req.body;
