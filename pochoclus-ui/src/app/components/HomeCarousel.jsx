@@ -1,6 +1,6 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 const AUTO_SCROLL_INTERVAL = 7000; // 7 segundos
 
@@ -11,8 +11,8 @@ export default function HomeCarousel() {
 
   useEffect(() => {
     fetch("http://localhost:3001/api/movieCollections/carrusel")
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         // Check if the data contains movies and set the images
         if (data.length > 0 && data[0].movies.length > 0) {
           setMovies(data[0].movies);
@@ -20,7 +20,7 @@ export default function HomeCarousel() {
           setMovies([]);
         }
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Error fetching images:", error);
         setMovies([]);
       });
@@ -40,7 +40,7 @@ export default function HomeCarousel() {
       const width = carouselRef.current.offsetWidth;
       carouselRef.current.scrollTo({
         left: width * index,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -52,7 +52,9 @@ export default function HomeCarousel() {
 
   const scrollLeft = () => {
     // Decrement the current index
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + movies.length) % movies.length
+    );
   };
 
   const scrollRight = () => {
@@ -61,33 +63,42 @@ export default function HomeCarousel() {
   };
 
   return (
-    <div id="controls-carousel" className="relative w-full" data-carousel="static">
+    <div
+      id="controls-carousel"
+      className="relative w-full"
+      data-carousel="static"
+    >
       {/* Carousel container */}
       <div
         ref={carouselRef}
-        className="relative h-56 sm:h-72 md:h-96 lg:h-112 xl:h-128 overflow-hidden rounded-lg flex"
-        style={{ scrollBehavior: 'smooth', overflow: 'hidden' }}
+        className="relative h-56 mb-8 sm:h-72 md:h-96 lg:h-112 xl:h-128 overflow-hidden rounded-lg flex"
+        style={{ scrollBehavior: "smooth", overflow: "hidden" }}
       >
         {/* Render images */}
-        {movies.length > 0 && movies.map((movie, index) => (
-          <div
-            key={movie._id}
-            className="flex-shrink-0 w-full relative"
-            style={{ width: `${carouselRef.current ? carouselRef.current.offsetWidth : '100%'}` }}
-          >
-            <Link href={`/movie/${movie._id}`}>
-              <img
-                src={`/img-home/${movie.imgInicio}`}
-                className="block w-full h-full object-cover"
-                alt={movie.name}
-              />
-              {/* Title container */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
-                <h1 className="text-lg font-semibold">{movie.name}</h1>
-              </div>
-            </Link>
-          </div>
-        ))}
+        {movies.length > 0 &&
+          movies.map((movie, index) => (
+            <div
+              key={movie._id}
+              className="flex-shrink-0 w-full relative"
+              style={{
+                width: `${
+                  carouselRef.current ? carouselRef.current.offsetWidth : "100%"
+                }`,
+              }}
+            >
+              <Link href={`/movie/${movie._id}`}>
+                <img
+                  src={`/img-home/${movie.imgInicio}`}
+                  className="block w-full h-full object-scale-down"
+                  alt={movie.name}
+                />
+                {/* Title container */}
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                  <h1 className="text-lg font-semibold">{movie.name}</h1>
+                </div>
+              </Link>
+            </div>
+          ))}
       </div>
 
       {/* Navigation buttons */}
