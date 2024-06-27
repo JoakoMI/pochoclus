@@ -28,31 +28,30 @@ export default function MovieDetail({ params }) {
   }, [id]);
 
   useEffect(() => {
-    const checkWatchlist = async () => {
+    try {
       const token = localStorage.getItem("authToken");
-      if (!token) return;
       const decodedToken = jwtDecode(token);
       const email = decodedToken.email;
+      const url = new URL("http://localhost:3001/api/users/watchlist");
+      url.searchParams.append("email", email);
 
-      try {
-        const response = await fetch("http://localhost:3001/api/users/watchlist", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({ email }),
+      fetch(url.toString(), {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => response.json())
+        .then((watchlist) => {
+          console.log(watchlist);
+          const isMovieInWatchlist = watchlist.some((movie) => movie._id == id);
+          setIsInWatchlist(isMovieInWatchlist);
+          console.log(isMovieInWatchlist);
         });
-        const watchlist = await response.json();
-        const isMovieInWatchlist = watchlist.some((watchlistMovie) => watchlistMovie._id === id);
-        setIsInWatchlist(isMovieInWatchlist);
-      } catch (error) {
-        console.error("Error checking watchlist:", error);
-      }
-    };
-
-    checkWatchlist();
-  }, [id]);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }, []);
 
   const handleAddToWatchlist = async () => {
     try {
@@ -63,7 +62,7 @@ export default function MovieDetail({ params }) {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
-          // Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({ movieId: id, email }),
       });
