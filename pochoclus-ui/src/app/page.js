@@ -22,8 +22,10 @@ export default function Home() {
   return (
     <section>
       <HomeCarousel />
-      {collections?.map((c) => {
-        return <HorizList collection={c} />;
+      {collections.map((c) => {
+        if (c.title != "Carrusel") {
+          return <HorizList collection={c} />;
+        }
       })}
     </section>
   );
