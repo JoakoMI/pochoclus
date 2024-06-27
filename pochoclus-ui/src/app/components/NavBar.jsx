@@ -60,7 +60,7 @@ export default function App() {
 
       <NavbarContent justify="end">
         <Menu as="div" className="relative">
-          <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-gray-800 rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+          <Menu.Button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-sky-950 rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             Mi cuenta
           </Menu.Button>
           <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
@@ -72,7 +72,7 @@ export default function App() {
                       {({ active }) => (
                         <button
                           className={`${
-                            active ? "bg-gray-900 text-white" : "text-gray-900"
+                            active ? " text-white" : "text-gray-900"
                           } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                           onClick={handleLogout}
                         >

@@ -130,7 +130,7 @@ export default function MovieDetail({ params }) {
         <section className="col-span-1 flex justify-center ">
           <img
             src={movie.poster}
-            className="w-full lg:w-64"
+            className="w-32 lg:w-64"
             alt={`${movie.name} poster`}
           />
         </section>

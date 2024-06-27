@@ -36,7 +36,7 @@ export default function BasicDemo() {
   };
 
   return (
-    <div className="card flex justify-content-center">
+    <div className="card  flex justify-content-center ">
       <AutoComplete
         value={value}
         suggestions={items}
