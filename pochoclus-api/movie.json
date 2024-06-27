@@ -27,12 +27,12 @@
     "link": "https://www.youtube.com/watch?v=Oyza9z_ltV0",
     "sp": [
       {
-        "titulo": "Homenaje de la Fundación Carlos Gardel",
-        "link": "https://www.youtube.com/watch?v=6V21OtxgYI4"
+        "spTitulo": "Homenaje de la Fundación Carlos Gardel",
+        "spLink": "https://www.youtube.com/watch?v=6V21OtxgYI4"
       },
       {
-        "titulo": "Trailer",
-        "link": "https://www.youtube.com/watch?v=XXXD0EZ4fq0"
+        "spTitulo": "Trailer",
+        "spLink": "https://www.youtube.com/watch?v=XXXD0EZ4fq0"
       }
     ]
   },
@@ -100,11 +100,11 @@
     "link": "https://www.youtube.com/watch?v=9p4KEvlrbp8",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=XXXD0EZ4fq0"
       },
       {
-        "spTitle": "Homenaje de la Fundación Carlos Gardel",
+        "spTitulo": "Homenaje de la Fundación Carlos Gardel",
         "spLink": "https://www.youtube.com/watch?v=6V21OtxgYI4"
       }
     ]
@@ -2482,7 +2482,7 @@
     "link": "https://www.youtube.com/watch?v=L_R2zrGz2Jc",
     "sp": [
       {
-        "spTitle": "Favio por Favio - Nazareno Cruz y el lobo",
+        "spTitulo": "Favio por Favio - Nazareno Cruz y el lobo",
         "spLink": "https://www.youtube.com/watch?v=aANsNHtaMuQ"
       }
     ],
@@ -2499,7 +2499,7 @@
     "link": "https://www.youtube.com/watch?v=s7w0jcYIz8w",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=V2oFzz9wtk8"
       }
     ]
@@ -2508,13 +2508,6 @@
     "movie": "La guerra del cerdo",
     "year": 1975,
     "link": "https://www.youtube.com/watch?v=TSSzzLH6J_A"
-  },
-  {
-    "movie": "Soñar, soñar",
-    "year": 1976,
-    "link": "https://www.youtube.com/watch?v=3tv3D_VW8AY",
-    "top100": 19,
-    "imgInicio": "soñarSoñar.jpg"
   },
   {
     "movie": "Piedra libre",
@@ -2568,7 +2561,7 @@
     "link": "https://www.youtube.com/watch?v=Udumk15ZnYM",
     "sp": [
       {
-        "spTitle": "Adolfo Aristarain sobre la pelicula",
+        "spTitulo": "Adolfo Aristarain sobre la pelicula",
         "spLink": "https://www.youtube.com/watch?v=sXMhsSL0yRM"
       }
     ],
@@ -2646,7 +2639,7 @@
     "link": "https://www.youtube.com/watch?v=AFcjepB_pZ4",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=J8iRDyaqLP0"
       }
     ]
@@ -2682,7 +2675,7 @@
     "link": "https://www.youtube.com/watch?v=ztMuS1baOQw",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=f6fIawRcRxs"
       }
     ],
@@ -2699,7 +2692,7 @@
     "link": "https://www.youtube.com/watch?v=F8Yv_0ZBR8o",
     "sp": [
       {
-        "spTitle": "Publicidad de la epoca",
+        "spTitulo": "Publicidad de la epoca",
         "spLink": "https://www.youtube.com/watch?v=Gz2AWJwjBOc"
       }
     ],
@@ -2711,7 +2704,7 @@
     "link": "https://www.youtube.com/watch?v=DrczGQChzY8",
     "sp": [
       {
-        "spTitle": "Archivo Histórico",
+        "spTitulo": "Archivo Histórico",
         "spLink": "https://www.youtube.com/watch?v=WhFtRoPW_ck"
       }
     ]
@@ -2732,7 +2725,7 @@
     "link": "https://www.youtube.com/watch?v=X0ey5AmunRQ",
     "sp": [
       {
-        "spTitle": "Efemérides",
+        "spTitulo": "Efemérides",
         "spLink": "https://www.youtube.com/watch?v=DBlUul91AW4"
       }
     ]
@@ -2774,11 +2767,11 @@
     "link": "https://www.youtube.com/watch?v=Z24YfTl8A4k",
     "sp": [
       {
-        "spTitle": "Efemerides",
-        "SpLink": "https://www.youtube.com/watch?v=R49vigeOfv8"
+        "spTitulo": "Efemerides",
+        "spLink": "https://www.youtube.com/watch?v=R49vigeOfv8"
       },
       {
-        "spTitle": "Nominación a los Premios Oscar",
+        "spTitulo": "Nominación a los Premios Oscar",
         "spLink": "https://www.youtube.com/watch?v=UAfvId9VEWo"
       }
     ],
@@ -2806,16 +2799,16 @@
     "link": "https://www.youtube.com/watch?v=VPhgeDCRt6A",
     "sp": [
       {
-        "spTitle": "Primer Premio Oscar argentino",
+        "spTitulo": "Primer Premio Oscar argentino",
         "spLink": "https://www.youtube.com/watch?v=LfS3GOlS-n4"
       },
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=BibM13-Jd8E"
       },
       {
-        "spTitle": "Canal Encuentro",
-        "SpLink": "https://www.youtube.com/watch?v=GdWE1vfYBno"
+        "spTitulo": "Canal Encuentro",
+        "spLink": "https://www.youtube.com/watch?v=GdWE1vfYBno"
       }
     ],
     "top100": 24
@@ -2846,7 +2839,7 @@
     "link": "https://www.youtube.com/watch?v=Bk3hQhJUAWo",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=BdzcWasJQL4"
       }
     ]
@@ -2921,7 +2914,7 @@
     "link": "https://www.youtube.com/watch?v=oAwSG0H5ziM",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=pBab8dZuFkk"
       }
     ]
@@ -2949,7 +2942,7 @@
     "link": "https://www.youtube.com/watch?v=uOQtAOugnW8",
     "sp": [
       {
-        "spTitle": "Favio por Favio - Gatica el mono",
+        "spTitulo": "Favio por Favio - Gatica el mono",
         "spLink": "https://www.youtube.com/watch?v=ifqVoyt9bfg"
       }
     ],
@@ -2972,7 +2965,7 @@
     "link": "https://www.youtube.com/watch?v=Vr3i3-TlFlM",
     "sp": [
       {
-        "spTitle": "Backstage",
+        "spTitulo": "Backstage",
         "spLink": "https://www.youtube.com/watch?v=0FNfXS_4xaM"
       }
     ]
@@ -3044,7 +3037,7 @@
     "link": "https://www.youtube.com/watch?v=C6yDuR-4HnA",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=aqsVHEB61As"
       }
     ],
@@ -3056,7 +3049,7 @@
     "link": "https://www.youtube.com/watch?v=4LGZ2AqYi1Y",
     "sp": [
       {
-        "spTitle": "Trailer",
+        "spTitulo": "Trailer",
         "spLink": "https://www.youtube.com/watch?v=hL7Hr0wzOEA"
       }
     ]

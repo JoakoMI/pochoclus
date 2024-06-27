@@ -130,12 +130,10 @@ async function createCollections() {
   const inicioMovies = await connectiondb
     .db(DATABASE)
     .collection(MOVIES)
-    .find({ imgInicio: { $exists: true } })
+    .find({ imgInicio: { $ne: null } })
     .sort({ popularity: -1 })
+    .project({ imgInicio: 1, _id: 1, name: 1 })
     .toArray();
-    console.log(inicioMovies)
-  
-
   // ----------------Agregar todos los arrays-----------------------
 
   await connectiondb
@@ -144,41 +142,64 @@ async function createCollections() {
     .insertMany([
       { title: "¿Qué gusto tiene la sal? Cine!", subtitle: "Grandes pelis de uno de los nuestros, el inigualable Carlitos Balá.", movies: carlosBalaMovies },
       { title: "El morocho del abasto: Carlos Gardel", subtitle: "Volver a ver estos clásicos de Carlos Gardel? Intentemos no perder la cabeza. El uno definitivo.", movies: gardelMovies },
-      { title: "Las 100 mejores películas argentinas de la historia", subtitle: "Algunas de las mejores películas argentinas de la historia, segun la célebre encuesta Top 100 que se realizó en 2022", movies: top100Movies },
-      { title: "Grandes películas de Mirtha Legrand", subtitle: "La Chiqui tiene uno de los catalogos cinematográficos más completos del cine nacional. Reviví sus films!", movies: mirthaLegrandMovies },
-      { title: "¡Filmoteca presenta!", subtitle: 'Algunas de las mejores películas argentinas proyectadas en "Filmoteca, temas de cine" el celebre programa de la TV Pública', movies: filmotecaMovies },
-      { title: "Damas y caballeros, con ustedes: Sandro de América", subtitle: "Las películas del gitano, disponibles para que disfrutes TODO lo que ofrecía el carisma y estilo del querido Sandro.", movies: sandroMovies },
+      {
+        title: "Las 100 mejores películas argentinas de la historia",
+        subtitle: "Algunas de las mejores películas argentinas de la historia, segun la célebre encuesta Top 100 que se realizó en 2022",
+        movies: top100Movies,
+      },
+      {
+        title: "Grandes películas de Mirtha Legrand",
+        subtitle: "La Chiqui tiene uno de los catalogos cinematográficos más completos del cine nacional. Reviví sus films!",
+        movies: mirthaLegrandMovies,
+      },
+      {
+        title: "¡Filmoteca presenta!",
+        subtitle: 'Algunas de las mejores películas argentinas proyectadas en "Filmoteca, temas de cine" el celebre programa de la TV Pública',
+        movies: filmotecaMovies,
+      },
+      {
+        title: "Damas y caballeros, con ustedes: Sandro de América",
+        subtitle: "Las películas del gitano, disponibles para que disfrutes TODO lo que ofrecía el carisma y estilo del querido Sandro.",
+        movies: sandroMovies,
+      },
       { title: "¿Qué se dice de Tita Merello?", subtitle: "Una de las primeras estrellas totales, aprovechá y disfrutá del tango y la milonga junto a Tita y su cine.", movies: titaMerelloMovies },
       { title: "Graciosos argentinos", subtitle: "Si tenés ganas de reirte, no suele haber muchas mejores opciones que ver grandes comedias del cine argentino.", movies: comedyMovies },
-      { title: "La Chaplin con faldas: Niní Marshall", subtitle: '"Digo de mí que no soy artista, sino una señora de su casa que logró, simplemente, hacerse la graciosa"', movies: niniMarshallMovies },
-      { title: "Grandes películas de grandes directores", subtitle: "Soffici, Christensen, Torre Nilsson, Favio... La lista es infinita. Algunas de las mejores películas dirigidas por los mejores directores de nuestro país.", movies: directoresMovies },
-      { title: "Grandes películas de Gauchos", subtitle: "¿Qué hay más argentino que historias de gauchos? Acá hay una selección de las mejores películas donde los gauchos son más que un estereotipo.", movies: gauchosMovies },
-      { title: "¡La vieja ve los colores! Grandes hits de Luis Sandrini", subtitle: "Algunas de las mejores comedias de Sandrini, el tipo con la carrera cómica más grande de nuestro país.", movies: luisAndriniMovies },
-      {title: "Carrusel", subtitle: "Carrusel", movies: inicioMovies}
+      {
+        title: "La Chaplin con faldas: Niní Marshall",
+        subtitle: '"Digo de mí que no soy artista, sino una señora de su casa que logró, simplemente, hacerse la graciosa"',
+        movies: niniMarshallMovies,
+      },
+      {
+        title: "Grandes películas de grandes directores",
+        subtitle: "Soffici, Christensen, Torre Nilsson, Favio... La lista es infinita. Algunas de las mejores películas dirigidas por los mejores directores de nuestro país.",
+        movies: directoresMovies,
+      },
+      {
+        title: "Grandes películas de Gauchos",
+        subtitle: "¿Qué hay más argentino que historias de gauchos? Acá hay una selección de las mejores películas donde los gauchos son más que un estereotipo.",
+        movies: gauchosMovies,
+      },
+      {
+        title: "¡La vieja ve los colores! Grandes hits de Luis Sandrini",
+        subtitle: "Algunas de las mejores comedias de Sandrini, el tipo con la carrera cómica más grande de nuestro país.",
+        movies: luisAndriniMovies,
+      },
+      { title: "Carrusel", subtitle: "Carrusel", movies: inicioMovies },
     ]);
 }
 
 async function getCollections() {
   const connectiondb = await getConnection();
-  const collections = await connectiondb
-    .db(DATABASE)
-    .collection(MOVIECOLLECTIONS)
-    .find({})
-    .toArray();
+  const collections = await connectiondb.db(DATABASE).collection(MOVIECOLLECTIONS).find({}).toArray();
 
   return collections;
 }
 
 async function getCarrusel() {
   const connectiondb = await getConnection();
-  const collections = await connectiondb
-    .db(DATABASE)
-    .collection(MOVIECOLLECTIONS)
-    .find({title : "Carrusel"})
-    .toArray();
+  const collections = await connectiondb.db(DATABASE).collection(MOVIECOLLECTIONS).find({ title: "Carrusel" }).toArray();
 
   return collections;
 }
 
-
-export { createCollections, getCollections , getCarrusel};
+export { createCollections, getCollections, getCarrusel };

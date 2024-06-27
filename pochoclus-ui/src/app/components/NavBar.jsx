@@ -34,7 +34,7 @@ export default function App() {
   const handleLogout = () => {
     localStorage.clear();
     setSession(null);
-    router.push("/");
+    window.location.href = "/";
   };
 
   return (
@@ -71,9 +71,9 @@ export default function App() {
                     <Menu.Item>
                       {({ active }) => (
                         <button
-                          className={`${
-                            active ? " text-white" : "text-gray-900"
-                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                        className={`${
+                          active ? "bg-gray-900 text-white" : "text-gray-900"
+                        } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                           onClick={handleLogout}
                         >
                           Salir
