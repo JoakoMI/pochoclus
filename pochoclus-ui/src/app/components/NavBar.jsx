@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Menu } from "@headlessui/react";
-import { Navbar, NavbarContent, NavbarItem, Link, Input, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button } from "@nextui-org/react";
+import { AcmeLogo } from "./AcmeLogo.jsx";
 import Search from "./search.jsx";
 
 export default function App() {
@@ -26,9 +27,13 @@ export default function App() {
   };
 
   return (
-    <Navbar isBordered>
-      <NavbarContent justify="start">
-        <p className="hidden sm:block font-bold text-inherit">Pochoclus</p>
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="sm:hidden" />
+        <NavbarBrand>
+          <AcmeLogo />
+          <p className="font-bold text-inherit">Pochoclus</p>
+        </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent justify="start">
@@ -42,19 +47,10 @@ export default function App() {
             Explorar
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Input
-            classNames={{
-              base: "max-w-full sm:max-w-[10rem] h-10",
-              mainWrapper: "h-full",
-              input: "text-small",
-              inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
-            }}
-            placeholder="Buscar..."
-            size="sm"
-            type="search"
-          />
-        </NavbarItem>
+
+        <NavbarContent justify="end">
+          <Search />
+        </NavbarContent>
       </NavbarContent>
 
       <NavbarContent justify="end">
