@@ -92,7 +92,7 @@ export default function Signup() {
           id="email"
           name="email"
           className="shadow-sm bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-          placeholder="petru@pochoclus.com"
+          placeholder="tumail@pochoclus.com"
           value={formData.email}
           onChange={handleChange}
           required
@@ -107,7 +107,7 @@ export default function Signup() {
           id="name"
           name="name"
           className="shadow-sm bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-          placeholder="Kingbara"
+          placeholder="tuUsuario"
           value={formData.name}
           onChange={handleChange}
           required
