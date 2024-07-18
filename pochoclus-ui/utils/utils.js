@@ -1,13 +1,11 @@
 export function getLocalStorageToken() {
-  return typeof window !== "undefined"
-    ? localStorage.getItem("authToken")
-    : null;
+  return typeof window !== "undefined" ? localStorage.getItem("authToken") : "";
 }
 
 export function setLocalStorageToken(data) {
   return typeof window !== "undefined"
     ? localStorage.setItem("authToken", data)
-    : null;
+    : "";
 }
 
 export default { getLocalStorageToken, setLocalStorageToken };
