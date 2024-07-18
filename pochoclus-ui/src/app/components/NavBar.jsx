@@ -19,7 +19,7 @@ import Search from "./search.jsx";
 import {
   getLocalStorageToken,
   setLocalStorageToken,
-} from "../../../utils/utils";
+} from "../../../utils/utils.js";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

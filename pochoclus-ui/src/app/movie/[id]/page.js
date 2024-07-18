@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import {
   getLocalStorageToken,
   setLocalStorageToken,
-} from "../../../utils/utils";
+} from "../../../../utils/utils";
 
 export default function MovieDetail({ params }) {
   const router = useRouter();
