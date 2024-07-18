@@ -6,7 +6,8 @@ import MovieCard from "../components/MovieCard";
 export default function MiLista() {
   const [movies, setMovies] = useState(null);
 
-  const token = localStorage.getItem("authToken");
+  const token =
+    typeof window !== "undefined" ? localStorage.getItem("authToken") : null;
   const decodedToken = jwtDecode(token);
   const email = decodedToken.email;
 

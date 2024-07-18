@@ -32,7 +32,10 @@ export default function MovieDetail({ params }) {
 
   useEffect(() => {
     try {
-      const token = localStorage.getItem("authToken");
+      const token =
+        typeof window !== "undefined"
+          ? localStorage.getItem("authToken")
+          : null;
       const decodedToken = jwtDecode(token);
       const email = decodedToken.email;
       const url = new URL("http://localhost:3001/api/users/watchlist");
@@ -58,7 +61,10 @@ export default function MovieDetail({ params }) {
 
   const handleAddToWatchlist = async () => {
     try {
-      const token = localStorage.getItem("authToken");
+      const token =
+        typeof window !== "undefined"
+          ? localStorage.getItem("authToken")
+          : null;
       if (token == null) {
         window.location.href = "/login";
       }
@@ -87,7 +93,10 @@ export default function MovieDetail({ params }) {
 
   const handleRemoveFromWatchlist = async () => {
     try {
-      const token = localStorage.getItem("authToken");
+      const token =
+        typeof window !== "undefined"
+          ? localStorage.getItem("authToken")
+          : null;
       const decodedToken = jwtDecode(token);
       const email = decodedToken.email;
       const response = await fetch(

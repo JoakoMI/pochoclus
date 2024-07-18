@@ -17,7 +17,8 @@ export default function Login() {
   });
 
   useEffect(() => {
-    const authToken = localStorage.getItem("authToken");
+    const authToken =
+      typeof window !== "undefined" ? localStorage.getItem("authToken") : null;
     if (authToken) {
       router.push("/");
     } else {
@@ -26,7 +27,9 @@ export default function Login() {
   }, [router]);
 
   useEffect(() => {
-    if (localStorage.getItem("authToken")) {
+    if (
+      typeof window !== "undefined" ? localStorage.getItem("authToken") : null
+    ) {
       router.push("/");
     }
   }, []);
@@ -64,8 +67,10 @@ export default function Login() {
       const data = await response.json();
 
       if (data != null) {
-        localStorage.setItem("authToken", data.token);
-        window.location.href = "/";
+        if (typeof window !== "undefined") {
+          localStorage.setItem("authToken", data.token);
+          window.location.href = "/";
+        }
       } else {
         console.log("Token no recibido");
       }
@@ -80,10 +85,15 @@ export default function Login() {
 
   return (
     <div className="m-16">
-      <h1 className="text-white text-center text-4xl font-bold mt-8">Iniciá sesión</h1>
+      <h1 className="text-white text-center text-4xl font-bold mt-8">
+        Iniciá sesión
+      </h1>
       <form className="max-w-sm mx-auto m-8 " onSubmit={handleSubmit}>
         <div class="mb-5">
-          <label htmlFor="email" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">
+          <label
+            htmlFor="email"
+            class="block mb-2 text-sm font-medium text-gray-200 dark:text-white"
+          >
             Tu email
           </label>
           <input
@@ -106,8 +116,16 @@ export default function Login() {
             required
             onChange={handleChange}
           />
-          <button type="button" className="absolute inset-y-0 right-0 flex items-center pr-2" onClick={() => setShowPassword(!showPassword)}>
-            {showPassword ? <HiEyeOff className="text-gray-400" size={18} /> : <HiEye className="text-gray-400" size={18} />}
+          <button
+            type="button"
+            className="absolute inset-y-0 right-0 flex items-center pr-2"
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? (
+              <HiEyeOff className="text-gray-400" size={18} />
+            ) : (
+              <HiEye className="text-gray-400" size={18} />
+            )}
           </button>
         </div>
 
@@ -123,7 +141,10 @@ export default function Login() {
 
           <div class="ms-2 m-8 text-sm text-center font-medium text-gray-200 dark:text-gray-300">
             Si todavia no tenes cuenta podes{" "}
-            <Link href="/signup" class="text-blue-500 hover:underline dark:text-blue-500">
+            <Link
+              href="/signup"
+              class="text-blue-500 hover:underline dark:text-blue-500"
+            >
               registrarte acá
             </Link>
           </div>

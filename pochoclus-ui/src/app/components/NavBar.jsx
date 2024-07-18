@@ -24,7 +24,8 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem("authToken");
+    const token =
+      typeof window !== "undefined" ? localStorage.getItem("authToken") : null;
     if (token) {
       setSession(token);
     }
@@ -71,9 +72,9 @@ export default function App() {
                     <Menu.Item>
                       {({ active }) => (
                         <button
-                        className={`${
-                          active ? "bg-gray-900 text-white" : "text-gray-900"
-                        } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
+                          className={`${
+                            active ? "bg-gray-900 text-white" : "text-gray-900"
+                          } group flex rounded-md items-center w-full px-2 py-2 text-sm`}
                           onClick={handleLogout}
                         >
                           Salir
