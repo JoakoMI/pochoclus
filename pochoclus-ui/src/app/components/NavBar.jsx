@@ -16,6 +16,10 @@ import {
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo.jsx";
 import Search from "./search.jsx";
+import {
+  getLocalStorageToken,
+  setLocalStorageToken,
+} from "../../../utils/utils";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -24,8 +28,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const token =
-      typeof window !== "undefined" ? localStorage.getItem("authToken") : null;
+    const token = getLocalStorageToken();
     if (token) {
       setSession(token);
     }

@@ -2,6 +2,10 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import {
+  getLocalStorageToken,
+  setLocalStorageToken,
+} from "../../../utils/utils";
 
 export default function Signup() {
   const router = useRouter();
@@ -18,8 +22,7 @@ export default function Signup() {
   });
 
   useEffect(() => {
-    const authToken =
-      typeof window !== "undefined" ? localStorage.getItem("authToken") : null;
+    const authToken = getLocalStorageToken();
     if (authToken) {
       router.push("/");
     } else {
@@ -28,9 +31,7 @@ export default function Signup() {
   }, [router]);
 
   useEffect(() => {
-    if (
-      typeof window !== "undefined" ? localStorage.getItem("authToken") : null
-    ) {
+    if (getLocalStorageToken()) {
       router.push("/");
     }
   });

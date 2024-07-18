@@ -2,12 +2,15 @@
 import { useState, useEffect } from "react";
 import { jwtDecode } from "jwt-decode";
 import MovieCard from "../components/MovieCard";
+import {
+  getLocalStorageToken,
+  setLocalStorageToken,
+} from "../../../utils/utils";
 
 export default function MiLista() {
   const [movies, setMovies] = useState(null);
 
-  const token =
-    typeof window !== "undefined" ? localStorage.getItem("authToken") : null;
+  const token = getLocalStorageToken();
   const decodedToken = jwtDecode(token);
   const email = decodedToken.email;
 
