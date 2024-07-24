@@ -9,30 +9,51 @@ import {
 
 export default function MiLista() {
   const [movies, setMovies] = useState(null);
+  const [email, setEmail] = useState(null);
 
-  const token = getLocalStorageToken();
-  const decodedToken = jwtDecode(token);
-  const email = decodedToken.email;
+  useEffect(() => {
+    const token = getLocalStorageToken();
 
-  try {
-    useEffect(() => {
-      const url = new URL("http://localhost:3001/api/users/watchlist");
-      url.searchParams.append("email", email);
+    if (token) {
+      try {
+        const decodedToken = jwtDecode(token);
+        setEmail(decodedToken.email);
+      } catch (error) {
+        console.error("Invalid token:", error.message);
+      }
+    } else {
+      console.error("No token found");
+    }
+  }, []);
 
-      fetch(url.toString(), {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
+  useEffect(() => {
+    if (email) {
+      const fetchMovies = async () => {
+        try {
+          const url = new URL("http://localhost:3001/api/users/watchlist");
+          url.searchParams.append("email", email);
+
+          const response = await fetch(url.toString(), {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error("Failed to fetch movies");
+          }
+
+          const data = await response.json();
           setMovies(data);
-        });
-    }, []);
-  } catch (error) {
-    console.log(error.message);
-  }
+        } catch (error) {
+          console.error("Error fetching movies:", error.message);
+        }
+      };
+
+      fetchMovies();
+    }
+  }, [email]);
 
   return (
     <div>
@@ -41,7 +62,7 @@ export default function MiLista() {
       </h1>
       <div className="m-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {movies?.map((m) => (
-          <div className="m-4 " key={m._id}>
+          <div className="m-4" key={m._id}>
             <MovieCard
               _id={m._id}
               name={m.name}
