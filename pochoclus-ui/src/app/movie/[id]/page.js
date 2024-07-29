@@ -21,7 +21,9 @@ export default function MovieDetail({ params }) {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/api/movies/${id}`);
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/movies/${id}`
+        );
         const data = await response.json();
         setMovie(data);
         setIsLoading(false);
@@ -39,7 +41,9 @@ export default function MovieDetail({ params }) {
       const token = getLocalStorageToken();
       const decodedToken = jwtDecode(token);
       const email = decodedToken.email;
-      const url = new URL("http://localhost:3001/api/users/watchlist");
+      const url = new URL(
+        `${process.env.NEXT_PUBLIC_API_URL}/api/users/watchlist`
+      );
       url.searchParams.append("email", email);
 
       fetch(url.toString(), {
@@ -70,7 +74,7 @@ export default function MovieDetail({ params }) {
       const email = decodedToken.email;
 
       const response = await fetch(
-        "http://localhost:3001/api/users/watchlist",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/users/watchlist`,
         {
           method: "PATCH",
           headers: {
@@ -95,7 +99,7 @@ export default function MovieDetail({ params }) {
       const decodedToken = jwtDecode(token);
       const email = decodedToken.email;
       const response = await fetch(
-        "http://localhost:3001/api/users/watchlist",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/users/watchlist`,
         {
           method: "DELETE",
           headers: {

@@ -10,7 +10,7 @@ export default function BasicDemo() {
   const search = async (event) => {
     try {
       const response = await fetch(
-        `http://localhost:3001/api/movies/byNameAndType?query=${event.query}`
+        `${process.env.NEXT_PUBLIC_API_URL}/api/movies/byNameAndType?query=${event.query}`
       );
       const data = await response.json();
       setItems(Array.isArray(data) ? data : []);

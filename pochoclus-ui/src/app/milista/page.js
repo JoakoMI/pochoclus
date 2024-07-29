@@ -30,7 +30,9 @@ export default function MiLista() {
     if (email) {
       const fetchMovies = async () => {
         try {
-          const url = new URL("http://localhost:3001/api/users/watchlist");
+          const url = new URL(
+            `${process.env.NEXT_PUBLIC_API_URL}/api/users/watchlist`
+          );
           url.searchParams.append("email", email);
 
           const response = await fetch(url.toString(), {

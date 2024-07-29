@@ -10,7 +10,7 @@ export default function HomeCarousel() {
   const carouselRef = useRef(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/movieCollections/carrusel")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movieCollections/carrusel`)
       .then((response) => response.json())
       .then((data) => {
         // Check if the data contains movies and set the images

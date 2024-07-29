@@ -10,7 +10,7 @@ export default function ActorDetail({ params }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/api/movies/person/${name}`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movies/person/${name}`)
       .then((response) => response.json())
       .then((data) => {
         setActor(data);
@@ -22,7 +22,9 @@ export default function ActorDetail({ params }) {
         setIsLoading(false);
       });
 
-    fetch(`http://localhost:3001/api/movies/moviesByPerson/${name}`)
+    fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/movies/moviesByPerson/${name}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setMovies(data);
@@ -41,7 +43,9 @@ export default function ActorDetail({ params }) {
           alt={person.name}
           className="w-40 h-40 rounded-full mb-4"
         />
-        <h1 className="text-white font-bold text-2xl mb-2 text-center">{person.name}</h1>
+        <h1 className="text-white font-bold text-2xl mb-2 text-center">
+          {person.name}
+        </h1>
       </div>
       <div className="w-full mt-4">
         <PersonMovies movies={movies} />

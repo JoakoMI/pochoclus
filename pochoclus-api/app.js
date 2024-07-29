@@ -9,7 +9,7 @@ const PORT = process.env.PORT;
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:3000", // URL del frontend
+  origin: "https://pochoclus.vercel.app", // URL del frontend
   optionsSuccessStatus: 200,
 };
 

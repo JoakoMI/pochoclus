@@ -8,7 +8,7 @@ export default function Home() {
   const [collections, setCollections] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/movieCollections")
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/movieCollections`)
       .then((response) => response.json())
       .then((data) => {
         setCollections(data);
