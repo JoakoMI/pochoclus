@@ -8,7 +8,7 @@ Búsqueda: Los usuarios pueden buscar películas.
 Visualización Online: Los usuarios pueden reproducir las películas directamente desde la plataforma.  
 Watclist: Los ususarios pueden creear una cuenta y guardar las peliculas en una lista personal.
 
-👨‍💻 Este proyecto fue desarrollado por @github/joakoMI @github/nicobarak @github/Ivan-Chueco-Tendler @github/ginofrigoni @github/NicoDiddi11 como parte de las materias Programación en Nuevas Tecnologías 2 y Taller de Programación 2 de la Tecnicatura de Analista de Sistemas de **ORT** a cargo de @github/ORT-PabloFernandez.
+👨‍💻 Este proyecto fue desarrollado por @joakoMI @nicobarak @Ivan-Chueco-Tendler @ginofrigoni @NicoDiddi11 como parte de las materias Programación en Nuevas Tecnologías 2 y Taller de Programación 2 de la Tecnicatura de Analista de Sistemas de **ORT** a cargo de @ORT-PabloFernandez.
 
 ⚙ **Tecnologías Utilizadas**  
 **Next.js:** Framework de React para la construcción de aplicaciones web.  
