@@ -1,6 +1,6 @@
 🍿 **Pochoclus** 🧉
 
-Este repositorio contiene el proyecto **Pochoclus**, un **archivo y streaming web de películas nacionales argentinas** previas al 2000 que no se encuentran en los servicios de streaming habituales. Nuestro objetivo es preservar y difundir las películas nacionales argentinas que son difíciles de encontrar en las plataformas de streaming actuales. Los usuarios podrán acceder a nuestro catálogo y visualizar las películas de manera online.
+**Pochoclus** es un **archivo y streaming web de películas nacionales argentinas** previas al 2000 que no se encuentran en los servicios de streaming habituales. Nuestro objetivo es preservar y difundir las películas argentinas que son difíciles de encontrar. Los usuarios podrán acceder a nuestro catálogo y visualizar las películas de manera online.
 
 💻 Funcionalidades:
 Catálogo de Películas: Los usuarios pueden explorar un catálogo de películas nacionales argentinas.
@@ -18,7 +18,7 @@ Visualización Online: Los usuarios pueden reproducir las películas directament
 🔗 Instalación
 Clona este repositorio:
 bash
-git clone https://github.com/tu-usuario/pochoclus.git
+git clone https://github.com/JoakoMI/pochoclus
 
 Navega al directorio del proyecto:
 bash
