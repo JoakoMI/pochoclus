@@ -23,37 +23,15 @@ export default function HorizList(props) {
   return (
     <div className="py-4 px-4 my-1 mb-4 relative">
       <section className="my-1 items-baseline mb-4">
-        <h1 className="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
+        <h1 className="text-white font-bold text-xl sm:text-xl lg:text-2xl">
           {props.collection.title}
         </h1>
-        <p className="text-gray-300 text-base sm:text-lg lg:text-xl">
+        <p className="text-gray-300 text-base sm:text-lg lg:text-l hidden sm:block">
           {props.collection.subtitle}
         </p>
       </section>
 
       <div className="flex items-center">
-        <button
-          type="button"
-          onClick={scrollLeft}
-          className="p-2 bg-gray-800/50 rounded-full hover:bg-gray-800/75"
-        >
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M15 19l-7-7 7-7"
-            ></path>
-          </svg>
-          <span className="sr-only">Previous</span>
-        </button>
-
         <div
           className="flex items-start gap-2 overflow-x-auto scroll-smooth scrollbar-hide"
           ref={listRef}
@@ -72,11 +50,32 @@ export default function HorizList(props) {
             />
           ))}
         </div>
+        <button
+          type="button"
+          onClick={scrollLeft}
+          className="m-1 p-2 bg-gray-800/50 rounded-full hover:bg-gray-800/75 absolute left-0"
+        >
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+          <span className="sr-only">Previous</span>
+        </button>
 
         <button
           type="button"
           onClick={scrollRight}
-          className="p-2 bg-gray-800/50 rounded-full hover:bg-gray-800/75"
+          className="m-1 p-2 bg-gray-800/50 rounded-full hover:bg-gray-800/75 absolute right-0"
         >
           <svg
             className="w-6 h-6 text-white"

@@ -44,14 +44,10 @@ export default function App() {
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
         <NavbarBrand>
           <Link href="/">
             <AcmeLogo />
-            <p className="font-bold text-gray-800 ">Pochoclus</p>
+            <p className="hidden sm:block font-bold text-gray-800">Pochoclus</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>

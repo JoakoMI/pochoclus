@@ -143,7 +143,7 @@ export default function MovieDetail({ params }) {
           />
         </section>
         <section className="col-span-2 text-white mt-4 lg:mt-0 lg:ml-4">
-          <div className="mb-4">
+          <div className="mb-4  hidden sm:block">
             <span className="font-bold text-xl">Géneros:</span>
             <div className="flex flex-wrap">
               {movie.genres.map((g, index) => (
