@@ -5,7 +5,8 @@
 💻 **Funcionalidades**  
 Catálogo de Películas: Los usuarios pueden explorar un catálogo de películas nacionales argentinas.  
 Búsqueda: Los usuarios pueden buscar películas.  
-Visualización Online: Los usuarios pueden reproducir las películas directamente desde la plataforma.
+Visualización Online: Los usuarios pueden reproducir las películas directamente desde la plataforma.  
+Watclist: Los ususarios pueden creear una cuenta y guardar las peliculas en una lista personal.
 
 👨‍💻 Este proyecto fue desarrollado por @joakoMI @nicobarak @Ivan-Chueco-Tendler @ginofrigoni @NicoDiddi11 como parte de las materias Programación en Nuevas Tecnologías 2 y Taller de Programación 2 de la Tecnicatura de Analista de Sistemas de **ORT** a cargo de @ORT-PabloFernandez.
 
