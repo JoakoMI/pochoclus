@@ -1,14 +1,14 @@
 # 🍿 **Pochoclus** 🧉
 
-##**Pochoclus** es un **archivo y streaming web de películas nacionales argentinas** previas al 2000 que no se encuentran en los servicios de streaming habituales. Nuestro objetivo es preservar y difundir las películas argentinas que son difíciles de encontrar. Los usuarios podrán acceder a nuestro catálogo y visualizar las películas de manera online.
+**Pochoclus** es un **archivo y streaming web de películas nacionales argentinas** previas al 2000 que no se encuentran en los servicios de streaming habituales. Nuestro objetivo es preservar y difundir las películas argentinas que son difíciles de encontrar. Los usuarios podrán acceder a nuestro catálogo y visualizar las películas de manera online.
 
-###💻 **Funcionalidades**  
+💻 **Funcionalidades**  
 Catálogo de Películas: Los usuarios pueden explorar un catálogo de películas nacionales argentinas.  
 Búsqueda: Los usuarios pueden buscar películas.  
 Visualización Online: Los usuarios pueden reproducir las películas directamente desde la plataforma.  
 Watclist: Los ususarios pueden creear una cuenta y guardar las peliculas en una lista personal.
 
-👨‍💻 Este proyecto fue desarrollado por @joakoMI @nicobarak @Ivan-Chueco-Tendler @ginofrigoni @NicoDiddi11 como parte de las materias Programación en Nuevas Tecnologías 2 y Taller de Programación 2 de la Tecnicatura de Analista de Sistemas de **ORT** a cargo de @ORT-PabloFernandez.
+👨‍💻 Este proyecto fue desarrollado por @github/joakoMI @github/nicobarak @github/Ivan-Chueco-Tendler @github/ginofrigoni @github/NicoDiddi11 como parte de las materias Programación en Nuevas Tecnologías 2 y Taller de Programación 2 de la Tecnicatura de Analista de Sistemas de **ORT** a cargo de @github/ORT-PabloFernandez.
 
 ⚙ **Tecnologías Utilizadas**  
 **Next.js:** Framework de React para la construcción de aplicaciones web.  
