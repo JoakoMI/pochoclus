@@ -16,16 +16,13 @@ Visualización Online: Los usuarios pueden reproducir las películas directament
 **Tailwind CSS:** Framework de CSS para el diseño de la interfaz de usuario.
 
 🔗 Instalación  
-Clona este repositorio:
-bash
+Clona este repositorio:  
 git clone https://github.com/JoakoMI/pochoclus
 
-Navega al directorio del proyecto:
-bash
+Navega al directorio del proyecto:  
 cd pochoclus
 
-Instala las dependencias:
-bash
+Instala las dependencias:  
 npm install
 
 🙋‍♂️ Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio importante antes de realizarlo!
